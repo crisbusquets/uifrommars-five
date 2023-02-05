@@ -110,10 +110,12 @@ strong > em {
   font-family: "Charter-BoldItalic";
 }
 
-nav {
+nav,
+.nav {
   font-family: "MartianMono-Medium";
   font-size: var(--font-size-nav);
   line-height: 1;
+  text-transform: uppercase;
 }
 
 .pill {
@@ -135,6 +137,7 @@ label {
 }
 
 small {
+  color: var(--regular-gray);
   font-family: "Charter-Regular";
   font-size: var(--font-size-small);
   line-height: 1.25;
@@ -151,4 +154,13 @@ blockquote {
   border-left: 3px solid var(--regular-gray);
   margin: 0;
   padding: 0 0 0 var(--spacing-medium);
+}
+
+/* interface items */
+nav > ul > li > a {
+  color: var(--dark-gray);
+  text-transform: uppercase;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: color 0.2s ease-in-out, border-bottom 0.2s ease-in-out;
 }

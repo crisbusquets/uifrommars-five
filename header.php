@@ -14,8 +14,18 @@
 </head>
 
 <body>
-<div class="menu">
-    <ul>
-        <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
-    </ul>
-</div>
+<header>
+    <div class="wrapper">
+    <div id="logo">
+        [asset]
+    </div>
+    <nav>
+        <ul>
+            <?php wp_nav_menu( array( 'theme_location' => 'primary-menu', 'container' => '', 'items_wrap' => '%3$s' ) ); ?>
+        </ul>
+    </nav>
+    <div id="search">
+        s
+    </div>
+    </div>
+</header>

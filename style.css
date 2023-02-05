@@ -10,6 +10,7 @@ Tags: black, white, red, grey, responsive, minimal
 
 @import "styles/variables.css";
 @import "styles/typography.css";
+@import "styles/grid.css";
 
 *,
 *::before,
@@ -22,4 +23,11 @@ Tags: black, white, red, grey, responsive, minimal
 html {
   background: var(--warm);
   color: var(--dark-gray);
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
 }

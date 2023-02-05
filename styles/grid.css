@@ -1,0 +1,85 @@
+/* TODO grids
+   - home
+   - interior pages */
+
+header,
+main,
+aside,
+footer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: var(--white);
+}
+
+main {
+  width: 100%;
+  margin: var(--spacing-huge) 0 0 0;
+}
+
+.wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  width: var(--max-content);
+  padding: var(--spacing-xmedium) 0;
+  border: 1px solid salmon;
+}
+
+#logo {
+  display: flex;
+  align-items: center;
+  flex: 1 1 auto;
+  height: auto;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  flex: 1 1 80%;
+}
+
+#search {
+  display: flex;
+  align-items: center;
+  height: auto;
+  margin: 0 0 0 var(--spacing-large);
+}
+
+nav > ul {
+  flex: 1 1 auto;
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+nav > ul > li {
+  margin: 0 0 0 0;
+}
+
+article {
+  width: 100%;
+  max-width: 43.75rem;
+}
+
+#footer-container {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  grid-gap: var(--spacing-large);
+}
+
+.item {
+  border: 1px solid red;
+}

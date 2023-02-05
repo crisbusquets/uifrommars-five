@@ -29,5 +29,10 @@
   --spacing-xlarge: 3rem;
   --spacing-xxlarge: 4rem;
   --spacing-big: 7rem;
-  --spacing-huge: 9rem;
+  --spacing-huge: 13.25rem;
+
+  /* breakpoints */
+  --mobile: 768px; /* up */
+  --tablet: 899px; /* from */
+  --max-content: 1232px; /* from */
 }
