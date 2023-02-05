@@ -1,0 +1,19 @@
+/*
+Theme Name: uiFromMars Five
+Theme URI: https://www.uifrommars.com
+Description: Diseño de producto digital en español
+Version: 1
+Author: Cris Busquets
+Author URI: http://www.cbusquets.com
+Tags: black, white, red, grey, responsive, minimal
+*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--background);
+}
