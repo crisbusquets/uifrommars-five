@@ -164,3 +164,36 @@ nav > ul > li > a {
   border-bottom: 1px solid transparent;
   transition: color 0.2s ease-in-out, border-bottom 0.2s ease-in-out;
 }
+
+#footer-container small {
+  display: inline-block;
+  margin: var(--spacing-small) 0 0 0;
+}
+
+.footer-nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.nav {
+  display: inline-block;
+  margin-bottom: var(--spacing-small);
+}
+
+.footer-nav ul > li {
+  margin-bottom: var(--spacing-tiny);
+}
+
+.footer-nav ul > li > a {
+  color: var(--regular-gray);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: all 500ms;
+}
+
+.footer-nav ul > li > a:hover {
+  color: var(--dark-gray);
+  text-decoration: none;
+  border-bottom: 1px solid var(--dark-gray);
+}

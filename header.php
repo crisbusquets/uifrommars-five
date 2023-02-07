@@ -23,7 +23,7 @@
         </div>
         <nav>
             <ul>
-                <?php wp_nav_menu( array( 'theme_location' => 'primary-menu', 'container' => '', 'items_wrap' => '%3$s' ) ); ?>
+                <?php wp_nav_menu( array( 'theme_location' => 'header-menu', 'container' => '', 'items_wrap' => '%3$s' ) ); ?>
             </ul>
         </nav>
         <div id="search-icon" class="toggleicon">

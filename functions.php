@@ -13,7 +13,10 @@ add_action( 'wp_enqueue_scripts', 'theme_scripts', 50, 0 );
 
 // register nav
 function register_menus() { 
-    register_nav_menu('primary-menu',__('Main Menu')); 
+    register_nav_menu('header-menu',__('Header Main'));
+    register_nav_menu('explore-menu',__('Footer Explore')); 
+    register_nav_menu('links-menu',__('Footer Links')); 
+    register_nav_menu('uifrommars-menu',__('Footer uiFromMars')); 
 } 
 add_action('init', 'register_menus');
 
