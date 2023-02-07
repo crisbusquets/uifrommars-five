@@ -3,6 +3,7 @@
    - interior pages */
 
 header,
+#search-form,
 main,
 aside,
 footer {
@@ -30,7 +31,6 @@ main {
   justify-content: center;
   width: var(--max-content);
   padding: var(--spacing-xmedium) 0;
-  border: 1px solid salmon;
 }
 
 #logo {
@@ -38,6 +38,12 @@ main {
   align-items: center;
   flex: 1 1 auto;
   height: auto;
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+
+#logo:hover {
+  opacity: 0.5;
 }
 
 nav {
@@ -46,11 +52,15 @@ nav {
   flex: 1 1 80%;
 }
 
-#search {
+#search-icon {
   display: flex;
   align-items: center;
   height: auto;
   margin: 0 0 0 var(--spacing-large);
+}
+
+#search-icon:hover {
+  cursor: pointer;
 }
 
 nav > ul {
@@ -64,7 +74,24 @@ nav > ul {
 }
 
 nav > ul > li {
+  margin: 0 var(--spacing-large) 0 0;
+}
+
+nav > ul > li:last-of-type {
   margin: 0 0 0 0;
+}
+
+nav > ul > li > a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 1px;
+  background: var(--dark-gray);
+  transition: width 0.5s;
+}
+
+nav > ul > li > a:hover::after {
+  width: 100%;
 }
 
 article {
@@ -78,8 +105,4 @@ article {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto;
   grid-gap: var(--spacing-large);
-}
-
-.item {
-  border: 1px solid red;
 }
