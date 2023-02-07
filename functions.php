@@ -2,8 +2,11 @@
 // call javascript
 function theme_scripts() 
 {
-    wp_register_script( 'aos', get_template_directory_uri() . '/scripts/search.js', array () , 1, 1, 1);
-    wp_enqueue_script ('aos');
+    wp_register_script( 'search', get_template_directory_uri() . '/scripts/search.js', array () , 1, 1, 1);
+    wp_enqueue_script ('search');
+
+    wp_register_script( 'scroll', get_template_directory_uri() . '/scripts/scroll.js', array () , 1, 1, 1);
+    wp_enqueue_script ('scroll');
 }
 
 add_action( 'wp_enqueue_scripts', 'theme_scripts', 50, 0 );
