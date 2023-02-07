@@ -1,8 +1,8 @@
 window.addEventListener("scroll", moveScrollIndicator);
-const scrollIndicatorElt = document.getElementById("scrollIndicator");
+const scrollIndicator = document.getElementById("scroll-indicator");
 const maxScrollableHeight = window.document.body.scrollHeight - window.innerHeight;
 
-function moveScrollIndicator(e) {
+function moveScrollIndicator() {
   const percentage = (window.scrollY / maxScrollableHeight) * 100;
-  scrollIndicatorElt.style.width = percentage + "%";
+  scrollIndicator.style.width = `${percentage}%`;
 }

@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<div class="line" id="scrollIndicator"></div>
+<div class="line" id="scroll-indicator"></div>
 
 <main>
 	<div class="wrapper">
