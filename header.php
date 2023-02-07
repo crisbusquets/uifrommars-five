@@ -26,16 +26,16 @@
                 <?php wp_nav_menu( array( 'theme_location' => 'header-menu', 'container' => '', 'items_wrap' => '%3$s' ) ); ?>
             </ul>
         </nav>
-        <div id="search-icon" class="toggleicon">
+        <div id="search-icon">
             <img src="<?php echo get_bloginfo('template_url') ?>/assets/images/icon/search.svg"/>
         </div>
         <div id="search-shade"></div>
-        <div id="search-form">
+        <div id="search-container">
             <div class="wrapper">
-                <div id="search-input">
+                <div class="search-input">
                     <?php get_search_form(); ?>
                 </div>
-                <div id="search-close" class="closebutton">
+                <div id="search-close">
                     <img src="<?php echo get_bloginfo('template_url') ?>/assets/images/icon/close.svg"/>
                 </div>
             </div>

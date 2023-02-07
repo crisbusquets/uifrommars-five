@@ -2,21 +2,22 @@ document.addEventListener("DOMContentLoaded", function () {
   // https://codepen.io/kccnma/pen/NEOLoR
 
   // Target elements
-  var hiddensearch = document.querySelector("#search-form");
-  var searchshade = document.querySelector("#search-shade");
+  const container = document.querySelector("#search-container");
+  const backgroundShade = document.querySelector("#search-shade");
+  const searchIcon = document.querySelector("#search-icon");
+  const closeButton = document.querySelector("#search-close");
+  const input = document.querySelector("#search-input");
 
   // Open - add classes
-  var toggleicon = document.querySelector(".toggleicon");
-  toggleicon.onclick = function () {
-    hiddensearch.classList.toggle("active");
-    searchshade.classList.toggle("active");
-    document.getElementById("search-focus").focus();
+  searchIcon.onclick = function () {
+    container.classList.add("active");
+    backgroundShade.classList.add("active");
+    input.focus();
   };
 
   // Close - remove classes
-  var closebutton = document.querySelector(".closebutton");
-  closebutton.onclick = function () {
-    hiddensearch.classList.remove("active");
-    searchshade.classList.remove("active");
+  closeButton.onclick = function () {
+    container.classList.remove("active");
+    backgroundShade.classList.remove("active");
   };
 });
