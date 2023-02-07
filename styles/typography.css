@@ -102,11 +102,13 @@ strong {
   font-family: "Charter-Bold";
 }
 
-em {
-  font-family: "Charter-BoldItalic";
+em,
+i {
+  font-family: "Charter-Italic";
 }
 
-strong > em {
+strong > em,
+em > strong {
   font-family: "Charter-BoldItalic";
 }
 
@@ -130,10 +132,17 @@ label {
   line-height: 1;
 }
 
-.footnotes {
+.footnotes,
+.wp-caption-text {
   font-family: -apple-system, "BlinkMacSystemFont", "Segoe UI", "Roboto", "Helvetica", "Arial", sans-serif;
   font-size: var(--font-size-footnotes);
   line-height: 1.25;
+}
+
+.wp-caption-text {
+  color: var(--regular-gray);
+  text-align: left;
+  margin: var(--spacing-tiny) 0 var(--spacing-xmedium) 0;
 }
 
 small {
@@ -163,6 +172,10 @@ nav > ul > li > a {
   text-decoration: none;
   border-bottom: 1px solid transparent;
   transition: color 0.2s ease-in-out, border-bottom 0.2s ease-in-out;
+}
+
+article a {
+  color: var(--dark-gray);
 }
 
 #footer-container small {

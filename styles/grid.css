@@ -14,6 +14,7 @@ footer {
 
 header {
   position: fixed;
+  z-index: 999;
   width: 100%;
   top: 0;
   background-color: var(--white);
@@ -24,13 +25,18 @@ main {
   margin: var(--spacing-huge) 0 0 0;
 }
 
-.wrapper {
+header > .wrapper,
+footer > .wrapper {
   display: flex;
   flex-flow: row wrap;
   align-items: center;
   justify-content: center;
   width: var(--max-content);
   padding: var(--spacing-xmedium) 0;
+}
+
+.wrapper {
+  padding: 0;
 }
 
 #logo {

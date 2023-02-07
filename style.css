@@ -27,6 +27,8 @@ html {
   color: var(--dark-gray);
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
+  scroll-padding-top: var(--spacing-xxlarge);
 }
 
 body {
