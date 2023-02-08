@@ -31,7 +31,9 @@
 
 			<article class="<?php post_class();?>">
 				<h1><?php the_title(); ?></h1>
-				meta
+				<div class="reading-time">
+					<p>Tiempo estimado de lectura: <span></span></p>	
+				</div>
 				<?php the_post_thumbnail( 'post-thumbnails' ); ?>
 				<?php the_content(); ?>
 			</article>

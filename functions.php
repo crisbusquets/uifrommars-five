@@ -7,6 +7,9 @@ function theme_scripts()
 
     wp_register_script( 'scroll', get_template_directory_uri() . '/scripts/scroll.js', array () , 1, 1, 1);
     wp_enqueue_script ('scroll');
+
+    wp_register_script( 'reading-time', get_template_directory_uri() . '/scripts/readingtime.js', array () , 1, 1, 1);
+    wp_enqueue_script ('reading-time');
 }
 
 add_action( 'wp_enqueue_scripts', 'theme_scripts', 50, 0 );
