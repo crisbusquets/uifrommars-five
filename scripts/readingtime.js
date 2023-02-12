@@ -1,6 +1,6 @@
 const post = document.querySelector("article");
-const readingTimeSummary = document.querySelector(".reading-time span");
-const avgWordsPerMin = 200;
+const readingTimeSummary = document.querySelector(".reading-time span.minutes");
+const avgWordsPerMin = 220;
 
 setReadingTime();
 

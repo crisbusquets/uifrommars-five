@@ -31,9 +31,19 @@
 
 			<article class="<?php post_class();?>">
 				<h1><?php the_title(); ?></h1>
-				<div class="reading-time">
-					<p>Tiempo estimado de lectura: <span></span></p>	
+
+				<div class="category">
+					<span class="pill"><?php the_category(' ') ?></span>
 				</div>
+
+				<div class="post-meta">
+					<div class="author">
+						<?php echo get_avatar( get_the_author_meta( 'ID' ), 20 ); ?><span class="meta">Escrito por <?php the_author(); ?></span></div>
+					<div class="reading-time">
+						<img class="icon" src="<?php echo get_bloginfo('template_url') ?>/assets/images/icon/reading-time.svg"/><span class="meta">Tiempo de lectura: <span class="minutes"></span></span>	
+					</div>
+				</div>
+
 				<?php the_post_thumbnail( 'post-thumbnails' ); ?>
 				<?php the_content(); ?>
 			</article>

@@ -64,4 +64,14 @@ function wpse_11826_search_by_title( $search, $wp_query ) {
 }
 
 add_filter( 'posts_search', 'wpse_11826_search_by_title', 10, 2 );
+
+// custom avatar
+add_filter( 'avatar_defaults', 'addNewAvatar' );
+function addNewAvatar($avatar_defaults) {
+	$myavatar = 'https://pbs.twimg.com/profile_images/1607460477872869378/2GGIHSfq_400x400.jpg';
+	$avatar_defaults[$myavatar] = "Cris' Avatar";
+	return $avatar_defaults;
+}
+
+
 ?>
