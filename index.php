@@ -5,7 +5,7 @@
 		<div class="blog-intro">
 			<h1>Artículos</h1>
 			<p>Quiero leer sobre
-				<select  name="cat" onChange="window.document.location.href=this.options[this.selectedIndex].value;"> 
+				<select  name="cat" class="postform" onChange="window.document.location.href=this.options[this.selectedIndex].value;"> 
                     <option value="">cualquier tema</option> 
                     <?php 
                     $args = array(

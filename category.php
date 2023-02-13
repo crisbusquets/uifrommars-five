@@ -9,10 +9,7 @@
 				<?php echo category_description(); ?>
 
 				<strong>Refina tu búsqueda</strong>
-				<form id="search-category" method="get" action="<?php bloginfo('url'); ?>">
-					<input type="text" name="s" id="s" /><?php wp_dropdown_categories('show_option_none=Selecciona una categoría'); ?>
-					<input type="submit" value="Buscar" />
-				</form>
+				<?php get_search_form(); ?>
 			</div>
 
 		<section class="category-grid">
