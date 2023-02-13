@@ -73,5 +73,11 @@ function addNewAvatar($avatar_defaults) {
 	return $avatar_defaults;
 }
 
+// custom post images
+add_action( 'after_setup_theme', 'wpdocs_theme_setup' );
+function wpdocs_theme_setup() {
+	add_image_size( 'post-thumbnails', 700, 450, false );
+    add_image_size( 'blog-thumbnails', 389, 250, false );
+}
 
 ?>
