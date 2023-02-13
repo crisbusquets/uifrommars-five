@@ -27,6 +27,7 @@ main {
 
 header > .wrapper,
 main#blog > .wrapper,
+main#category > .wrapper,
 footer > .wrapper {
   display: flex;
   flex-flow: row wrap;

@@ -1,0 +1,54 @@
+main#category > .wrapper {
+  padding: 0;
+}
+
+.category-intro {
+  width: 100%;
+  margin-bottom: var(--spacing-big);
+}
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-rows: min-content auto;
+  width: 100vw;
+  height: auto;
+  gap: 64px 32px;
+  grid-template-areas:
+    ". . ."
+    ". . ."
+    ". . ."
+    ". . .";
+}
+
+.category-column {
+  width: 100%;
+  height: auto;
+}
+
+article.category-listing a {
+  border: 0;
+}
+
+article.category-listing a.category-image > img {
+  margin-top: 0;
+}
+
+article.category-listing > p.entry-title:nth-child(2n) {
+  font-family: "Charter-Bold";
+  margin-top: var(--spacing-medium);
+}
+
+article.category-listing > h2.entry-title a {
+  color: var(--dark-gray);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: all 500ms;
+}
+
+article.category-listing > p.entry-title a:hover {
+  color: var(--regular-gray);
+  text-decoration: none;
+  border-bottom: 1px solid var(--regular-gray);
+}

@@ -3,8 +3,26 @@
 <main id="blog">
 	<div class="wrapper">
 		<div class="blog-intro">
-			<h1>Blog</h1>
-			<p>Quiero leer sobre cualquier tema en la fase de todas y con un nivel de complejidad cualquiera.</p>
+			<h1>Artículos</h1>
+			<p>Quiero leer sobre
+				<select  name="cat" onChange="window.document.location.href=this.options[this.selectedIndex].value;"> 
+                    <option value="">cualquier tema</option> 
+                    <?php 
+                    $args = array(
+                               'order'=> 'ASC',
+                               'hide_empty' => 1,
+                            );
+
+                    $categories = get_categories($args); 
+                    foreach ( $categories as $category ) {
+                        $term_link = get_category_link($category->term_id );
+                        $term_link = esc_url( $term_link );
+                        echo '<option value="'.$term_link.'">'.$category->cat_name.'</option>';
+                    }
+                    ?>
+
+                </select>
+			</p>
 		</div>
 
 		<section class="blog-grid">
