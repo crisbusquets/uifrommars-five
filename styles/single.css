@@ -94,8 +94,7 @@ article ol > li::before {
 article .category {
   margin-top: var(--spacing-medium);
 }
-
-article .pill a {
+.pill a {
   display: inline-block;
   background-color: var(--light-gray);
   color: var(--dark-gray);
@@ -107,7 +106,7 @@ article .pill a {
   transition: all 300ms ease-in-out;
 }
 
-article .pill a:hover {
+.pill a:hover {
   background-color: var(--medium-gray);
 }
 
