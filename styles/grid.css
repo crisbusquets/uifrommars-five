@@ -29,6 +29,7 @@ header > .wrapper,
 #search-container > .wrapper,
 main#blog > .wrapper,
 main#category > .wrapper,
+main#search > .wrapper,
 footer > .wrapper {
   display: flex;
   flex-flow: row wrap;

@@ -40,7 +40,7 @@ article.category-listing > p.entry-title:nth-child(2n) {
   margin-top: var(--spacing-medium);
 }
 
-article.category-listing > h2.entry-title a {
+article.category-listing > p.entry-title a {
   color: var(--dark-gray);
   text-decoration: none;
   border-bottom: 1px solid transparent;

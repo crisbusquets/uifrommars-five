@@ -1,3 +1,4 @@
+/* search functionality structure */
 #search-shade {
   background: var(--dark-gray);
   opacity: 0;
@@ -39,6 +40,14 @@
   padding: 0 0 var(--spacing-xmedium) 0;
 }
 
+/* search form and input structure */
+
+.search-form {
+  display: flex;
+  margin: var(--spacing-xmedium) 0 0 0;
+  gap: var(--spacing-medium);
+}
+
 .search-input {
   display: flex;
   align-items: center;
@@ -53,40 +62,69 @@
   margin-top: 16px;
 }
 
-#search-title {
-  padding-bottom: var(--spacing-xlarge);
-  border-bottom: 0.5px solid var(--medium-gray);
+/* search results page */
+
+main#search > .wrapper {
+  padding: 0;
 }
 
-.search-excerpt {
-  background-color: var(--light-gray);
-  padding: 2px 4px;
-  border-radius: 2px;
+.search-intro {
+  width: 100%;
+  margin-bottom: var(--spacing-big);
 }
 
-form.search-container {
-  display: flex;
-  margin: var(--spacing-xmedium) 0 0 0;
-  gap: var(--spacing-medium);
+.search-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-rows: min-content auto;
+  width: 100vw;
+  height: auto;
+  gap: 64px 32px;
+  grid-template-areas:
+    ". . ."
+    ". . ."
+    ". . ."
+    ". . .";
+}
+
+.search-column {
+  width: 100%;
+  height: auto;
+}
+
+article.search-results a {
+  border: 0;
+}
+
+article.search-results a.search-image > img {
+  margin-top: 0;
 }
 
 article.search-results h2 {
   margin: var(--spacing-xlarge) 0 0 0;
 }
 
-article.search-results h2 a {
+article.search-results > p.entry-title:nth-child(2n) {
+  font-family: "Charter-Bold";
+  margin-top: var(--spacing-medium);
+}
+
+article.search-results > p.entry-title a {
   color: var(--dark-gray);
   text-decoration: none;
   border-bottom: 1px solid transparent;
   transition: all 500ms;
 }
 
-article.search-results h2 a:hover {
+article.search-results > p.entry-title a:hover {
   color: var(--regular-gray);
   text-decoration: none;
   border-bottom: 1px solid var(--regular-gray);
 }
 
-article.search-results p {
-  margin: var(--spacing-tiny) 0 0 0;
+.search-highlight {
+  background-color: var(--light-gray);
+  padding: 2px;
+  border-radius: 2px;
 }
