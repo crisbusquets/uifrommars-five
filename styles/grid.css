@@ -1,7 +1,3 @@
-/* TODO grids
-   - home
-   - interior pages */
-
 header,
 #search-container,
 main,
@@ -14,7 +10,7 @@ footer {
 
 header {
   position: fixed;
-  z-index: 999;
+  z-index: 9;
   width: 100%;
   top: 0;
   background-color: var(--white);
@@ -26,12 +22,9 @@ main {
 }
 
 header > .wrapper,
-main#home > .wrapper,
+main > .wrapper,
 #search-container > .wrapper,
 aside > .wrapper,
-main#blog > .wrapper,
-main#category > .wrapper,
-main#search > .wrapper,
 footer > .wrapper {
   display: flex;
   flex-flow: row wrap;
@@ -109,6 +102,48 @@ nav > ul > li > a:hover::after {
 article {
   width: 100%;
   max-width: 43.75rem;
+}
+
+.page-title {
+  width: 100%;
+  margin-bottom: var(--spacing-big);
+}
+
+.content-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: min-content auto;
+  width: 100vw;
+  height: auto;
+  gap: 96px 32px;
+  grid-template-areas: ". . .";
+}
+
+.content-grid .grid-column {
+  width: 100%;
+  height: auto;
+}
+
+img.size-blog-thumbnails {
+  margin: 0;
+}
+
+img.size-blog-thumbnails:hover {
+  cursor: pointer;
+}
+
+a.category-link {
+  display: inline-block;
+  margin-top: var(--spacing-large);
+  color: var(--mars);
+  text-transform: uppercase;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: all 500ms;
+}
+
+a.category-link:hover {
+  border-bottom: 1px solid var(--mars);
 }
 
 #footer-container {

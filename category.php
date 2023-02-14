@@ -4,7 +4,7 @@
 	<div class="wrapper">
 		<?php if ( have_posts() ) : ?>
 
-			<div class="category-intro">
+			<div class="page-title">
 				<h1><?php $cat = get_the_category(); echo $cat[0]->cat_name; ?></h1>
 				<?php echo category_description(); ?>
 
@@ -12,21 +12,21 @@
 				<?php get_search_form(); ?>
 			</div>
 
-		<section class="category-grid">
+		<section class="content-grid">
 		
 			<?php while ( have_posts() ) : the_post(); ?>
-			<section class="<?php echo $category->name; ?> listing category-column">
-				<article id="post-<?php the_ID(); ?>" <?php post_class( 'category-listing' ); ?>>
+			<section class="<?php echo $category->name; ?> category-column">
+				<article id="post-<?php the_ID(); ?>" <?php post_class( 'grid-column' ); ?>>
 
 						<a href="<?php the_permalink(); ?>" class="category-image">
 							<?php the_post_thumbnail( 'blog-thumbnails' ); ?>
 						</a>
 						
-					<p class="entry-title">
+					<h3>
 						<a href="<?php the_permalink(); ?>">
 							<?php the_title(); ?>
 						</a>
-					</p>
+					</h3>
 
 				</article>
 			</section>

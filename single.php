@@ -29,7 +29,7 @@
 			}
 		</script>
 
-			<article class="<?php post_class();?>">
+			<article class="single-post">
 				<h1><?php the_title(); ?></h1>
 
 				<div class="category">
@@ -62,7 +62,7 @@
 	<div class="wrapper">
 		<div class="related-posts">
 			<h2>Artículos relacionados</h2>
-			<div class="related-posts-grid">
+			<div class="content-grid-recent">
 				
 			<?php
 				$orig_post = $post;
@@ -85,16 +85,16 @@
 				$my_query->the_post();
 				?>
 				
-				<article class="related-post-column">
-					<a href="<? the_permalink()?>">
+				<article class="grid-column">
+					<a href="<? the_permalink()?>" class="category-image">
 						<?php the_post_thumbnail( 'blog-thumbnails' ); ?>
 					</a>
 
-					<p class="entry-title">
+					<h3>
 						<a href="<? the_permalink()?>">
 							<?php the_title(); ?>
 						</a>
-					</p>
+					</h3>
 				</article>
 				
 				<? }

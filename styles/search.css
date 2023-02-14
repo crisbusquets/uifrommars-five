@@ -64,65 +64,6 @@
 
 /* search results page */
 
-main#search > .wrapper {
-  padding: 0;
-}
-
-.search-intro {
-  width: 100%;
-  margin-bottom: var(--spacing-big);
-}
-
-.search-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(4, 1fr);
-  grid-template-rows: min-content auto;
-  width: 100vw;
-  height: auto;
-  gap: 64px 32px;
-  grid-template-areas:
-    ". . ."
-    ". . ."
-    ". . ."
-    ". . .";
-}
-
-.search-column {
-  width: 100%;
-  height: auto;
-}
-
-article.search-results a {
-  border: 0;
-}
-
-article.search-results a.search-image > img {
-  margin-top: 0;
-}
-
-article.search-results h2 {
-  margin: var(--spacing-xlarge) 0 0 0;
-}
-
-article.search-results > p.entry-title:nth-child(2n) {
-  font-family: "Charter-Bold";
-  margin-top: var(--spacing-medium);
-}
-
-article.search-results > p.entry-title a {
-  color: var(--dark-gray);
-  text-decoration: none;
-  border-bottom: 1px solid transparent;
-  transition: all 500ms;
-}
-
-article.search-results > p.entry-title a:hover {
-  color: var(--regular-gray);
-  text-decoration: none;
-  border-bottom: 1px solid var(--regular-gray);
-}
-
 .search-highlight {
   background-color: var(--light-gray);
   padding: 2px;

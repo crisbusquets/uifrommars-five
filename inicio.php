@@ -8,23 +8,23 @@ Template Name: Inicio
 
 <main id="home">
 	<div class="wrapper">
-        <section class="home-intro">
-            <div class="home-newsletter">
+        <section class="two-columns">
+            <div class="newsletter">
                 <h1>El newsletter para los diseñadores que quieren mejorar día a día.</h1>
                 <p>Un lugar construido exclusivamente para diseñador@s UI/UX y de producto que buscan crecer día tras día :)</p>
                 <p>¡Únete a 6359 diseñador@s y empieza ya!</p>
                 <p>[form]</p>
             </div>
 
-            <div class="home-lottie">
+            <div class="lottie">
                 <p>image</p>
             </div>
         </section>
 
-        <section class="home-last">
+        <section class="one-column">
             <h2>Últimos artículos</h2>
 
-            <div class="home-last-listing">
+            <div class="content-grid-recent">
                 <?php
                     global $post;
                     $last_posts = get_posts(array('posts_per_page' => 6));
@@ -32,12 +32,15 @@ Template Name: Inicio
                     foreach ( $last_posts as $post ) :
                     setup_postdata( $post );?>
 
-                    <article class="last-listing-column">
-                        <a href="<?php the_permalink(); ?>" class="listing">
+                    <article id="post-<?php the_ID(); ?>" <?php post_class( 'grid-column' ); ?>>
+                        
+                        <a href="<?php the_permalink(); ?>" class="category-image">
                             <?php the_post_thumbnail( 'blog-thumbnails' ); ?>
                         </a>
-                        <span class="category pill"><?php the_category(' ') ?></span>
-                        <h3 class="entry-title">
+                        <!-- TODO: add "category-link" class to the category link -->
+                        <?php the_category(' ') ?>
+                        
+                        <h3>
                             <a href="<?php the_permalink(); ?>">
                                 <?php the_title(); ?>
                             </a>
@@ -49,7 +52,7 @@ Template Name: Inicio
 
         </section>
 
-        <section class="home-top">
+        <section class="two-columns">
             <div class="most-read">
                 <h2>Lo más leído en uiFromMars</h2>
                     <?php
@@ -59,30 +62,33 @@ Template Name: Inicio
 
                         foreach ( $post_id as $post ) :
                         setup_postdata( $post );?>
-                        <div class="most-read-item">
-                            <div class="first-column">
-                                <span class="category pill"><?php the_category(' ') ?></span>
+                        <article class="most-read-list">
+
+                            <div class="cat-column">
+                                <!-- TODO: add "category-link" class to the category link -->
+                                <?php the_category(' ') ?>
                             </div>
 
-                            <div class="second-column">
-                                <h3 class="entry-title">
+                            <div class="title-column">
+                                <h3>
                                     <a href="<?php the_permalink(); ?>">
                                         <?php the_title(); ?>
                                     </a>
                                 </h3>
                             </div>
 
-                            <div class="third-column">
-                            <a href="<?php the_permalink(); ?>">
-                                <img class="icon" src="<?php echo get_bloginfo('template_url') ?>/assets/images/icon/diagonal-chevron.svg"/>
-                            </a>
+                            <div class="icon-column">
+                                <a href="<?php the_permalink(); ?>">
+                                    <img class="icon" src="<?php echo get_bloginfo('template_url') ?>/assets/images/icon/diagonal-chevron.svg"/>
+                                </a>
                             </div>
-                        </div>
+
+                        </article>
 
                     <?php endforeach; wp_reset_postdata(); ?>
             </div>
             
-            <div class="category-list">
+            <div class="categories">
                 <h2>Categorías</h2>
                 <div class="category-cloud">
                     <?php

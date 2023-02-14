@@ -2,7 +2,7 @@
 
 <main id="blog">
 	<div class="wrapper">
-		<div class="blog-intro">
+		<div class="page-title">
 			<h1>Artículos</h1>
 			<p>Quiero leer sobre
 				<select  name="cat" class="postform" onChange="window.document.location.href=this.options[this.selectedIndex].value;"> 
@@ -25,7 +25,7 @@
 			</p>
 		</div>
 
-		<section class="blog-grid">
+		<section class="content-grid">
 
 			<?php
 				// get_categories function fetch a list of the categories
@@ -53,7 +53,7 @@
 					// Run the query using those arguments (custom loop)
 					$query = new WP_Query( $args ); if ( $query->have_posts() ) { ?>
 
-					<section class="<?php echo $category->name; ?> listing category-column">
+					<section class="<?php echo $category->name; ?> category-column">
 						<h2><?php echo $category->name; ?></h2>
 
 						<?php 
@@ -62,7 +62,7 @@
 
 						<?php while ( $query->have_posts() ) {$query->the_post(); $do_not_duplicate[] = $post->ID;?>
 
-							<article id="post-<?php the_ID(); ?>" <?php post_class( 'category-listing' ); ?>>
+							<article id="post-<?php the_ID(); ?>" class="grid-column">
 
 							<?php if ( $first ): ?>
 								<a href="<?php the_permalink(); ?>">
@@ -71,12 +71,13 @@
 								<?php $first = false; ?>
 							<?php endif; ?>
 
-							<p class="entry-title">
+							<h3>
 								<a href="<?php the_permalink(); ?>">
 									<?php the_title(); ?>
 								</a>
-								<hr>
-							</p>
+							</h3>
+
+							<hr>
 
 							</article>
 
