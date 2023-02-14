@@ -136,3 +136,52 @@ article .reading-time > img.icon {
   border-radius: 50%;
   margin: 0;
 }
+
+/* related posts */
+.related-posts {
+  width: 100%;
+}
+
+.related-posts h2 {
+  margin: 0 0 var(--spacing-xlarge) 0;
+}
+
+.related-posts-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  height: auto;
+  gap: 32px;
+  grid-template-areas: ". . .";
+}
+
+.related-post-column {
+  width: 100%;
+  height: auto;
+}
+
+article.related-post-column a {
+  border: 0;
+}
+
+article.related-post-column a > img {
+  margin-top: 0;
+}
+
+article.related-post-column > p.entry-title:nth-child(2n) {
+  font-family: "Charter-Bold";
+  margin-top: var(--spacing-medium);
+}
+
+article.related-post-column > p.entry-title a {
+  color: var(--dark-gray);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: all 500ms;
+}
+
+article.related-post-column > p.entry-title a:hover {
+  color: var(--regular-gray);
+  text-decoration: none;
+  border-bottom: 1px solid var(--regular-gray);
+}

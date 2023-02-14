@@ -27,6 +27,7 @@ main {
 
 header > .wrapper,
 #search-container > .wrapper,
+aside > .wrapper,
 main#blog > .wrapper,
 main#category > .wrapper,
 main#search > .wrapper,
