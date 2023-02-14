@@ -1,7 +1,5 @@
 <?php wp_footer(); ?>
-<aside>
-    <div class="wrapper">[widget]</div>
-</aside>
+
 <footer>
     <div class="wrapper">
         <div id="footer-container">
