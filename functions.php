@@ -1,18 +1,13 @@
 <?php
-// call javascript
-function theme_scripts() 
-{
-    wp_register_script( 'search', get_template_directory_uri() . '/scripts/search.js', array () , 1, 1, 1);
-    wp_enqueue_script ('search');
-
-    wp_register_script( 'scroll', get_template_directory_uri() . '/scripts/scroll.js', array () , 1, 1, 1);
-    wp_enqueue_script ('scroll');
-
-    wp_register_script( 'reading-time', get_template_directory_uri() . '/scripts/readingtime.js', array () , 1, 1, 1);
-    wp_enqueue_script ('reading-time');
+// javascript
+function my_scripts() {
+    if( is_single() ){
+        wp_enqueue_script( 'scroll', get_template_directory_uri() . '/scripts/scroll.js', array(), '1.0.0', true );
+        wp_enqueue_script( 'reading-time', get_template_directory_uri() . '/scripts/readingtime.js', array(), '1.0.0', true );
+    }
+    wp_enqueue_script( 'search', get_template_directory_uri() . '/scripts/search.js', array(), '1.0.0', true );
 }
-
-add_action( 'wp_enqueue_scripts', 'theme_scripts', 50, 0 );
+add_action( 'wp_enqueue_scripts', 'my_scripts' );
 
 // register nav
 function register_menus() { 
