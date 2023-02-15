@@ -8,6 +8,7 @@
 
 .grid-column h3:nth-child(2n) {
   font-family: "Charter-Bold";
+  margin: var(--spacing-small) 0 0 0;
 }
 
 .grid-column > hr {
@@ -20,5 +21,7 @@
 }
 
 .grid-column:last-of-type > hr {
-  display: none;
+  display: block;
+  background-color: transparent;
+  margin: 0 0 var(--spacing-xlarge) 0;
 }

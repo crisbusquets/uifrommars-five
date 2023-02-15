@@ -80,4 +80,19 @@ function wpdocs_theme_setup() {
     add_image_size( 'blog-thumbnails', 389, 250, false );
 }
 
+// custom class to the_category
+function yourTheme_category_class($thelist){
+    $categories = get_the_category();
+  
+    if ( !$categories || is_wp_error($categories) ) {
+      return $thelist;
+    }
+  
+    foreach ( $categories as $category ) {
+      $output .= '<a href="' . esc_url(get_category_link($category->term_id)) . '" class="category-link">' . $category->name . '</a>';
+    }
+  
+    return $output;
+  }
+  add_filter( 'the_category', 'yourTheme_category_class');
 ?>

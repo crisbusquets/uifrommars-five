@@ -1,12 +1,13 @@
 <?php get_header(); ?>
 
 <main id="blog">
-	<div class="wrapper">
-		<div class="page-title">
-			<h1>Artículos</h1>
-			<p>Quiero leer sobre
-				<select  name="cat" class="postform" onChange="window.document.location.href=this.options[this.selectedIndex].value;"> 
-                    <option value="">cualquier tema</option> 
+    <div class="wrapper">
+        <div class="page-title">
+            <h1>Artículos</h1>
+            <p>Quiero leer sobre
+                <select name="cat" class="postform"
+                    onChange="window.document.location.href=this.options[this.selectedIndex].value;">
+                    <option value="">cualquier tema</option>
                     <?php 
                     $args = array(
                                'order'=> 'ASC',
@@ -22,12 +23,12 @@
                     ?>
 
                 </select>
-			</p>
-		</div>
+            </p>
+        </div>
 
-		<section class="content-grid">
+        <section class="content-grid">
 
-			<?php
+            <?php
 				// get_categories function fetch a list of the categories
 				$categories = get_categories();
 
@@ -53,47 +54,47 @@
 					// Run the query using those arguments (custom loop)
 					$query = new WP_Query( $args ); if ( $query->have_posts() ) { ?>
 
-					<section class="<?php echo $category->name; ?> category-column">
-						<h2><?php echo $category->name; ?></h2>
+            <section class="<?php echo $category->name; ?> category-column">
+                <h2><?php echo $category->name; ?></h2>
 
-						<?php 
+                <?php 
 						// To check later if that is the first post
 						$first = true; ?>
 
-						<?php while ( $query->have_posts() ) {$query->the_post(); $do_not_duplicate[] = $post->ID;?>
+                <?php while ( $query->have_posts() ) {$query->the_post(); $do_not_duplicate[] = $post->ID;?>
 
-							<article id="post-<?php the_ID(); ?>" class="grid-column">
+                <article id="post-<?php the_ID(); ?>" class="grid-column">
 
-							<?php if ( $first ): ?>
-								<a href="<?php the_permalink(); ?>">
-									<?php the_post_thumbnail( 'blog-thumbnails' ); ?>
-								</a>
-								<?php $first = false; ?>
-							<?php endif; ?>
+                    <?php if ( $first ): ?>
+                    <a href="<?php the_permalink(); ?>">
+                        <?php the_post_thumbnail( 'blog-thumbnails' ); ?>
+                    </a>
+                    <?php $first = false; ?>
+                    <?php endif; ?>
 
-							<h3>
-								<a href="<?php the_permalink(); ?>">
-									<?php the_title(); ?>
-								</a>
-							</h3>
+                    <h3>
+                        <a href="<?php the_permalink(); ?>">
+                            <?php the_title(); ?>
+                        </a>
+                    </h3>
 
-							<hr>
+                    <hr>
 
-							</article>
+                </article>
 
-						<?php } // end while ?>
-						<a href="<?php echo $category_link; ?>" class="category-link pill">Más <?php echo $category->name; ?> →</a>
-					</section>
+                <?php } // end while ?>
+                <a href="<?php echo $category_link; ?>" class="category-link">Más <?php echo $category->name; ?> →</a>
+            </section>
 
-					<?php } // end if query have_posts
+            <?php } // end if query have_posts
 
 					// Use reset to restore original query.
 					wp_reset_postdata();
 				}
 			?>
 
-		</section>
-	</div>
+        </section>
+    </div>
 </main>
 
 <?php get_footer(); ?>

@@ -133,8 +133,11 @@ img.size-blog-thumbnails:hover {
 }
 
 a.category-link {
+  font-family: "MartianMono-Medium";
+  font-size: var(--font-size-pill);
+  line-height: 1;
+  font-weight: 500;
   display: inline-block;
-  margin-top: var(--spacing-large);
   color: var(--mars);
   text-transform: uppercase;
   text-decoration: none;
