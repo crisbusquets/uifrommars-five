@@ -5,7 +5,7 @@
         <div class="page-title">
             <h1>Artículos</h1>
             <p>Quiero leer sobre
-                <select name="cat" class="postform"
+                <select name="cat" class="blogform"
                     onChange="window.document.location.href=this.options[this.selectedIndex].value;">
                     <option value="">cualquier tema</option>
                     <?php 
