@@ -100,15 +100,6 @@ h3 > a:hover {
   border-bottom: 1px solid var(--regular-gray);
 }
 
-/* article h3 {
-  font-family: "MartianMonoCondensed-Light";
-  font-size: var(--font-size-heading-3);
-  line-height: 1.2;
-  margin: var(--spacing-xxlarge) 0 0 0;
-  font-weight: 300;
-}
-*/
-
 p,
 input[type="text"],
 input[type="search"],
@@ -131,6 +122,21 @@ i {
 strong > em,
 em > strong {
   font-family: "Charter-BoldItalic";
+}
+
+.single-post a,
+.page a {
+  color: var(--mars);
+  text-decoration: none;
+  border-bottom: 1px dotted var(--mars);
+  transition: all 500ms;
+}
+
+.single-post a:hover,
+.page a:hover {
+  color: var(--regular-gray);
+  text-decoration: none;
+  border-bottom: 1px dotted var(--regular-gray);
 }
 
 nav,

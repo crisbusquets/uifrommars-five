@@ -1,0 +1,73 @@
+.single-post ul,
+.page ul,
+.single-post ol,
+.page ol {
+  list-style-type: none;
+  padding: 0;
+}
+
+.single-post li,
+.page li {
+  font-family: "Charter-Regular";
+  font-size: var(--font-size-body);
+  line-height: 1.3;
+  margin: 0 0 0 var(--spacing-xmedium);
+  position: relative;
+  padding-bottom: var(--spacing-medium);
+}
+
+.single-post li ul li,
+.page li ul li {
+  padding-top: var(--spacing-medium);
+  padding-bottom: 0;
+}
+
+.single-post li ol li,
+.page li ol li {
+  padding: var(--spacing-medium) 0 0 var(--spacing-medium);
+}
+
+.single-post ul > li::before,
+.page ul > li::before,
+.single-post ul > li ul li::before,
+.page ul > li ul li::before {
+  position: absolute;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  transform: translate(-135%, 15%);
+}
+
+.single-post ul > li::before,
+.page ul > li::before,
+.single-post ul > li ul li::before,
+.page ul > li ul li::before {
+  content: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 4L10.59 5.41L16.17 11H4V13H16.17L10.59 18.59L12 20L20 12L12 4Z' fill='%23EE3E2B'/%3E%3C/svg%3E%0A");
+}
+
+.single-post ul > li ul li::before,
+.page ul > li ul li::before {
+  content: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 14C13.1046 14 14 13.1046 14 12C14 10.8954 13.1046 10 12 10C10.8954 10 10 10.8954 10 12C10 13.1046 10.8954 14 12 14Z' fill='%23EE3E2B'/%3E%3C/svg%3E%0A");
+}
+
+.single-post ol,
+.page ol {
+  list-style: none;
+
+  counter-reset: list;
+}
+
+.single-post ol > li,
+.page ol > li {
+  counter-increment: num;
+  margin: 0;
+}
+
+.single-post ol > li::before,
+.page ol > li::before {
+  counter-increment: list;
+  content: counters(list, ".") ". ";
+  color: var(--mars);
+  font-family: "Charter-Bold";
+  font-weight: 700;
+}

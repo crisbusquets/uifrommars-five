@@ -149,6 +149,10 @@ a.category-link:hover {
   border-bottom: 1px solid var(--mars);
 }
 
+footer {
+  margin: var(--spacing-xxlarge) 0 0 0;
+}
+
 #footer-container {
   display: grid;
   width: 100%;
