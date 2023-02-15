@@ -3,15 +3,16 @@
 <footer>
     <div class="wrapper">
         <div id="footer-container">
-            <div class="item credits">
-            <img src="<?php echo get_bloginfo('template_url') ?>/assets/images/uifrommars-logo.svg"/>
-            <small>Copyright © 2018-<?php echo date("Y");?>.<br>Todos los derechos reservados.</small>
-        </div>
+            <div class="credits">
+                <img src="<?php echo get_bloginfo('template_url') ?>/assets/images/uifrommars-logo.svg" />
+                <small>Copyright © 2018-<?php echo date("Y");?>.<br>Todos los derechos reservados.</small>
+            </div>
             <div class="footer-nav">
                 <span class="nav">Explora</span>
                 <ul class="meta">
                     <?php wp_nav_menu( array( 'theme_location' => 'explore-menu', 'container' => '', 'items_wrap' => '%3$s' ) ); ?>
-                </ul></div>
+                </ul>
+            </div>
             <div class="footer-nav">
                 <span class="nav">Enlaces</span>
                 <ul class="meta">
@@ -28,4 +29,5 @@
     </div>
 </footer>
 </body>
+
 </html>

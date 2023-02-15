@@ -6,6 +6,7 @@ function my_scripts() {
         wp_enqueue_script( 'reading-time', get_template_directory_uri() . '/scripts/readingtime.js', array(), '1.0.0', true );
     }
     wp_enqueue_script( 'search', get_template_directory_uri() . '/scripts/search.js', array(), '1.0.0', true );
+    wp_enqueue_script( 'nav', get_template_directory_uri() . '/scripts/nav.js', array(), '1.0.0', true );
 }
 add_action( 'wp_enqueue_scripts', 'my_scripts' );
 
@@ -72,8 +73,9 @@ function addNewAvatar($avatar_defaults) {
 add_action( 'after_setup_theme', 'wpdocs_theme_setup' );
 function wpdocs_theme_setup() {
 	add_image_size( 'post-thumbnails', 700, 450, false );
-    add_image_size( 'blog-thumbnails', 389, 250, false );
+    add_image_size( 'blog-thumbnails', 370, 238, false );
 }
+
 
 // custom class to the_category
 function yourTheme_category_class($thelist){
