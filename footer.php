@@ -4,7 +4,8 @@
     <div class="wrapper">
         <div id="footer-container">
             <div class="credits">
-                <img src="<?php echo get_bloginfo('template_url') ?>/assets/images/uifrommars-logo.svg" />
+                <img src="<?php echo get_bloginfo('template_url') ?>/assets/images/uifrommars-logo.svg" alt="uiFromMars"
+                    style="width:140px; height: auto;" />
                 <small>Copyright © 2018-<?php echo date("Y");?>.<br>Todos los derechos reservados.</small>
             </div>
             <div class="footer-nav">

@@ -35,6 +35,10 @@ nav > ul > li > a:hover::after {
   width: 100%;
 }
 
+nav > ul > li.current-menu-item a {
+  border-bottom: 1px solid var(--dark-gray);
+}
+
 button.nav-toggle {
   display: none;
 }

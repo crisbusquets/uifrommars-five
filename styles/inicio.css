@@ -1,5 +1,6 @@
-main#home section:nth-child(2) {
-  margin: var(--spacing-big) 0;
+main#home section:nth-child(2),
+main#home section:nth-child(3) {
+  margin: var(--spacing-big) 0 0 0;
 }
 
 main#home h2 {
@@ -103,6 +104,7 @@ section.one-column {
   grid-row-gap: 0px;
   padding: var(--spacing-xmedium) 0;
   border-bottom: 1px solid var(--medium-gray);
+  transition: all 500ms;
 }
 
 @media (max-width: 948px) {
@@ -113,8 +115,21 @@ section.one-column {
   }
 }
 
+.most-read-list h3 {
+  display: inline;
+  border-bottom: 1px solid transparent;
+  transition: all 500ms;
+}
+
 .most-read-list:hover {
   background-color: var(--light-gray);
+  cursor: pointer;
+}
+
+.most-read-list:hover h3 {
+  color: var(--regular-gray);
+  text-decoration: none;
+  border-bottom: 1px solid var(--regular-gray);
 }
 
 .cat-column {

@@ -50,6 +50,10 @@
 
 /* search form and input structure */
 
+main#search .search-form {
+  margin: var(--spacing-small) 0 0 0;
+}
+
 .search-form {
   display: flex;
   margin: 0 0 0 0;

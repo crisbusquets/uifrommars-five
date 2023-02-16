@@ -6,8 +6,23 @@ select.postform,
 button {
   box-sizing: border-box;
   height: 48px;
-  width: 100%;
+  width: auto;
   vertical-align: bottom;
+}
+
+input[type="email"] {
+  width: 100%;
+}
+
+@media (max-width: 948px) {
+  input[type="search"],
+  input[type="submit"],
+  input[type="email"],
+  select,
+  select.postform,
+  button {
+    width: 100%;
+  }
 }
 
 input[type="search"],

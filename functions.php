@@ -7,6 +7,7 @@ function my_scripts() {
     }
     wp_enqueue_script( 'search', get_template_directory_uri() . '/scripts/search.js', array(), '1.0.0', true );
     wp_enqueue_script( 'nav', get_template_directory_uri() . '/scripts/nav.js', array(), '1.0.0', true );
+    
 }
 add_action( 'wp_enqueue_scripts', 'my_scripts' );
 
@@ -22,8 +23,22 @@ add_action('init', 'register_menus');
 // remove extra UL id
 add_filter( 'nav_menu_item_id', '__return_null', 10, 3 );
 
-// remove extra LI class
-add_filter( 'nav_menu_css_class', '__return_empty_array', 10, 3 );
+// remove extra LI class except "current"
+add_filter('nav_menu_css_class', 'discard_menu_classes', 10, 2);
+
+function discard_menu_classes($classes, $item) {
+    $classes = array_filter( 
+        $classes, 
+        create_function( '$class', 
+                 'return in_array( $class, 
+                      array( "current-menu-item", "current-menu-parent" ) );' )
+        );
+    return array_merge(
+        $classes,
+        (array)get_post_meta( $item->ID, '_menu_item_classes', true )
+        );
+    }
+
 
 // search (category dropwn)
 add_action('pre_get_posts', 'search_by_cat');

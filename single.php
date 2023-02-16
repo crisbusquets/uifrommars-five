@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <div class="line" id="scroll-indicator"></div>
 
-<main>
+<main id="post">
     <div class="wrapper">
         <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
@@ -49,6 +49,7 @@
 
             <?php the_post_thumbnail( 'post-thumbnails' ); ?>
             <?php the_content(); ?>
+            <hr />
         </article>
 
         <?php endwhile; else: ?>
@@ -59,15 +60,15 @@
 
         <?php endif; ?>
     </div>
-</main>
 
-<aside>
-    <div class="wrapper">
 
-        <h2 class="related-posts">Artículos relacionados</h2>
-        <div class="content-grid-recent">
+    <aside>
+        <div class="wrapper">
 
-            <?php
+            <h2 class="related-posts">Artículos relacionados</h2>
+            <div class="content-grid-recent">
+
+                <?php
                 $orig_post = $post;
                 global $post;
                 $tags = wp_get_post_tags($post->ID);
@@ -88,26 +89,29 @@
                 $my_query->the_post();
                 ?>
 
-            <article class="grid-column">
-                <a href="<? the_permalink()?>" class="category-image">
-                    <?php the_post_thumbnail( 'blog-thumbnails' ); ?>
-                </a>
-
-                <h3>
-                    <a href="<? the_permalink()?>">
-                        <?php the_title(); ?>
+                <article class="grid-column">
+                    <a href="<? the_permalink()?>" class="category-image">
+                        <?php the_post_thumbnail( 'blog-thumbnails' ); ?>
                     </a>
-                </h3>
-            </article>
 
-            <? }
+                    <?php the_category(' ') ?>
+
+                    <h3>
+                        <a href="<? the_permalink()?>">
+                            <?php the_title(); ?>
+                        </a>
+                    </h3>
+                </article>
+
+                <? }
                 }
                 $post = $orig_post;
                 wp_reset_query();
                 ?>
 
+            </div>
         </div>
-    </div>
-</aside>
+    </aside>
+</main>
 
 <?php get_footer(); ?>

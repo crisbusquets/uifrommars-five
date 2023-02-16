@@ -58,7 +58,7 @@
 #mlb2-5200883.ml-form-embedContainer {
   box-sizing: border-box;
   display: table;
-  margin: 0 auto;
+  margin: var(--spacing-xmedium) 0 0 0;
   position: static;
   width: 100% !important;
 }
@@ -193,7 +193,7 @@
 }
 #mlb2-5200883.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow {
   float: left;
-  margin: 0 0 20px 0;
+  margin: 0 0 0 0;
 }
 #mlb2-5200883.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-formContent.horozintalForm {
   margin: 0;
@@ -891,9 +891,18 @@
   padding-left: 24px;
 }
 #mlb2-5200883.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow label a {
-  color: #8f8f93;
-  text-decoration: underline;
+  color: var(--dark-gray);
+  border-bottom: 1px dotted var(--dark-gray);
+  text-decoration: none;
+  transition: color 500ms;
 }
+
+#mlb2-5200883.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow label a:hover {
+  color: var(--regular-gray);
+  border-bottom: 1px dotted var(--regular-gray);
+  text-decoration: none;
+}
+
 #mlb2-5200883.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow label p {
   color: var(--dark-gray) !important;
   font-family: "Charter-Regular" !important;

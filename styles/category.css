@@ -1,3 +1,11 @@
+main#category p {
+  width: 70ch;
+}
+
+main#category .search-form {
+  margin: var(--spacing-small) 0 0 0;
+}
+
 .pagination {
   display: flex;
   justify-content: center;

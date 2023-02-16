@@ -15,7 +15,6 @@ Template Name: Inicio
                     día :)</p>
                 <p>¡Únete a <mark><?php echo do_shortcode( '[mailerlite-subscribers]' ); ?></mark> diseñador@s y
                     empieza ya!</p>
-                <p>
 
                 <div id="uifrommars-form-main">
                     <div id="mlb2-5200883" class="ml-form-embedContainer ml-subscribe-form ml-subscribe-form-5200883">
@@ -95,7 +94,6 @@ Template Name: Inicio
                         type="text/javascript"></script>
                 </div>
 
-                </p>
             </div>
 
             <div class="lottie">
@@ -119,7 +117,7 @@ Template Name: Inicio
                     foreach ( $last_posts as $post ) :
                     setup_postdata( $post );?>
 
-                <article id="post-<?php the_ID(); ?>" <?php post_class( 'grid-column' ); ?>>
+                <article class="grid-column">
 
                     <a href="<?php the_permalink(); ?>" class="category-image">
                         <?php the_post_thumbnail( 'blog-thumbnails' ); ?>
@@ -140,6 +138,7 @@ Template Name: Inicio
 
         <section class="two-columns">
             <div class="most-read">
+                <hr />
                 <h2>Lo más leído en uiFromMars</h2>
                 <?php
                         global $post;
@@ -147,8 +146,10 @@ Template Name: Inicio
                         $post_id = array(1754, 1241, 1299, 2368, 1382, 592, 3442, 4008, 121, 3667);
 
                         foreach ( $post_id as $post ) :
-                        setup_postdata( $post );?>
-                <article class="most-read-list">
+                        setup_postdata( $post );
+                    ?>
+
+                <article class="most-read-list" onclick="document.location='<?php the_permalink(); ?>'">
 
                     <div class="cat-column">
                         <?php the_category(' ') ?>
@@ -156,17 +157,17 @@ Template Name: Inicio
 
                     <div class="title-column">
                         <h3>
-                            <a href="<?php the_permalink(); ?>">
-                                <?php the_title(); ?>
-                            </a>
+
+                            <?php the_title(); ?>
+
                         </h3>
                     </div>
 
                     <div class="icon-column">
-                        <a href="<?php the_permalink(); ?>">
-                            <img class="icon"
-                                src="<?php echo get_bloginfo('template_url') ?>/assets/images/icon/diagonal-chevron.svg" />
-                        </a>
+
+                        <img class="icon"
+                            src="<?php echo get_bloginfo('template_url') ?>/assets/images/icon/diagonal-chevron.svg" />
+
                     </div>
 
                 </article>
@@ -175,6 +176,7 @@ Template Name: Inicio
             </div>
 
             <div class="categories">
+                <hr />
                 <h2>Categorías</h2>
                 <div class="category-cloud">
                     <?php

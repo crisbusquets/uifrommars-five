@@ -35,7 +35,11 @@
                     $query = new WP_Query( $args ); if ( $query->have_posts() ) { ?>
 
             <section class="<?php echo $category->name; ?>">
-                <h2><?php echo $category->name; ?></h2>
+                <h2>
+                    <a href="<?php echo $category_link; ?>">
+                        <?php echo $category->name; ?>
+                    </a>
+                </h2>
 
                 <?php 
                         // To check later if that is the first post

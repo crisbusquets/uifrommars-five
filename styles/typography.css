@@ -120,6 +120,10 @@ h3 > a:hover {
   border-bottom: 1px solid var(--regular-gray);
 }
 
+.grid-column h3 {
+  margin: var(--spacing-small) 0 0 0;
+}
+
 p,
 input[type="text"],
 input[type="search"],
