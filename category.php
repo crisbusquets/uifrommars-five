@@ -24,7 +24,7 @@
                     <a href="<?php the_permalink(); ?>">
                         <?php the_post_thumbnail( 'blog-thumbnails' ); ?>
                     </a>
-
+                    <?php the_category(' ') ?>
                     <h3>
                         <a href="<?php the_permalink(); ?>">
                             <?php the_title(); ?>

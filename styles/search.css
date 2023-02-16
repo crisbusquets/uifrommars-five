@@ -64,6 +64,7 @@ main#search .search-form {
 @media (max-width: 948px) {
   .search-form {
     flex-flow: column wrap;
+    width: 100%;
   }
 }
 
@@ -77,6 +78,12 @@ main#search .search-form {
   flex: 0 0 auto;
   cursor: pointer;
   margin-top: var(--spacing-tiny);
+}
+
+@media (max-width: 948px) {
+  #search-close {
+    margin: 0 0 0 var(--spacing-large);
+  }
 }
 
 /* search results page */

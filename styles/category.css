@@ -2,6 +2,12 @@ main#category p {
   width: 70ch;
 }
 
+@media (max-width: 948px) {
+  main#category p {
+    width: 100%;
+  }
+}
+
 main#category .search-form {
   margin: var(--spacing-small) 0 0 0;
 }

@@ -20,6 +20,7 @@ Tags: black, white, red, grey, responsive, minimal
 @import "styles/category.css";
 @import "styles/mailerlite.css";
 @import "styles/single.css";
+@import "styles/page.css";
 
 *,
 *::before,
@@ -27,6 +28,8 @@ Tags: black, white, red, grey, responsive, minimal
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  text-shadow: 1px 0px 0px rgba(0, 0, 0, 0.002);
 }
 
 html {

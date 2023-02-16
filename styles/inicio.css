@@ -3,8 +3,21 @@ main#home section:nth-child(3) {
   margin: var(--spacing-big) 0 0 0;
 }
 
+@media (max-width: 948px) {
+  main#home section:nth-child(2),
+  main#home section:nth-child(3) {
+    margin: var(--spacing-xxlarge) 0 0 0;
+  }
+}
+
 main#home h2 {
   margin: 0 0 var(--spacing-xlarge) 0;
+}
+
+@media (max-width: 948px) {
+  main#home h2 {
+    margin: 0 0 var(--spacing-large) 0;
+  }
 }
 
 section.two-columns {
@@ -17,7 +30,8 @@ section.two-columns {
 
 @media (max-width: 948px) {
   section.two-columns {
-    flex-flow: column wrap;
+    flex-flow: column nowrap;
+    gap: var(--spacing-xlarge);
   }
 }
 
@@ -28,6 +42,12 @@ section.two-columns {
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
+}
+
+@media (max-width: 948px) {
+  .newsletter {
+    order: 2;
+  }
 }
 
 mark {
@@ -43,10 +63,16 @@ mark {
 }
 
 .lottie {
-  flex: 0 1 auto;
+  flex: 0 1 50%;
   height: auto;
   text-align: center;
   order: 2;
+}
+
+@media (max-width: 948px) {
+  .lottie {
+    order: 1;
+  }
 }
 
 section.one-column {
@@ -71,7 +97,7 @@ section.one-column {
     grid-template-rows: 1fr;
     gap: 48px 0px;
     grid-template-areas: ".";
-    margin: var(--spacing-xmedium) 0 0 0;
+    margin: 0 0 0 0;
   }
 }
 

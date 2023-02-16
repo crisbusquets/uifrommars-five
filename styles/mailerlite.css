@@ -1,5 +1,13 @@
 @import url(https://static.mailerlite.com/assets/plugins/groot/modules/includes/groot_fonts/import.css?version=1640459);
 
+/* home */
+
+@media (max-width: 948px) {
+  #mlb2-5200883.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow {
+    margin: 0 0 var(--spacing-xmedium) 0 !important;
+  }
+}
+
 /* pop-up */
 .ml-popup-blocks {
   padding: 20px 32px !important;

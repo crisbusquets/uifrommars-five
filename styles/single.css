@@ -83,6 +83,12 @@ main#post hr {
   margin: var(--spacing-xmedium) 0 var(--spacing-xlarge) 0;
 }
 
+@media (max-width: 948px) {
+  .single-post .post-meta {
+    gap: var(--spacing-small);
+  }
+}
+
 span.meta {
   color: var(--regular-gray);
 }
@@ -105,4 +111,10 @@ span.meta {
 /* related posts */
 h2.related-posts {
   margin: 0 0 var(--spacing-xlarge) 0;
+}
+
+@media (max-width: 948px) {
+  h2.related-posts {
+    margin: 0 0 var(--spacing-large) 0;
+  }
 }

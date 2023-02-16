@@ -45,7 +45,7 @@
             <div id="logo">
                 <a href="/" target="_self" alt="Volver al inicio">
                     <img src="<?php echo get_bloginfo('template_url') ?>/assets/images/uifrommars-logo.svg"
-                        alt="uiFromMars" style="width:140px; height: auto;" />
+                        alt="uiFromMars" />
                 </a>
             </div>
 

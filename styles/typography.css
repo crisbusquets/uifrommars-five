@@ -221,6 +221,13 @@ label {
   line-height: 1.25;
 }
 
+@media (max-width: 948px) {
+  .footnotes,
+  .wp-caption-text {
+    font-size: var(--font-size-footnotes-mobile);
+  }
+}
+
 .wp-caption-text {
   color: var(--regular-gray);
   text-align: left;

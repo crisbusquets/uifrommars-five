@@ -97,11 +97,8 @@ Template Name: Inicio
             </div>
 
             <div class="lottie">
-                <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-
-
                 <lottie-player src="https://lottie.host/d893ab41-b17d-4c7c-a9a7-f8c85b0c14b9/EB0hN5i2E3.json"
-                    background="transparent" speed="1" style="width: 550px; height: auto;" loop autoplay>
+                    background="transparent" speed="1" style="width: 100%; height: auto;" loop autoplay>
                 </lottie-player>
             </div>
         </section>
