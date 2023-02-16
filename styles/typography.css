@@ -143,6 +143,9 @@ select {
   select {
     font-size: var(--font-size-body-mobile);
   }
+  p {
+    line-height: 1.4;
+  }
 }
 
 strong {
@@ -177,7 +180,8 @@ em > strong {
 nav,
 .nav,
 input[type="submit"],
-button.primary {
+button.primary,
+ol.toc::before {
   font-family: "MartianMono-Medium";
   font-size: var(--font-size-nav);
   line-height: 1;
@@ -218,6 +222,11 @@ label {
 .wp-caption-text {
   font-family: -apple-system, "BlinkMacSystemFont", "Segoe UI", "Roboto", "Helvetica", "Arial", sans-serif;
   font-size: var(--font-size-footnotes);
+  line-height: 1.25;
+}
+
+ol.toc > li > a {
+  font-size: var(--font-size-toc);
   line-height: 1.25;
 }
 

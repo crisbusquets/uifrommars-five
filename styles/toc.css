@@ -1,0 +1,43 @@
+ol.toc {
+  border: 1px solid var(--medium-gray);
+  background-color: transparent;
+  padding: var(--spacing-xmedium) !important;
+  margin: var(--spacing-large) 0;
+}
+
+ol.toc::before {
+  content: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M6 2.66667C6 2.29848 6.29848 2 6.66667 2H12.6667C13.0349 2 13.3333 2.29848 13.3333 2.66667C13.3333 3.03486 13.0349 3.33333 12.6667 3.33333H6.66667C6.29848 3.33333 6 3.03486 6 2.66667Z' fill='%23333030'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M2.66663 2.66667C2.66663 2.29848 2.9651 2 3.33329 2H3.99996C4.36815 2 4.66663 2.29848 4.66663 2.66667C4.66663 3.03486 4.36815 3.33333 3.99996 3.33333H3.33329C2.9651 3.33333 2.66663 3.03486 2.66663 2.66667Z' fill='%23333030'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M6 9.33341C6 8.96522 6.29848 8.66675 6.66667 8.66675H12.6667C13.0349 8.66675 13.3333 8.96522 13.3333 9.33341C13.3333 9.7016 13.0349 10.0001 12.6667 10.0001H6.66667C6.29848 10.0001 6 9.7016 6 9.33341Z' fill='%23333030'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M2.66663 9.33341C2.66663 8.96522 2.9651 8.66675 3.33329 8.66675H3.99996C4.36815 8.66675 4.66663 8.96522 4.66663 9.33341C4.66663 9.7016 4.36815 10.0001 3.99996 10.0001H3.33329C2.9651 10.0001 2.66663 9.7016 2.66663 9.33341Z' fill='%23333030'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M6 5.99992C6 5.63173 6.29848 5.33325 6.66667 5.33325H12.6667C13.0349 5.33325 13.3333 5.63173 13.3333 5.99992C13.3333 6.36811 13.0349 6.66658 12.6667 6.66658H6.66667C6.29848 6.66658 6 6.36811 6 5.99992Z' fill='%23333030'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M2.66663 5.99992C2.66663 5.63173 2.9651 5.33325 3.33329 5.33325H3.99996C4.36815 5.33325 4.66663 5.63173 4.66663 5.99992C4.66663 6.36811 4.36815 6.66658 3.99996 6.66658H3.33329C2.9651 6.66658 2.66663 6.36811 2.66663 5.99992Z' fill='%23333030'/%3E%3C/svg%3E%0A")
+    "\00a0Índice de contenidos";
+  display: inline-flex;
+  padding-bottom: var(--spacing-medium);
+}
+
+ol.toc > li {
+  padding: 0 0 var(--spacing-small) 0;
+}
+
+ol.toc > li:last-child {
+  padding: 0 0 0 0;
+}
+
+ol.toc > li > a {
+  color: var(--regular-gray);
+  text-decoration: none;
+  border-bottom: 0px dotted var(--regular-gray);
+  transition: all 250ms;
+}
+
+ol.toc > li > a:hover {
+  color: var(--dark-gray);
+  text-decoration: none;
+  border-bottom: 1px dotted var(--dark-gray);
+}
+
+.single-post ol.toc > li::before {
+  counter-increment: list;
+  content: counters(list, ".") ". ";
+  color: var(--regular-gray);
+  font-family: "Charter-Regular";
+  font-weight: normal;
+  font-size: var(--font-size-toc);
+}

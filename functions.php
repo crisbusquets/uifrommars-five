@@ -109,6 +109,7 @@ function yourTheme_category_class($thelist){
   }
   add_filter( 'the_category', 'yourTheme_category_class');
 
+  
 // Disable the emoji's 
 function disable_emojis() {
     remove_action( 'wp_head', 'print_emoji_detection_script', 7 );

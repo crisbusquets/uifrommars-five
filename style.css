@@ -12,6 +12,7 @@ Tags: black, white, red, grey, responsive, minimal
 @import "styles/typography.css";
 @import "styles/grid.css";
 @import "styles/nav.css";
+@import "styles/toc.css";
 @import "styles/forms.css";
 @import "styles/lists.css";
 @import "styles/search.css";
@@ -38,7 +39,7 @@ html {
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
-  scroll-padding-top: var(--spacing-xxlarge);
+  scroll-padding-top: 6.25rem;
 }
 
 body {
