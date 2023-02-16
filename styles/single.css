@@ -118,3 +118,22 @@ h2.related-posts {
     margin: 0 0 var(--spacing-large) 0;
   }
 }
+
+/* newsletter widget */
+.newsletter-post {
+  display: flex;
+  flex-flow: column;
+  width: 78%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+@media (max-width: 948px) {
+  .newsletter-post {
+    width: 100%;
+  }
+}
+
+.newsletter-post h3 {
+  margin: 0;
+}

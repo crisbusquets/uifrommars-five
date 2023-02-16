@@ -50,6 +50,15 @@
             <?php the_post_thumbnail( 'post-thumbnails' ); ?>
             <?php the_content(); ?>
             <hr />
+            <div class="newsletter-post">
+                <h3>Subscríbete a uiFromMars</h3>
+                <p>Un lugar construido exclusivamente para diseñador@s UI/UX y de producto que buscan crecer día tras
+                    día :)</p>
+                <p>¡Únete a <mark><?php echo do_shortcode( '[mailerlite-subscribers]' ); ?></mark> diseñador@s y
+                    empieza ya!</p>
+                <?php get_template_part( 'mailerlite', 'widget' ); ?>
+            </div>
+            <hr />
         </article>
 
         <?php endwhile; else: ?>
@@ -64,7 +73,6 @@
 
     <aside>
         <div class="wrapper">
-
             <h2 class="related-posts">Artículos relacionados</h2>
             <div class="content-grid-recent">
 
