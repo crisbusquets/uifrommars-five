@@ -78,6 +78,12 @@ header > .wrapper {
   margin: 0 0 0 var(--spacing-large);
 }
 
+@media (max-width: 948px) {
+  #search-icon {
+    margin: 0 var(--spacing-xmedium) 0 0;
+  }
+}
+
 #search-icon:hover {
   cursor: pointer;
 }

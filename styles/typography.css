@@ -74,6 +74,13 @@ h1 {
   font-weight: 800;
 }
 
+@media (max-width: 948px) {
+  h1 {
+    line-height: 1.3;
+    font-size: var(--font-size-heading-1-mobile);
+  }
+}
+
 h2 {
   font-family: "MartianMonoCondensed-Medium";
   font-size: var(--font-size-heading-2);
@@ -82,9 +89,22 @@ h2 {
   font-weight: 500;
 }
 
+@media (max-width: 948px) {
+  h2 {
+    font-size: var(--font-size-heading-2-mobile);
+  }
+}
+
 h3 {
   font-family: "Charter-Bold";
   margin: var(--spacing-xmedium) 0 0 0;
+}
+
+@media (max-width: 948px) {
+  h3 {
+    font-size: var(--font-size-heading-3-mobile);
+    margin: var(--spacing-medium) 0 0 0;
+  }
 }
 
 h3 > a {
@@ -103,11 +123,22 @@ h3 > a:hover {
 p,
 input[type="text"],
 input[type="search"],
+input[type="email"],
 select {
   font-family: "Charter-Regular";
   font-size: var(--font-size-body);
   line-height: 1.3;
   margin: var(--spacing-xmedium) 0 0 0;
+}
+
+@media (max-width: 948px) {
+  p,
+  input[type="text"],
+  input[type="search"],
+  input[type="email"],
+  select {
+    font-size: var(--font-size-body-mobile);
+  }
 }
 
 strong {
@@ -141,7 +172,8 @@ em > strong {
 
 nav,
 .nav,
-input[type="submit"] {
+input[type="submit"],
+button.primary {
   font-family: "MartianMono-Medium";
   font-size: var(--font-size-nav);
   line-height: 1;
@@ -240,10 +272,26 @@ h1 + h3,
 h2 + h1,
 h2 + h2,
 h2 + h3,
+h2 + .single-post h3,
 h3 + h1,
 h3 + h2,
 h3 + h3 {
   margin-top: var(--spacing-xmedium);
+}
+
+@media (max-width: 948px) {
+  h1 + h1,
+  h1 + h2,
+  h1 + h3,
+  h2 + h1,
+  h2 + h2,
+  h2 + h3,
+  h2 + .single-post h3,
+  h3 + h1,
+  h3 + h2,
+  h3 + h3 {
+    margin: var(--spacing-small) 0 0 0;
+  }
 }
 
 #footer-container small {

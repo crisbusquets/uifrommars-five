@@ -16,6 +16,13 @@
   padding-bottom: var(--spacing-medium);
 }
 
+@media (max-width: 948px) {
+  .single-post li,
+  .page li {
+    font-size: var(--font-size-body-mobile);
+  }
+}
+
 .single-post li ul li,
 .page li ul li {
   padding-top: var(--spacing-medium);

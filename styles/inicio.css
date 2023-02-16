@@ -28,8 +28,21 @@ section.two-columns {
   flex-flow: column wrap;
   justify-content: center;
 }
+
+mark {
+  font-family: "MartianMono-Medium";
+  color: var(--mars);
+  font-size: var(--font-size-meta);
+  padding: 2px 4px;
+  background-color: rgba(238, 62, 43, 0.1);
+  line-height: 1;
+  text-transform: uppercase;
+  font-weight: 500;
+  border-radius: 2px;
+}
+
 .lottie {
-  flex: 1 1 auto;
+  flex: 0 1 auto;
   height: auto;
   text-align: center;
   order: 2;
@@ -55,8 +68,9 @@ section.one-column {
   .content-grid-recent {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
-    gap: 64px 0px;
+    gap: 48px 0px;
     grid-template-areas: ".";
+    margin: var(--spacing-xmedium) 0 0 0;
   }
 }
 

@@ -18,6 +18,7 @@ Tags: black, white, red, grey, responsive, minimal
 @import "styles/inicio.css";
 @import "styles/blog.css";
 @import "styles/category.css";
+@import "styles/mailerlite.css";
 @import "styles/single.css";
 
 *,

@@ -1,14 +1,17 @@
 input[type="search"],
 input[type="submit"],
+input[type="email"],
 select,
 select.postform,
 button {
   box-sizing: border-box;
   height: 48px;
+  width: 100%;
   vertical-align: bottom;
 }
 
 input[type="search"],
+input[type="email"],
 select {
   background-color: var(--white);
   color: var(--regular-gray);
@@ -66,6 +69,10 @@ button {
   color: var(--white);
   -webkit-transition: 0.3s;
   transition: 0.3s;
+}
+
+button.primary {
+  width: 100%;
 }
 
 input[type="submit"]:hover,

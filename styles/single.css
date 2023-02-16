@@ -28,6 +28,13 @@
   font-weight: 300;
 }
 
+@media (max-width: 948px) {
+  .single-post h3 {
+    font-size: var(--font-size-heading-3-mobile);
+    margin: var(--spacing-xlarge) 0 0 0;
+  }
+}
+
 .single-post img {
   width: 100%;
   height: auto;
@@ -90,10 +97,6 @@ span.meta {
 }
 
 /* related posts */
-.related-posts {
-  margin: var(--spacing-xxlarge) 0 0 0;
-}
-
-.related-posts h2 {
-  margin: 0 0 var(--spacing-xlarge) 0;
+h2.related-posts {
+  margin: 0;
 }

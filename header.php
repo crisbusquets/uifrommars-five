@@ -22,8 +22,7 @@
                     <img src="<?php echo get_bloginfo('template_url') ?>/assets/images/uifrommars-logo.svg" />
                 </a>
             </div>
-            <button class="nav-toggle">&#9776;</button>
-            <!-- TODO: responsive nav -->
+
             <div class="nav-container">
                 <nav>
                     <ul>
@@ -34,6 +33,8 @@
             <div id="search-icon">
                 <img src="<?php echo get_bloginfo('template_url') ?>/assets/images/icon/search.svg" />
             </div>
+            <button class="nav-toggle"><img
+                    src="<?php echo get_bloginfo('template_url') ?>/assets/images/icon/nav.svg" /></button>
             <div id="search-shade"></div>
             <div id="search-container">
                 <div class="wrapper">

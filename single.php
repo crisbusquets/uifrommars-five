@@ -64,7 +64,7 @@
 <aside>
     <div class="wrapper">
 
-        <h2>Artículos relacionados</h2>
+        <h2 class="related-posts">Artículos relacionados</h2>
         <div class="content-grid-recent">
 
             <?php
