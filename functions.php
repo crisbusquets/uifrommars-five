@@ -173,4 +173,13 @@ add_filter('embed_oembed_html', function ($html, $url, $attr, $post_id) {
 add_filter('embed_oembed_html', function($code) {
   return str_replace('<iframe', '<iframe class="embed-responsive-item" ', $code);
 });
+
+// Solve issue Google Tag Manager to track menu (main & footer).
+// It changes the <li> class specified on Appearance > Menu to the <a> tag.
+function my_walker_nav_menu_start_el($item_output, $item, $depth, $args) {
+    $classes     = implode(' ', $item->classes);
+    $item_output = preg_replace('/<a /', '<a class="'.$classes.'"', $item_output, 1);
+    return $item_output;
+ }
+add_filter('walker_nav_menu_start_el', 'my_walker_nav_menu_start_el', 10, 4);
 ?>
