@@ -59,6 +59,8 @@ Template Name: Inicio
             <div class="most-read">
                 <hr />
                 <h2>Lo más leído en uiFromMars</h2>
+                <!-- add a number to each class, so I can track them with GTM -->
+                <?php $counter = 1; ?>
                 <?php
                         global $post;
 
@@ -68,7 +70,8 @@ Template Name: Inicio
                         setup_postdata( $post );
                     ?>
 
-                <article class="most-read-list" onclick="document.location='<?php the_permalink(); ?>'">
+                <article class="most-read-list <?php echo( 'gtm_web_most-read-' . $counter ); $counter++; ?>"
+                    onclick="document.location='<?php the_permalink(); ?>'">
 
                     <div class="cat-column">
                         <?php the_category(' ') ?>

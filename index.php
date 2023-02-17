@@ -24,8 +24,6 @@
                         'post_type' => 'post',
                         // How many articles per category will this show
                         'posts_per_page' => '4',
-                        // Don't duplicate articles (below checks the post ID)
-                        'post__not_in' => $do_not_duplicate
                     );
 
                     // Identify category link
@@ -45,7 +43,7 @@
                         // To check later if that is the first post
                         $first = true; ?>
 
-                <?php while ( $query->have_posts() ) {$query->the_post(); $do_not_duplicate[] = $post->ID;?>
+                <?php while ( $query->have_posts() ) {$query->the_post();?>
 
                 <article id="post-<?php the_ID(); ?>" class="grid-column">
 
