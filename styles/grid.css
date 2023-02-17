@@ -21,6 +21,8 @@ main {
   width: 100vw;
   max-width: 100%;
   margin: var(--spacing-huge) 0 0 0;
+  flex: 1;
+  display: flex; /* if you remove this line it works on Safari */
 }
 
 @media (max-width: 948px) {
@@ -185,6 +187,7 @@ hr {
 }
 
 footer {
+  flex: 0;
   background-color: var(--light-gray);
   width: 100vw;
   max-width: 100%;
