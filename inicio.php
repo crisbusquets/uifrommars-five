@@ -70,8 +70,7 @@ Template Name: Inicio
                         setup_postdata( $post );
                     ?>
 
-                <article class="most-read-list <?php echo( 'gtm_web_most-read-' . $counter ); $counter++; ?>"
-                    onclick="document.location='<?php the_permalink(); ?>'">
+                <article class="most-read-list">
 
                     <div class="cat-column">
                         <?php the_category(' ') ?>
@@ -79,17 +78,16 @@ Template Name: Inicio
 
                     <div class="title-column">
                         <h3>
-
-                            <?php the_title(); ?>
-
+                            <a href="<?php the_permalink(); ?>"
+                                class="<?php echo( 'gtm_web_most-read-' . $counter ); $counter++; ?>">
+                                <?php the_title(); ?>
                         </h3>
                     </div>
 
                     <div class="icon-column">
-
                         <img class="icon"
                             src="<?php echo get_bloginfo('template_url') ?>/assets/images/icon/diagonal-chevron.svg" />
-
+                        </a>
                     </div>
 
                 </article>
