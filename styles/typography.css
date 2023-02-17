@@ -225,7 +225,8 @@ label {
   line-height: 1.25;
 }
 
-ol.toc > li > a {
+ol.toc > li > a,
+ol.toc > li > ol > li a {
   font-size: var(--font-size-toc);
   line-height: 1.25;
 }

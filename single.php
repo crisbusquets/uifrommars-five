@@ -77,26 +77,10 @@
             <div class="content-grid-recent">
 
                 <?php
-                $orig_post = $post;
-                global $post;
-                $tags = wp_get_post_tags($post->ID);
-                
-                if ($tags) {
-                $tag_ids = array();
-                foreach($tags as $individual_tag) $tag_ids[] = $individual_tag->term_id;
-                $args=array(
-                'tag__in' => $tag_ids,
-                'post__not_in' => array($post->ID),
-                'posts_per_page'=>3, // Number of related posts to display.
-                'caller_get_posts'=>1
-                );
-                
-                $my_query = new wp_query( $args );
-                
-                while( $my_query->have_posts() ) {
-                $my_query->the_post();
+                    $related = get_posts( array( 'category__in' => wp_get_post_categories($post->ID), 'numberposts' => 3, 'post__not_in' => array($post->ID) ) );
+                        if( $related ) foreach( $related as $post ) {
+                        setup_postdata($post);
                 ?>
-
                 <article class="grid-column">
                     <a href="<? the_permalink()?>" class="category-image">
                         <?php the_post_thumbnail( 'blog-thumbnails' ); ?>
@@ -110,12 +94,8 @@
                         </a>
                     </h3>
                 </article>
-
-                <? }
-                }
-                $post = $orig_post;
-                wp_reset_query();
-                ?>
+                <?php }
+                    wp_reset_postdata(); ?>
 
             </div>
         </div>

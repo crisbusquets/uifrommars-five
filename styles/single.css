@@ -15,6 +15,7 @@ main#post hr {
 }
 
 .wp-video {
+  width: 100% !important;
   max-width: 100%;
   height: auto;
   margin: var(--spacing-xmedium) 0 0 0;
