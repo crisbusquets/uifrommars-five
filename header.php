@@ -16,7 +16,7 @@
         ?>
     </title>
 
-
+    <link rel="preconnect" href="https://www.googletagmanager.com" />
     <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/style.css">
 
     <link rel="apple-touch-icon" sizes="180x180"
@@ -35,6 +35,25 @@
     <meta name="msapplication-config"
         content="<?php bloginfo('template_url'); ?>/assets/images/favicon/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
+
+    <!-- Google Tag Manager -->
+    <script>
+    (function(w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+            'gtm.start': new Date().getTime(),
+            event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s),
+            dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src =
+            'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-TQ5KZWS');
+    </script>
+    <!-- End Google Tag Manager -->
 
     <?php wp_head(); ?>
 </head>
@@ -56,7 +75,7 @@
                     </ul>
                 </nav>
             </div>
-            <div id="search-icon">
+            <div id="search-icon" class="gtm_web_search-link">
                 <img src="<?php echo get_bloginfo('template_url') ?>/assets/images/icon/search.svg" />
             </div>
             <button class="nav-toggle"><img
