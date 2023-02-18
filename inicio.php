@@ -56,45 +56,34 @@ Template Name: Inicio
         </section>
 
         <section class="two-columns">
+
             <div class="most-read">
                 <hr />
                 <h2>Lo más leído en uiFromMars</h2>
+
+                <?php $counter = 1; ?>
                 <?php
-                        global $post;
-
-                        $post_id = array(1754, 1241, 1299, 2368, 1382, 592, 3442, 4008, 121, 3667);
-
-                        foreach ( $post_id as $post ) :
-                        setup_postdata( $post );
-                    ?>
-
-                <article class="most-read-list">
-
-                    <div class="cat-column">
+                    $post_id = array(1754, 1241, 1299, 2368, 1382, 592, 3442, 4008, 121, 3667);
+                    foreach ( $post_id as $post ) :?>
+                <article class="most-read-grid">
+                    <div class="most-category">
                         <?php the_category(' ') ?>
                     </div>
 
-                    <div class="title-column">
+                    <div class="most-title">
                         <h3>
-                            <a href="<?php the_permalink(); ?>">
+                            <a href="<?php the_permalink(); ?>"
+                                class="<?php echo( 'gtm_web_most-read-' . $counter ); $counter++; ?>">
                                 <?php the_title(); ?>
                             </a>
                         </h3>
                     </div>
-
-                    <div class="icon-column">
-                        <a href="<?php the_permalink(); ?>">
-                            <img class="icon"
-                                src="<?php echo get_bloginfo('template_url') ?>/assets/images/icon/diagonal-chevron.svg" />
-                        </a>
-                    </div>
-
                 </article>
 
                 <?php endforeach; wp_reset_postdata(); ?>
             </div>
 
-            <div class="categories">
+            <div class=" categories">
                 <hr />
                 <h2>Categorías</h2>
                 <div class="category-cloud">
