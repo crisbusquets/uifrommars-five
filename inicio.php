@@ -59,8 +59,6 @@ Template Name: Inicio
             <div class="most-read">
                 <hr />
                 <h2>Lo más leído en uiFromMars</h2>
-                <!-- add a number to each class, so I can track them with GTM -->
-                <?php $counter = 1; ?>
                 <?php
                         global $post;
 
@@ -78,15 +76,16 @@ Template Name: Inicio
 
                     <div class="title-column">
                         <h3>
-                            <a href="<?php the_permalink(); ?>"
-                                class="<?php echo( 'gtm_web_most-read-' . $counter ); $counter++; ?>">
+                            <a href="<?php the_permalink(); ?>">
                                 <?php the_title(); ?>
+                            </a>
                         </h3>
                     </div>
 
                     <div class="icon-column">
-                        <img class="icon"
-                            src="<?php echo get_bloginfo('template_url') ?>/assets/images/icon/diagonal-chevron.svg" />
+                        <a href="<?php the_permalink(); ?>">
+                            <img class="icon"
+                                src="<?php echo get_bloginfo('template_url') ?>/assets/images/icon/diagonal-chevron.svg" />
                         </a>
                     </div>
 

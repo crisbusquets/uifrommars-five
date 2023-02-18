@@ -6,6 +6,7 @@ select.postform,
 button {
   box-sizing: border-box;
   height: 48px;
+  line-height: 100%;
   width: auto;
   vertical-align: bottom;
 }
