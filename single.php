@@ -82,14 +82,14 @@
                         setup_postdata($post);
                 ?>
                 <article class="grid-column">
-                    <a href="<? the_permalink()?>" class="category-image">
+                    <a href="<?php the_permalink(); ?>" class="category-image">
                         <?php the_post_thumbnail( 'blog-thumbnails' ); ?>
                     </a>
 
                     <?php the_category(' ') ?>
 
                     <h3>
-                        <a href="<? the_permalink()?>">
+                        <a href="<?php the_permalink(); ?>">
                             <?php the_title(); ?>
                         </a>
                     </h3>
