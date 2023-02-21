@@ -20,7 +20,7 @@ main#post hr {
   height: auto;
   margin: var(--spacing-xmedium) 0 0 0;
   position: relative;
-  z-index: -1;
+  z-index: 0;
 }
 
 .wp-caption {
