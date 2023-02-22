@@ -77,6 +77,9 @@ function wpse_11826_search_by_title( $search, $wp_query ) {
 
 add_filter( 'posts_search', 'wpse_11826_search_by_title', 10, 2 );
 
+// featured image
+add_theme_support( 'post-thumbnails' );
+
 // custom avatar
 add_filter( 'avatar_defaults', 'addNewAvatar' );
 function addNewAvatar($avatar_defaults) {
