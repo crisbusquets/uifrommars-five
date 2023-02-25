@@ -12,6 +12,14 @@ function my_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'my_scripts' );
 
+/*
+ * Let WordPress manage the document title.
+ * By adding theme support, we declare that this theme does not use a
+ * hard-coded <title> tag in the document head, and expect WordPress to
+ * provide it for us.
+ */
+add_theme_support( 'title-tag' );
+
 // register nav
 function register_menus() { 
     register_nav_menu('header-menu',__('Header Main'));
@@ -158,24 +166,6 @@ function disable_emojis() {
    
    return $urls;
    }
-
-//YouTube
-add_filter('the_content', function($content) {
-	return str_replace(array("<iframe", "</iframe>"), array('<div class="iframe-container"><iframe', "</iframe></div>"), $content);
-});
-
-add_filter('embed_oembed_html', function ($html, $url, $attr, $post_id) {
-	if(strpos($html, 'youtube.com') !== false || strpos($html, 'youtu.be') !== false){
-  		return '<div class="embed-responsive embed-responsive-16by9">' . $html . '</div>';
-	} else {
-	 return $html;
-	}
-}, 10, 4);
-
-
-add_filter('embed_oembed_html', function($code) {
-  return str_replace('<iframe', '<iframe class="embed-responsive-item" ', $code);
-});
 
 // Solve issue Google Tag Manager to track menu (main & footer).
 // It changes the <li> class specified on Appearance > Menu to the <a> tag.
