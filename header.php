@@ -30,32 +30,25 @@
         content="<?php bloginfo('template_url'); ?>/assets/images/favicon/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
 
-
-
     <!-- Google Tag Manager -->
-    <!-- el if es para que no salte en localhost -->
+    <? if($_SERVER["REMOTE_ADDR"] != "localhost:8000") { ?>
     <script>
-    var host = window.location.hostname;
-    if (host != "localhost") {
-        <
-        script >
-            (function(w, d, s, l, i) {
-                w[l] = w[l] || [];
-                w[l].push({
-                    'gtm.start': new Date().getTime(),
-                    event: 'gtm.js'
-                });
-                var f = d.getElementsByTagName(s)[0],
-                    j = d.createElement(s),
-                    dl = l != 'dataLayer' ? '&l=' + l : '';
-                j.async = true;
-                j.src =
-                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-                f.parentNode.insertBefore(j, f);
-            })(window, document, 'script', 'dataLayer', 'GTM-TQ5KZWS');
+    (function(w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+            'gtm.start': new Date().getTime(),
+            event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s),
+            dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src =
+            'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-TQ5KZWS');
     </script>
-    }
-    </script>
+    <? } ?>
     <!-- End Google Tag Manager -->
 
     <?php wp_head(); ?>
