@@ -17,7 +17,8 @@ header {
   background-color: var(--white);
 }
 
-main {
+main,
+aside {
   width: 100vw;
   max-width: 100%;
   margin: var(--spacing-huge) 0 0 0;
@@ -30,6 +31,10 @@ main {
     margin: var(--spacing-big) 0 0 0;
     padding: 0 16px;
   }
+}
+
+aside {
+  margin: 0;
 }
 
 .wrapper {
