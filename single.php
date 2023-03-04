@@ -69,37 +69,35 @@
 
         <?php endif; ?>
     </div>
+</main>
+<aside>
+    <div class="wrapper">
+        <h2 class="related-posts">Artículos relacionados</h2>
+        <div class="content-grid-recent">
 
-
-    <aside>
-        <div class="wrapper">
-            <h2 class="related-posts">Artículos relacionados</h2>
-            <div class="content-grid-recent">
-
-                <?php
+            <?php
                     $related = get_posts( array( 'category__in' => wp_get_post_categories($post->ID), 'numberposts' => 3, 'post__not_in' => array($post->ID) ) );
                         if( $related ) foreach( $related as $post ) {
                         setup_postdata($post);
                 ?>
-                <article class="grid-column">
-                    <a href="<?php the_permalink(); ?>" class="category-image">
-                        <?php the_post_thumbnail( 'blog-thumbnails' ); ?>
+            <article class="grid-column">
+                <a href="<?php the_permalink(); ?>" class="category-image">
+                    <?php the_post_thumbnail( 'blog-thumbnails' ); ?>
+                </a>
+
+                <?php the_category(' ') ?>
+
+                <h3>
+                    <a href="<?php the_permalink(); ?>">
+                        <?php the_title(); ?>
                     </a>
-
-                    <?php the_category(' ') ?>
-
-                    <h3>
-                        <a href="<?php the_permalink(); ?>">
-                            <?php the_title(); ?>
-                        </a>
-                    </h3>
-                </article>
-                <?php }
+                </h3>
+            </article>
+            <?php }
                     wp_reset_postdata(); ?>
 
-            </div>
         </div>
-    </aside>
-</main>
+    </div>
+</aside>
 
 <?php get_footer(); ?>
