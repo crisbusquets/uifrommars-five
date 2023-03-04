@@ -41,11 +41,19 @@ $curauth = (isset($_GET['author_name'])) ? get_user_by('slug', $author_name) : g
             <?php echo '' . count_user_posts( $q->ID ); ?>).</p>
         <div class="content-grid-recent">
 
+
             <?php
-                    $related = get_posts( array( 'category__in' => wp_get_post_categories($post->ID), 'numberposts' => 9, 'post__not_in' => array($post->ID) ) );
-                        if( $related ) foreach( $related as $post ) {
-                        setup_postdata($post);
-                ?>
+// Define our WP Query Parameters
+$the_query = new WP_Query( 'posts_per_page=9' ); ?>
+
+            <?php
+// Start our WP Query
+while ($the_query -> have_posts()) : $the_query -> the_post();
+// Display the Post Title with Hyperlink
+?>
+
+
+
             <article class="grid-column">
                 <a href="<?php the_permalink(); ?>" class="category-image">
                     <?php the_post_thumbnail( 'blog-thumbnails' ); ?>
@@ -59,8 +67,11 @@ $curauth = (isset($_GET['author_name'])) ? get_user_by('slug', $author_name) : g
                     </a>
                 </h3>
             </article>
-            <?php }
-                    wp_reset_postdata(); ?>
+            <?php
+// Repeat the process and reset once it hits the limit
+endwhile;
+wp_reset_postdata();
+?>
 
         </div>
     </div>
