@@ -177,6 +177,16 @@ em > strong {
   border-bottom: 1px dotted var(--regular-gray);
 }
 
+span.meta a {
+  color: var(--regular-gray);
+  border-bottom: 1px dotted var(--regular-gray);
+}
+
+span.meta a:hover {
+  color: var(--dark-gray);
+  border-bottom: 1px dotted var(--dark-gray);
+}
+
 nav,
 .nav,
 input[type="submit"],

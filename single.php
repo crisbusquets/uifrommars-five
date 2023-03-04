@@ -39,7 +39,7 @@
             <div class="post-meta">
                 <div class="author">
                     <?php echo get_avatar( get_the_author_meta( 'ID' ), 20 ); ?><span class="meta">Escrito por
-                        <?php the_author(); ?></span></div>
+                        <?php the_author_posts_link(); ?></span></div>
                 <div class="reading-time">
                     <img class="icon"
                         src="<?php echo get_bloginfo('template_url') ?>/assets/images/icon/reading-time.svg" /><span

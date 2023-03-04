@@ -138,3 +138,36 @@ h2.related-posts {
 .newsletter-post h3 {
   margin: 0;
 }
+
+/* author info */
+.author-heading {
+  display: flex;
+  flex-flow: row;
+  gap: var(--spacing-xmedium);
+}
+
+.author-name-position {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  gap: var(--spacing-tiny);
+}
+
+.author-photo img {
+  border-radius: 50%;
+}
+
+/* related posts */
+h2.author-related-posts {
+  margin: 0 0 var(--spacing-xmedium) 0;
+}
+
+p.author-related-posts {
+  margin: 0 0 var(--spacing-xlarge) 0;
+}
+
+@media (max-width: 948px) {
+  h2.related-posts {
+    margin: 0 0 var(--spacing-small) 0;
+  }
+}
