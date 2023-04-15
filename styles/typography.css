@@ -241,6 +241,15 @@ ol.toc > li > ol > li a {
   line-height: 1.25;
 }
 
+code {
+  font-family: "Courier New", Courier, monospace;
+  padding: 24px;
+  background-color: var(--light-gray);
+  margin: var(--spacing-xmedium) 0 var(--spacing-large) 0;
+  color: var(--regular-gray);
+  line-height: 135%;
+}
+
 @media (max-width: 948px) {
   .footnotes,
   .wp-caption-text {
