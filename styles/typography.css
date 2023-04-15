@@ -242,8 +242,8 @@ ol.toc > li > ol > li a {
 }
 
 code {
-  font-family: "Courier New", Courier, monospace;
-  font-size: var(--font-size-body);
+  font-family: "Courier New", Courier, monospace !important;
+  font-size: var(--font-size-meta);
   padding: var(--spacing-xmedium);
   background-color: var(--light-gray);
   margin: var(--spacing-xmedium) 0 var(--spacing-large) 0;
