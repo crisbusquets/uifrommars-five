@@ -243,11 +243,12 @@ ol.toc > li > ol > li a {
 
 code {
   font-family: "Courier New", Courier, monospace;
-  padding: 24px;
+  font-size: var(--font-size-body);
+  padding: var(--spacing-xmedium);
   background-color: var(--light-gray);
   margin: var(--spacing-xmedium) 0 var(--spacing-large) 0;
   color: var(--regular-gray);
-  line-height: 135%;
+  line-height: 1.35;
 }
 
 @media (max-width: 948px) {
