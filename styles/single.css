@@ -61,6 +61,11 @@ main#post hr {
   margin-top: var(--spacing-medium);
 }
 
+.single-post .pill {
+  display: flex;
+  gap: var(--spacing-small);
+}
+
 .single-post .pill a {
   display: inline-block;
   border: 0;

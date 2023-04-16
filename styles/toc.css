@@ -12,12 +12,14 @@ ol.toc::before {
   padding-bottom: var(--spacing-medium);
 }
 
-ol.toc > li {
-  padding: 0 0 var(--spacing-small) 0;
+.single-post ol.toc li::marker {
+  color: var(--regular-gray);
 }
 
-ol.toc > li:last-child {
-  padding: 0 0 0 0;
+ol.toc a,
+ol.toc li::marker {
+  font-size: var(--font-size-toc);
+  line-height: 1.25;
 }
 
 ol.toc > li > a,
@@ -35,12 +37,14 @@ ol.toc > li > ol > li > a:hover {
   border-bottom: 1px dotted var(--dark-gray);
 }
 
-.single-post ol.toc > li::before,
-.single-post ol.toc > li > ol > li::before {
-  counter-increment: list;
-  content: counters(list, ".") ". ";
-  color: var(--regular-gray);
-  font-family: "Charter-Regular";
-  font-weight: normal;
-  font-size: var(--font-size-toc);
+ol.toc > li {
+  padding: 0 0 var(--spacing-small) 0;
+}
+
+ol.toc > li:last-child {
+  padding: 0 0 0 0;
+}
+
+ol.toc li ol li {
+  padding: var(--spacing-medium) 0 0 0;
 }
