@@ -1,0 +1,43 @@
+#top-bar {
+  background-color: var(--mars);
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  top: 0;
+  height: 32px;
+  z-index: 10;
+}
+
+@media (max-width: 948px) {
+  #top-bar {
+    padding: 0 32px;
+    height: 48px;
+  }
+}
+
+#top-bar:hover {
+  background-color: var(--dark-mars);
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+
+#top-bar p {
+  margin: 0;
+  padding: 0;
+  line-height: 1.3;
+  text-align: center;
+  color: var(--white);
+  font-family: "MartianMono-Medium";
+  font-size: var(--font-size-nav);
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+#top-bar p > span {
+  color: var(--white);
+  font-family: "MartianMonoCondensed-ExtraBold";
+  text-decoration: none;
+  border-bottom: 1px solid var(--white);
+}

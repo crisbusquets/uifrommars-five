@@ -13,8 +13,14 @@ header {
   z-index: 9;
   width: 100vw;
   max-width: 100%;
-  top: 0;
+  top: 32px;
   background-color: var(--white);
+}
+
+@media (max-width: 948px) {
+  header {
+    top: 48px;
+  }
 }
 
 main,
