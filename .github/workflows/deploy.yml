@@ -16,5 +16,5 @@ jobs:
           script: |
             mkdir test # create folder you want to deploy to in the live server
             cd test # enter or cd into the folder
-            gh repo clone crisbusquets/uifrommars-five # Clone the repository into the folder
+            https://github.com/crisbusquets/uifrommars-five.git # Clone the repository into the folder
             echo 'Deployment successful to digital ocean' # Message to be displayed when deployment is successful 
