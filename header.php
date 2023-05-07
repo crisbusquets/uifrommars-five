@@ -57,7 +57,7 @@
 <body>
     <a href="https://www.edicionesjardindemonos.es/producto/diseno-desde-marte/" target="_blank"
         alt="Compra Diseño desde Marte">
-        <div id="top-bar">
+        <div id="top-bar" class="gtm_web_topbar-link">
             <p>📘 ¡He escrito un libro! Diseño desde Marte, <span>ya a la venta</span></p>
         </div>
     </a>
