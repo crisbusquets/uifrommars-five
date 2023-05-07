@@ -90,8 +90,8 @@ section.one-column {
 }
 
 .grid-column {
-  display: flex;
-  flex-flow: column nowrap;
+  /*  display: flex;
+  flex-flow: column nowrap; */
 }
 
 .most-read {
