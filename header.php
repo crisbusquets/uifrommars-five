@@ -8,7 +8,7 @@
     <link rel="profile" href="http://gmpg.org/xfn/11" />
     <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 
-    <link rel="preconnect" href="https://www.googletagmanager.com" />
+    <link rel="preconnect" async href="https://www.googletagmanager.com" />
     <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/style.css">
 
     <link rel="apple-touch-icon" sizes="180x180"
@@ -64,7 +64,7 @@
             <div id="logo">
                 <a href="/" target="_self" alt="Volver al inicio">
                     <img src="<?php echo get_bloginfo('template_url') ?>/assets/images/uifrommars-logo.svg"
-                        alt="uiFromMars" />
+                        alt="uiFromMars" width="140" height="39" />
                 </a>
             </div>
 
@@ -76,10 +76,11 @@
                 </nav>
             </div>
             <div id="search-icon" class="gtm_web_search-link">
-                <img src="<?php echo get_bloginfo('template_url') ?>/assets/images/icon/search.svg" />
+                <img src="<?php echo get_bloginfo('template_url') ?>/assets/images/icon/search.svg" width="28"
+                    height="28" alt="Buscar en uiFromMars" />
             </div>
-            <button class="nav-toggle"><img
-                    src="<?php echo get_bloginfo('template_url') ?>/assets/images/icon/nav.svg" /></button>
+            <button class="nav-toggle"><img src="<?php echo get_bloginfo('template_url') ?>/assets/images/icon/nav.svg"
+                    width="28" height="28" alt="Navegación uiFromMars" /></button>
             <div id="search-shade"></div>
             <div id="search-container">
                 <div class="wrapper">
@@ -87,7 +88,8 @@
                         <?php get_search_form(); ?>
                     </div>
                     <div id="search-close">
-                        <img src="<?php echo get_bloginfo('template_url') ?>/assets/images/icon/close.svg" />
+                        <img src="<?php echo get_bloginfo('template_url') ?>/assets/images/icon/close.svg" width="28"
+                            height="28" />
                     </div>
                 </div>
             </div>
