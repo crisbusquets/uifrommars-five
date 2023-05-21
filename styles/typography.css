@@ -254,12 +254,14 @@ code {
 
 @media (max-width: 948px) {
   .footnotes,
-  .wp-caption-text {
+  .wp-caption-text,
+  .wp-element-caption {
     font-size: var(--font-size-footnotes-mobile);
   }
 }
 
-.wp-caption-text {
+.wp-caption-text,
+.wp-element-caption {
   color: var(--regular-gray);
   text-align: left;
   margin: var(--spacing-tiny) 0 var(--spacing-xmedium) 0;
