@@ -19,10 +19,8 @@ Template Name: Inicio
             </div>
 
             <div class="lottie">
-                <lottie-player rel="preconect" async
-                    src="https://lottie.host/d893ab41-b17d-4c7c-a9a7-f8c85b0c14b9/EB0hN5i2E3.json"
-                    background="transparent" speed="1" style="width: 100%; height: auto;" loop autoplay>
-                </lottie-player>
+                <img src="<?php echo get_bloginfo('template_url') ?>/assets/images/uifrommars-hero.svg" width="454"
+                    height="329" alt="Únete a uiFromMars" />
             </div>
         </section>
 

@@ -67,11 +67,20 @@ mark {
   height: auto;
   text-align: center;
   order: 2;
+  display: flex;
+  justify-content: center;
+  align-self: center;
 }
 
 @media (max-width: 948px) {
   .lottie {
     order: 1;
+    margin: var(--spacing-large) 0 0 0;
+  }
+
+  .lottie img {
+    width: 284px;
+    height: 206px;
   }
 }
 
