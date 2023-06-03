@@ -37,7 +37,8 @@ Template Name: Inicio
 
                 <article class="grid-column">
 
-                    <a href="<?php the_permalink(); ?>" class="category-image">
+                    <a href="<?php the_permalink(); ?>" aria-label="Lee más sobre <?php the_title(); ?>"
+                        class="category-image">
                         <?php the_post_thumbnail( 'blog-thumbnails' ); ?>
                     </a>
                     <?php the_category(' ') ?>

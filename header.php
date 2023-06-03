@@ -89,7 +89,7 @@
                     </div>
                     <div id="search-close">
                         <img src="<?php echo get_bloginfo('template_url') ?>/assets/images/icon/close.svg" width="28"
-                            height="28" />
+                            height="28" alt="Cerrar búsqueda" />
                     </div>
                 </div>
             </div>
