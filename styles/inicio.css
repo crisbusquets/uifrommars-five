@@ -76,6 +76,8 @@ mark {
   .lottie {
     order: 1;
     margin: var(--spacing-large) 0 0 0;
+    width: 284px;
+    height: 206px;
   }
 
   .lottie img {
