@@ -1,3 +1,7 @@
+ul + .wp-block-image img {
+  margin-top: 0;
+}
+
 .line {
   background-color: var(--mars);
   height: 2px;
@@ -40,6 +44,14 @@ main#post hr {
     font-size: var(--font-size-heading-3-mobile);
     margin: var(--spacing-xlarge) 0 0 0;
   }
+}
+
+.single-post h4 {
+  font-family: "MartianMonoCondensed-Light";
+  font-size: var(--font-size-heading-4);
+  line-height: 1.2;
+  margin: var(--spacing-xxlarge) 0 0 0;
+  font-weight: 300;
 }
 
 .single-post img {
