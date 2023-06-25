@@ -195,6 +195,10 @@ hr {
   margin: 0 0 var(--spacing-xlarge) 0;
 }
 
+.wp-block-video {
+  margin: var(--spacing-xmedium) 0;
+}
+
 footer {
   flex: 0;
   background-color: var(--light-gray);
