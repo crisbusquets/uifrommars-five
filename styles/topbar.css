@@ -1,5 +1,5 @@
 #top-bar {
-  background-color: var(--mars);
+  background-color: var(--dark-gray);
   position: fixed;
   display: flex;
   justify-content: center;
@@ -18,7 +18,7 @@
 }
 
 #top-bar:hover {
-  background-color: var(--dark-mars);
+  background-color: var(--regular-gray);
   cursor: pointer;
   transition: background-color 0.5s ease;
 }
