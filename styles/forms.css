@@ -73,7 +73,8 @@ select.blogform {
 }
 
 input[type="submit"],
-button {
+button,
+button.primary {
   background-color: var(--mars);
   border: 0.5px solid var(--mars);
   border-radius: 2px;
