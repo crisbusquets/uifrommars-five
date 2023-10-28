@@ -28,6 +28,11 @@ section.two-columns {
   width: 100%;
 }
 
+section.two-columns:last-of-type {
+  background-color: palegreen;
+  gap: 96px;
+}
+
 @media (max-width: 948px) {
   section.two-columns {
     flex-flow: column nowrap;
