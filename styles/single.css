@@ -185,6 +185,7 @@ p.author-related-posts {
 
 @media (max-width: 948px) {
   h2.related-posts {
+    text-align: center;
     margin: 0 0 var(--spacing-small) 0;
   }
 }

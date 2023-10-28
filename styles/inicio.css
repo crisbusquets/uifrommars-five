@@ -17,6 +17,7 @@ main#home h2 {
 @media (max-width: 948px) {
   main#home h2 {
     margin: 0 0 var(--spacing-large) 0;
+    text-align: center;
   }
 }
 
@@ -94,15 +95,25 @@ section.one-column {
 
 .content-grid-recent {
   width: 100%;
-  display: grid;
+  display: inline-grid;
   grid-auto-rows: auto;
   grid-template-columns: repeat(auto-fill, minmax(370px, 1fr));
   gap: 6rem 3.65rem;
 }
 
+@media (max-width: 640px) {
+  .content-grid-recent {
+    gap: 3rem 0;
+    justify-items: center;
+  }
+}
+
 .grid-column {
   /*  display: flex;
   flex-flow: column nowrap; */
+  display: flex;
+  flex-direction: column;
+  max-width: 370px;
 }
 
 .most-read {
