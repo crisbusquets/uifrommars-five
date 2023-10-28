@@ -85,7 +85,7 @@
                     <?php the_post_thumbnail( 'blog-thumbnails' ); ?>
                 </a>
 
-                <?php the_category(' ') ?>
+                <span class="separator"><?php the_category(' ') ?></span>
 
                 <h3>
                     <a href="<?php the_permalink(); ?>">

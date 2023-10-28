@@ -185,6 +185,11 @@ a.category-link:hover {
   border-bottom: 1px solid var(--mars);
 }
 
+span.separator {
+  display: flex;
+  gap: var(--spacing-small);
+}
+
 hr {
   display: block;
   width: 100%;
