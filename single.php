@@ -81,14 +81,14 @@
                         setup_postdata($post);
                 ?>
             <article class="grid-column">
-                <a href="<?php the_permalink(); ?>" class="category-image">
+                <a href="<?php the_permalink(); ?>" class="category-image plausible-event-name=Related+Article">
                     <?php the_post_thumbnail( 'blog-thumbnails' ); ?>
                 </a>
 
                 <span class="separator"><?php the_category(' ') ?></span>
 
                 <h3>
-                    <a href="<?php the_permalink(); ?>">
+                    <a href="<?php the_permalink(); ?>" class="plausible-event-name=Related+Article">
                         <?php the_title(); ?>
                     </a>
                 </h3>
