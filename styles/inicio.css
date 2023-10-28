@@ -25,7 +25,6 @@ section.two-columns {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
-  gap: 96px;
   width: 100%;
 }
 
@@ -43,6 +42,10 @@ section.two-columns {
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
+}
+
+.newsletter > h1 {
+  max-width: 80%;
 }
 
 @media (max-width: 948px) {
@@ -71,6 +74,10 @@ mark {
   display: flex;
   justify-content: center;
   align-self: center;
+}
+
+.lottie img {
+  width: 100%;
 }
 
 @media (max-width: 948px) {
