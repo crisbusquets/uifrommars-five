@@ -97,8 +97,8 @@
   .ml-form-checkboxRow
   label
   a {
-  text-decoration: none;
-  border-color: var(--dark-gray);
+  text-decoration: var(--text-decoration-line) var(--text-decoration-style) var(--dark-gray)
+    var(--text-decoration-thickness);
 }
 
 #mailerlite-mars
@@ -109,6 +109,6 @@
   label
   a:hover {
   color: var(--regular-gray);
-  border-bottom: 1px dotted var(--regular-gray);
-  text-decoration: none;
+  text-decoration: var(--text-decoration-line) var(--text-decoration-style) var(--regular-gray)
+    var(--text-decoration-thickness);
 }

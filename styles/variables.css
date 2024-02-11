@@ -42,6 +42,11 @@
   --spacing-big: 7rem;
   --spacing-huge: 13.25rem;
 
+  /* underline styles */
+  --text-decoration-line: underline;
+  --text-decoration-style: dotted;
+  --text-decoration-thickness: 1.75px;
+
   /* breakpoints */
   --mobile: 768px; /* up */
   --tablet: 899px; /* from */

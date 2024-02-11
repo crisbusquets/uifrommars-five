@@ -170,26 +170,27 @@ em > strong {
 .single-post a,
 .page a {
   color: var(--mars);
-  text-decoration: none;
-  border-bottom: 1px dotted var(--mars);
+  text-decoration: var(--text-decoration-line) var(--text-decoration-style) var(--mars) var(--text-decoration-thickness);
   transition: all 500ms;
 }
 
 .single-post a:hover,
 .page a:hover {
   color: var(--regular-gray);
-  text-decoration: none;
-  border-bottom: 1px dotted var(--regular-gray);
+  text-decoration: var(--text-decoration-line) var(--text-decoration-style) var(--regular-gray)
+    var(--text-decoration-thickness);
 }
 
 span.meta a {
   color: var(--regular-gray);
-  border-bottom: 1px dotted var(--regular-gray);
+  text-decoration: var(--text-decoration-line) var(--text-decoration-style) var(--regular-gray)
+    var(--text-decoration-thickness);
 }
 
 span.meta a:hover {
   color: var(--dark-gray);
-  border-bottom: 1px dotted var(--dark-gray);
+  text-decoration: var(--text-decoration-line) var(--text-decoration-style) var(--regular-gray)
+    var(--text-decoration-thickness);
 }
 
 nav,
@@ -295,20 +296,6 @@ nav > ul > li > a {
   border-bottom: 1px solid transparent;
   transition: color 0.2s ease-in-out, border-bottom 0.2s ease-in-out;
 }
-
-/* article a {
-  color: var(--mars);
-  border-bottom: 1px dotted hsl(6, 85%, 55%, 0.45);
-  padding: 0;
-  text-decoration: none;
-  transition: all 400ms ease;
-}
-
-article a:hover {
-  text-decoration: none;
-  color: var(--dark-gray);
-  border-bottom: 1px solid hsl(0, 3%, 42%, 0.35);
-} */
 
 h1 + h1,
 h1 + h2,

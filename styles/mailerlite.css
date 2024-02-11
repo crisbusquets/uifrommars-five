@@ -900,15 +900,15 @@
 }
 #mlb2-5200883.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow label a {
   color: var(--dark-gray);
-  border-bottom: 1px dotted var(--dark-gray);
-  text-decoration: none;
+  text-decoration: var(--text-decoration-line) var(--text-decoration-style) var(--regular-gray)
+    var(--text-decoration-thickness);
   transition: color 500ms;
 }
 
 #mlb2-5200883.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow label a:hover {
   color: var(--regular-gray);
-  border-bottom: 1px dotted var(--regular-gray);
-  text-decoration: none;
+  text-decoration: var(--text-decoration-line) var(--text-decoration-style) var(--regular-gray)
+    var(--text-decoration-thickness);
 }
 
 #mlb2-5200883.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow label p {
