@@ -105,10 +105,9 @@ section.one-column {
 }
 
 .content-grid-recent {
-  width: 100%;
   display: inline-grid;
   grid-auto-rows: auto;
-  grid-template-columns: repeat(auto-fill, minmax(370px, 1fr));
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 6rem 3.65rem;
 }
 
@@ -116,13 +115,8 @@ section.one-column {
   .content-grid-recent {
     gap: 3rem 0;
     justify-items: center;
+    grid-template-columns: 1fr;
   }
-}
-
-.grid-column {
-  /*  display: flex;
-  flex-flow: column; */
-  max-width: 370px;
 }
 
 .most-read {
@@ -166,6 +160,12 @@ section.one-column {
 
 .most-title h3 {
   margin: 0;
+}
+
+.most-read,
+.categories {
+  border-top: 1px solid var(--regular-gray);
+  padding-top: var(--spacing-xlarge);
 }
 
 .categories {

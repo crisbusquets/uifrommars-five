@@ -58,7 +58,6 @@ Template Name: Inicio
         <section class="two-columns">
 
             <div class="most-read">
-                <hr />
                 <h2>Lo más leído en uiFromMars</h2>
 
                 <?php $counter = 1; ?>
@@ -83,8 +82,7 @@ Template Name: Inicio
                 <?php endforeach; wp_reset_postdata(); ?>
             </div>
 
-            <div class=" categories">
-                <hr />
+            <div class="categories">
                 <h2>Categorías</h2>
                 <div class="category-cloud">
                     <?php

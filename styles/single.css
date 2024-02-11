@@ -12,12 +12,6 @@ ul + .wp-block-image img {
   top: 0;
 }
 
-main#post hr {
-  margin: var(--spacing-xxlarge) auto;
-  width: 75%;
-  display: flex;
-}
-
 .wp-video {
   width: 100% !important;
   max-width: 100%;

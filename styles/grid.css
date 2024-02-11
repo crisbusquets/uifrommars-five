@@ -23,24 +23,27 @@ header {
   }
 }
 
+main {
+  margin-top: var(--spacing-huge);
+}
+
 main,
 aside {
   width: 100vw;
   max-width: 100%;
-  margin: var(--spacing-huge) 0 0 0;
   flex: 1;
   display: flex; /* if you remove this line it works on Safari */
 }
 
 @media (max-width: 948px) {
   main {
-    margin: var(--spacing-big) 0 0 0;
-    padding: 0 16px;
+    margin-top: var(--spacing-big);
   }
-}
 
-aside {
-  margin: 0;
+  main,
+  aside {
+    padding-inline: var(--spacing-medium);
+  }
 }
 
 .wrapper {
@@ -73,19 +76,13 @@ aside > .wrapper {
     flex-flow: row nowrap;
     padding: var(--spacing-medium);
   }
-
-  aside {
-    width: 100vw;
-    max-width: 100%;
-    padding: 0;
-  }
 }
 
 @media (max-width: 1232px) and (min-width: 949px) {
   header,
   main,
   footer {
-    padding: 0 16px;
+    padding-inline: var(--spacing-medium);
   }
 }
 
@@ -132,7 +129,6 @@ aside > .wrapper {
 }
 
 article {
-  width: 100%;
   max-width: 43.75rem;
 }
 
@@ -191,13 +187,13 @@ span.separator {
 }
 
 hr {
-  display: block;
-  width: 100%;
   background-color: var(--regular-gray);
   border-radius: 2px;
   height: 1px;
   border: none;
-  margin: 0 0 var(--spacing-xlarge) 0;
+  margin: var(--spacing-xxlarge) auto;
+  width: 75%;
+  display: flex;
 }
 
 .wp-block-video {
