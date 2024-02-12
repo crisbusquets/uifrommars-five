@@ -41,6 +41,7 @@ nav > ul > li.current-menu-item a {
 
 button.nav-toggle {
   display: none;
+  z-index: 1;
 }
 
 @media (max-width: 948px) {
