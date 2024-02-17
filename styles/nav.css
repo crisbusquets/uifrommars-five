@@ -62,19 +62,19 @@ button.nav-toggle {
     box-shadow: 0 0 0 0;
     color: var(--dark-gray);
   }
-  .abrir-navegacion {
+  .opened-nav {
     display: none;
   }
 
-  .abrir-navegacion.visibility {
+  .opened-nav.visible {
     display: flex;
   }
 
-  .cerrar-navegacion:not(.visibility) {
+  .closed-nav:not(.visible) {
     display: none;
   }
 
-  .visibility {
+  .visible {
     display: flex;
   }
 

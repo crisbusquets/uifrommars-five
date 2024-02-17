@@ -1,7 +1,7 @@
 var container = document.querySelector(".nav-container");
 var button = document.querySelector("button");
-var abrir = document.querySelector(".abrir-navegacion");
-var cerrar = document.querySelector(".cerrar-navegacion");
+var openedNav = document.querySelector(".opened-nav");
+var closedNav = document.querySelector(".closed-nav");
 
 button.addEventListener("click", () => {
   /** Slide down. */
@@ -9,8 +9,8 @@ button.addEventListener("click", () => {
     /** Show the container. */
     container.classList.add("active");
     container.style.height = "auto";
-    cerrar.classList.add("visibility");
-    abrir.classList.remove("visibility");
+    closedNav.classList.add("visible");
+    openedNav.classList.remove("visible");
 
     /** Get the computed height of the container. */
     var height = container.clientHeight + "px";
@@ -29,8 +29,8 @@ button.addEventListener("click", () => {
   } else {
     /** Set the height as 0px to trigger the slide up animation. */
     container.style.height = "0px";
-    cerrar.classList.remove("visibility");
-    abrir.classList.add("visibility");
+    closedNav.classList.remove("visible");
+    openedNav.classList.add("visible");
 
     /** Remove the `active` class when the animation ends. */
     container.addEventListener(
