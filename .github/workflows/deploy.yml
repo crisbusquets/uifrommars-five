@@ -13,19 +13,11 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Debug SSH Key Permissions
-        run: |
-          ls -la ${{ secrets.SSH_PRIVATE_KEY }}
-          cat ${{ secrets.SSH_PRIVATE_KEY }}
-          ssh-keygen -lf ${{ secrets.SSH_PRIVATE_KEY }}
-
       - name: Deploy Theme to Digital Ocean
         uses: appleboy/ssh-action@master
         with:
           host: ${{ secrets.DROPLET_IP }}
           username: ${{ secrets.DROPLET_USER }}
-          key: ${{ secrets.SSH_PRIVATE_KEY }}
-          port: 22
           script: |
             cd /var/www/html/wp-content/themes/uifrommars-five/
             git pull origin main
