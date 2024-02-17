@@ -18,7 +18,8 @@ jobs:
         with:
           host: ${{ secrets.DROPLET_IP }}
           username: ${{ secrets.DROPLET_USER }}
-          key: ${{ runner.ssh_key }}
+          key: ${{ secrets.DROPLET_SSH_PRIVATE_KEY }}
+          port: 22
           script: |
             cd /var/www/html/wp-content/themes/uifrommars-five/
             git pull origin main
