@@ -54,7 +54,6 @@ button.nav-toggle {
     border-radius: 0;
     width: auto;
     padding: 0;
-    color: var(--dark-gray);
   }
 
   button.nav-toggle:hover {
@@ -63,6 +62,22 @@ button.nav-toggle {
     box-shadow: 0 0 0 0;
     color: var(--dark-gray);
   }
+  .abrir-navegacion {
+    display: none;
+  }
+
+  .abrir-navegacion.visibility {
+    display: flex;
+  }
+
+  .cerrar-navegacion:not(.visibility) {
+    display: none;
+  }
+
+  .visibility {
+    display: flex;
+  }
+
   .nav-container {
     transition: height 500ms ease;
     overflow: hidden;

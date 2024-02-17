@@ -72,7 +72,9 @@
                     height="28" alt="Buscar en uiFromMars" />
             </div>
             <button class="nav-toggle"><img src="<?php echo get_bloginfo('template_url') ?>/assets/images/icon/nav.svg"
-                    width="28" height="28" alt="Navegación uiFromMars" /></button>
+                    class="abrir-navegacion visibility" width="28" height="28" alt="Navegación uiFromMars" />
+                <img src="<?php echo get_bloginfo('template_url') ?>/assets/images/icon/close.svg"
+                    class="cerrar-navegacion" width="28" height="28" alt="Cerrar navegación uiFromMars" /></button>
             <div id="search-shade"></div>
             <div id="search-container">
                 <div class="wrapper">
