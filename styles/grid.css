@@ -36,6 +36,10 @@ aside {
 }
 
 @media (max-width: 948px) {
+  main:not(#home) {
+    margin-top: var(--spacing-bigger);
+  }
+
   main {
     margin-top: var(--spacing-big);
   }
