@@ -164,7 +164,10 @@ em > strong {
 .single-post a,
 .page a {
   color: var(--mars);
-  text-decoration: var(--text-decoration-line) var(--text-decoration-style) var(--mars) var(--text-decoration-thickness);
+  text-underline-position: var(--text-underline-position);
+  text-decoration-thickness: var(--text-decoration-thickness);
+  text-underline-offset: var(--text-underline-offset);
+  text-decoration-style: var(--text-decoration-style);
   transition: all 500ms;
 }
 
