@@ -101,6 +101,16 @@ ul + .wp-block-image img {
   }
 }
 
+.single-post hr {
+  background-color: var(--regular-gray);
+  border-radius: 2px;
+  height: 1px;
+  border: none;
+  margin: var(--spacing-xxxl) auto;
+  width: 75%;
+  display: flex;
+}
+
 span.meta {
   color: var(--regular-gray);
 }

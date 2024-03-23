@@ -60,9 +60,8 @@
                         </a>
                     </h3>
 
-                    <hr>
-
                 </article>
+                <hr>
 
                 <?php } // end while ?>
                 <a href="<?php echo $category_link; ?>" class="category-link">Más <?php echo $category->name; ?> →</a>
