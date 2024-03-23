@@ -71,10 +71,12 @@
                 <img src="<?php echo get_bloginfo('template_url') ?>/assets/images/icon/search.svg" width="28"
                     height="28" alt="Buscar en uiFromMars" />
             </div>
-            <button class="nav-toggle"><img src="<?php echo get_bloginfo('template_url') ?>/assets/images/icon/nav.svg"
-                    class="opened-nav visible" width="28" height="28" alt="Navegación uiFromMars" />
-                <img src="<?php echo get_bloginfo('template_url') ?>/assets/images/icon/close.svg"
-                    class="closed-nav" width="28" height="28" alt="Cerrar navegación uiFromMars" /></button>
+            <button class="nav-toggle" aria-label="Abrir menú navegación" aria-expanded="false">
+                <img id="menu-icon" src="<?php echo get_bloginfo('template_url') ?>/assets/images/icon/menu.svg"
+                    width="28" height="28" alt="icono tres líneas navegación" />
+                <img id="close-icon" src="<?php echo get_bloginfo('template_url') ?>/assets/images/icon/close.svg"
+                    style="display: none;" width="28" height="28" alt="icono aspa cerrar" />
+            </button>
             <div id="search-shade"></div>
             <div id="search-container">
                 <div class="wrapper">

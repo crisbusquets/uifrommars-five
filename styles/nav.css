@@ -62,21 +62,6 @@ button.nav-toggle {
     box-shadow: 0 0 0 0;
     color: var(--dark-gray);
   }
-  .opened-nav {
-    display: none;
-  }
-
-  .opened-nav.visible {
-    display: flex;
-  }
-
-  .closed-nav:not(.visible) {
-    display: none;
-  }
-
-  .visible {
-    display: flex;
-  }
 
   .nav-container {
     transition: height 500ms ease;
@@ -90,9 +75,10 @@ button.nav-toggle {
     background-color: var(--white);
   }
 
-  .nav-container:not(.active) {
+  .nav-container:not(.open) {
     display: none;
   }
+
   nav {
     font-size: var(--font-size-nav-mobile);
     line-height: 1;
