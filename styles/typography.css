@@ -161,8 +161,7 @@ em > strong {
   font-family: "Charter-BoldItalic";
 }
 
-.single-post a,
-.page a {
+.content-narrow a {
   color: var(--mars);
   text-underline-position: var(--text-underline-position);
   text-decoration-thickness: var(--text-decoration-thickness);
@@ -171,8 +170,7 @@ em > strong {
   transition: all 500ms;
 }
 
-.single-post a:hover,
-.page a:hover {
+.content-narrow a:hover {
   color: var(--regular-gray);
   text-decoration: var(--text-decoration-line) var(--text-decoration-style) var(--regular-gray)
     var(--text-decoration-thickness);

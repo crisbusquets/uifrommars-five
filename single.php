@@ -29,7 +29,7 @@
         }
         </script>
 
-        <article class="single-post">
+        <article class="single-post content-narrow">
             <h1><?php the_title(); ?></h1>
 
             <div class="category">
