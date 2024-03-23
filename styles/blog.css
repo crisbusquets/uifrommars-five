@@ -4,7 +4,7 @@ main#blog .size-blog-thumbnails {
 
 .content-grid h2 {
   display: inline-block;
-  margin: 0 0 var(--spacing-medium) 0;
+  margin: 0 0 var(--spacing-md) 0;
 }
 
 .content-grid h2::after {
@@ -14,7 +14,7 @@ main#blog .size-blog-thumbnails {
 .content-grid h2 a {
   color: var(--dark-gray);
   text-decoration: none;
-  margin: 0 0 var(--spacing-medium) 0;
+  margin: 0 0 var(--spacing-md) 0;
   transition: all 500ms;
 }
 
@@ -26,25 +26,25 @@ main#blog .size-blog-thumbnails {
 main#blog .grid-column h3 {
   font-family: "Charter-Regular";
   font-weight: normal;
-  margin: var(--spacing-xmedium) 0 0 0;
+  margin: var(--spacing-lg) 0 0 0;
 }
 
 main#blog .grid-column h3:nth-child(2n) {
   font-family: "Charter-Bold";
-  margin: var(--spacing-small) 0 0 0;
+  margin: var(--spacing-sm) 0 0 0;
 }
 
 main#blog .grid-column > hr {
   display: block;
-  width: var(--spacing-xxlarge);
+  width: var(--spacing-xxxl);
   background-color: var(--mars);
   height: 1px;
   border: none;
-  margin: var(--spacing-xmedium) 0 0 0;
+  margin: var(--spacing-lg) 0 0 0;
 }
 
 main#blog .grid-column:last-of-type > hr {
   display: block;
   background-color: transparent;
-  margin: 0 0 var(--spacing-xlarge) 0;
+  margin: 0 0 var(--spacing-xxl) 0;
 }

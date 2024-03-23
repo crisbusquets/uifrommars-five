@@ -16,7 +16,7 @@ ul + .wp-block-image img {
   width: 100% !important;
   max-width: 100%;
   height: auto;
-  margin: var(--spacing-xmedium) 0 0 0;
+  margin: var(--spacing-lg) 0 0 0;
   position: relative;
   z-index: 0;
 }
@@ -29,14 +29,14 @@ ul + .wp-block-image img {
   font-family: "MartianMonoCondensed-Light";
   font-size: var(--font-size-heading-3);
   line-height: 1.2;
-  margin: var(--spacing-xxlarge) 0 0 0;
+  margin: var(--spacing-xxxl) 0 0 0;
   font-weight: 300;
 }
 
 @media (max-width: 948px) {
   .single-post h3 {
     font-size: var(--font-size-heading-3-mobile);
-    margin: var(--spacing-xlarge) 0 0 0;
+    margin: var(--spacing-xxl) 0 0 0;
   }
 }
 
@@ -44,14 +44,14 @@ ul + .wp-block-image img {
   font-family: "MartianMonoCondensed-Light";
   font-size: var(--font-size-heading-4);
   line-height: 1.2;
-  margin: var(--spacing-xxlarge) 0 0 0;
+  margin: var(--spacing-xxxl) 0 0 0;
   font-weight: 300;
 }
 
 .single-post img {
   width: 100%;
   height: auto;
-  margin: var(--spacing-xmedium) 0 0 0;
+  margin: var(--spacing-lg) 0 0 0;
   border-radius: 2px;
 }
 
@@ -60,16 +60,16 @@ ul + .wp-block-image img {
 }
 
 .single-post > ul {
-  margin: var(--spacing-large) 0;
+  margin: var(--spacing-xl) 0;
 }
 
 .single-post > .category {
-  margin-top: var(--spacing-medium);
+  margin-top: var(--spacing-md);
 }
 
 .single-post .pill {
   display: flex;
-  gap: var(--spacing-small);
+  gap: var(--spacing-sm);
 }
 
 .single-post .pill a {
@@ -80,7 +80,7 @@ ul + .wp-block-image img {
   text-transform: uppercase;
   background-color: var(--light-gray);
   color: var(--dark-gray);
-  padding: var(--spacing-tiny) var(--spacing-small);
+  padding: var(--spacing-xs) var(--spacing-sm);
   transition: all 300ms ease-in-out;
 }
 
@@ -91,13 +91,13 @@ ul + .wp-block-image img {
 .single-post .post-meta {
   display: flex;
   flex-flow: row wrap;
-  gap: var(--spacing-medium);
-  margin: var(--spacing-xmedium) 0 var(--spacing-xlarge) 0;
+  gap: var(--spacing-md);
+  margin: var(--spacing-lg) 0 var(--spacing-xxl) 0;
 }
 
 @media (max-width: 948px) {
   .single-post .post-meta {
-    gap: var(--spacing-small);
+    gap: var(--spacing-sm);
   }
 }
 
@@ -109,7 +109,7 @@ span.meta {
 .reading-time {
   display: flex;
   align-items: center;
-  gap: var(--spacing-tiny);
+  gap: var(--spacing-xs);
 }
 
 .author > img.avatar,
@@ -122,12 +122,12 @@ span.meta {
 
 /* related posts */
 h2.related-posts {
-  margin: 0 0 var(--spacing-xlarge) 0;
+  margin: 0 0 var(--spacing-xxl) 0;
 }
 
 @media (max-width: 948px) {
   h2.related-posts {
-    margin: 0 0 var(--spacing-large) 0;
+    margin: 0 0 var(--spacing-xl) 0;
   }
 }
 
@@ -154,14 +154,14 @@ h2.related-posts {
 .author-heading {
   display: flex;
   flex-flow: row;
-  gap: var(--spacing-xmedium);
+  gap: var(--spacing-lg);
 }
 
 .author-name-position {
   display: flex;
   flex-flow: column;
   justify-content: center;
-  gap: var(--spacing-tiny);
+  gap: var(--spacing-xs);
 }
 
 .author-photo img {
@@ -170,16 +170,16 @@ h2.related-posts {
 
 /* related posts */
 h2.author-related-posts {
-  margin: 0 0 var(--spacing-xmedium) 0;
+  margin: 0 0 var(--spacing-lg) 0;
 }
 
 p.author-related-posts {
-  margin: 0 0 var(--spacing-xlarge) 0;
+  margin: 0 0 var(--spacing-xxl) 0;
 }
 
 @media (max-width: 948px) {
   h2.related-posts {
     text-align: center;
-    margin: 0 0 var(--spacing-small) 0;
+    margin: 0 0 var(--spacing-sm) 0;
   }
 }

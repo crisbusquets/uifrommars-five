@@ -1,22 +1,22 @@
 main#home section:nth-child(2),
 main#home section:nth-child(3) {
-  margin: var(--spacing-big) 0 0 0;
+  margin: var(--spacing-huge) 0 0 0;
 }
 
 @media (max-width: 948px) {
   main#home section:nth-child(2),
   main#home section:nth-child(3) {
-    margin: var(--spacing-xxlarge) 0 0 0;
+    margin: var(--spacing-xxxl) 0 0 0;
   }
 }
 
 main#home h2 {
-  margin: 0 0 var(--spacing-xlarge) 0;
+  margin: 0 0 var(--spacing-xxl) 0;
 }
 
 @media (max-width: 948px) {
   main#home h2 {
-    margin: 0 0 var(--spacing-large) 0;
+    margin: 0 0 var(--spacing-xl) 0;
     text-align: center;
   }
 }
@@ -35,7 +35,7 @@ section.two-columns:last-of-type {
 @media (max-width: 948px) {
   section.two-columns {
     flex-flow: column nowrap;
-    gap: var(--spacing-xlarge);
+    gap: var(--spacing-xxl);
   }
 }
 
@@ -87,7 +87,7 @@ mark {
 @media (max-width: 948px) {
   .lottie {
     order: 1;
-    margin: var(--spacing-large) 0 0 0;
+    margin: var(--spacing-xl) 0 0 0;
     width: 284px;
     height: 206px;
   }
@@ -141,7 +141,7 @@ section.one-column {
 
   grid-column-gap: 32px;
   grid-row-gap: 0px;
-  padding: var(--spacing-xmedium) 0;
+  padding: var(--spacing-lg) 0;
   border-bottom: 1px solid var(--medium-gray);
   transition: background-color 500ms;
 }
@@ -150,7 +150,7 @@ section.one-column {
   .most-read-grid {
     display: flex;
     flex-flow: column wrap;
-    gap: var(--spacing-medium);
+    gap: var(--spacing-md);
   }
 }
 
@@ -165,7 +165,7 @@ section.one-column {
 .most-read,
 .categories {
   border-top: 1px solid var(--regular-gray);
-  padding-top: var(--spacing-xlarge);
+  padding-top: var(--spacing-xxl);
 }
 
 .categories {
@@ -177,7 +177,7 @@ section.one-column {
 .category-cloud {
   display: flex;
   flex-flow: row wrap;
-  gap: var(--spacing-medium);
+  gap: var(--spacing-md);
 }
 
 .most-read-list {

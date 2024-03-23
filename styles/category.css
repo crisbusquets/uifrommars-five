@@ -9,7 +9,7 @@ main#category p {
 }
 
 main#category .search-form {
-  margin: var(--spacing-small) 0 0 0;
+  margin: var(--spacing-sm) 0 0 0;
 }
 
 .pagination {
@@ -19,13 +19,13 @@ main#category .search-form {
   font-family: "MartianMonoCondensed-Light";
   font-size: var(--font-size-heading-3);
   line-height: 1.2;
-  margin: var(--spacing-xxlarge) 0 0 0;
+  margin: var(--spacing-xxxl) 0 0 0;
   font-weight: 300;
 }
 
 .page-numbers {
   color: var(--regular-gray);
-  margin: var(--spacing-small);
+  margin: var(--spacing-sm);
   border-bottom: 2px solid transparent;
   text-decoration: none;
   transition: all 500ms;

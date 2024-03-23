@@ -32,7 +32,7 @@ select {
   background-color: var(--white);
   color: var(--regular-gray);
   border-radius: 2px;
-  padding: var(--spacing-small);
+  padding: var(--spacing-sm);
   border: 0.5px solid var(--regular-gray);
   margin: 0;
 }
@@ -42,7 +42,7 @@ select {
   -moz-appearance: none;
   text-overflow: "";
   width: auto;
-  padding-right: var(--spacing-large);
+  padding-right: var(--spacing-xl);
 }
 
 select.postform {
@@ -80,7 +80,7 @@ button.primary {
   border-radius: 2px;
   cursor: pointer;
   width: auto;
-  padding: 0 var(--spacing-xmedium);
+  padding: 0 var(--spacing-lg);
   margin: 0;
   text-transform: uppercase;
   color: var(--white);

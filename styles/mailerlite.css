@@ -4,7 +4,7 @@
 
 @media (max-width: 948px) {
   #mlb2-5200883.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow {
-    margin: 0 0 var(--spacing-xmedium) 0 !important;
+    margin: 0 0 var(--spacing-lg) 0 !important;
   }
 }
 
@@ -66,7 +66,7 @@
 #mlb2-5200883.ml-form-embedContainer {
   box-sizing: border-box;
   display: table;
-  margin: var(--spacing-xmedium) 0 0 0;
+  margin: var(--spacing-lg) 0 0 0;
   position: static;
   width: 100% !important;
 }

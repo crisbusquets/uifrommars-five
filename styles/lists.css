@@ -23,9 +23,9 @@
   font-family: "Charter-Regular";
   font-size: var(--font-size-body);
   line-height: 1.3;
-  margin: 0 0 0 var(--spacing-xmedium);
+  margin: 0 0 0 var(--spacing-lg);
   position: relative;
-  padding-bottom: var(--spacing-medium);
+  padding-bottom: var(--spacing-md);
 }
 
 @media (max-width: 948px) {
@@ -37,13 +37,13 @@
 
 .single-post li ul li,
 .page li ul li {
-  padding-top: var(--spacing-medium);
+  padding-top: var(--spacing-md);
   padding-bottom: 0;
 }
 
 .single-post li ol li,
 .page li ol li {
-  padding: var(--spacing-medium) 0 0 var(--spacing-medium);
+  padding: var(--spacing-md) 0 0 var(--spacing-md);
 }
 
 .single-post ul > li::before,

@@ -9,12 +9,12 @@ main#page h3 {
   font-family: "MartianMonoCondensed-Light";
   font-size: var(--font-size-heading-3);
   line-height: 1.2;
-  margin: var(--spacing-xxlarge) 0 0 0;
+  margin: var(--spacing-xxxl) 0 0 0;
   font-weight: 300;
 }
 
 main#page hr {
-  margin: var(--spacing-xxlarge) auto;
+  margin: var(--spacing-xxxl) auto;
   width: 75%;
   display: flex;
 }

@@ -85,7 +85,7 @@ h2 {
   font-family: "MartianMonoCondensed-Medium";
   font-size: var(--font-size-heading-2);
   line-height: 1.2;
-  margin: var(--spacing-xxlarge) 0 0 0;
+  margin: var(--spacing-xxxl) 0 0 0;
   font-weight: 500;
 }
 
@@ -102,13 +102,13 @@ h2 em {
 
 h3 {
   font-family: "Charter-Bold";
-  margin: var(--spacing-xmedium) 0 0 0;
+  margin: var(--spacing-lg) 0 0 0;
 }
 
 @media (max-width: 948px) {
   h3 {
     font-size: var(--font-size-heading-3-mobile);
-    margin: var(--spacing-medium) 0 0 0;
+    margin: var(--spacing-md) 0 0 0;
   }
 }
 
@@ -126,7 +126,7 @@ h3 > a:hover {
 }
 
 .grid-column h3 {
-  margin: var(--spacing-small) 0 0 0;
+  margin: var(--spacing-sm) 0 0 0;
 }
 
 p,
@@ -137,7 +137,7 @@ select {
   font-family: "Charter-Regular";
   font-size: var(--font-size-body);
   line-height: 1.3;
-  margin: var(--spacing-xmedium) 0 0 0;
+  margin: var(--spacing-lg) 0 0 0;
 }
 
 @media (max-width: 948px) {
@@ -220,7 +220,7 @@ ol.toc::before {
   text-transform: uppercase;
   background-color: var(--light-gray);
   color: var(--dark-gray);
-  padding: var(--spacing-tiny) var(--spacing-small);
+  padding: var(--spacing-xs) var(--spacing-sm);
   transition: all 300ms ease-in-out;
 }
 
@@ -245,9 +245,9 @@ label {
 code {
   font-family: "Courier New", Courier, monospace !important;
   font-size: var(--font-size-meta);
-  padding: var(--spacing-xmedium);
+  padding: var(--spacing-lg);
   background-color: var(--dark-gray);
-  margin: var(--spacing-xmedium) 0 var(--spacing-large) 0;
+  margin: var(--spacing-lg) 0 var(--spacing-xl) 0;
   color: var(--light-gray);
   line-height: 1.35;
   border-radius: 2px;
@@ -265,7 +265,7 @@ code {
 .wp-element-caption {
   color: var(--regular-gray);
   text-align: left;
-  margin: var(--spacing-tiny) 0 var(--spacing-xmedium) 0;
+  margin: var(--spacing-xs) 0 var(--spacing-lg) 0;
 }
 
 small {
@@ -285,7 +285,7 @@ blockquote {
   color: var(--regular-gray);
   border-left: 3px solid var(--regular-gray);
   margin: 0;
-  padding: 0 0 0 var(--spacing-medium);
+  padding: 0 0 0 var(--spacing-md);
 }
 
 /* interface items */
@@ -307,7 +307,7 @@ h2 + .single-post h3,
 h3 + h1,
 h3 + h2,
 h3 + h3 {
-  margin-top: var(--spacing-xmedium);
+  margin-top: var(--spacing-lg);
 }
 
 @media (max-width: 948px) {
@@ -321,13 +321,13 @@ h3 + h3 {
   h3 + h1,
   h3 + h2,
   h3 + h3 {
-    margin: var(--spacing-small) 0 0 0;
+    margin: var(--spacing-sm) 0 0 0;
   }
 }
 
 #footer-container small {
   display: inline-block;
-  margin: var(--spacing-small) 0 0 0;
+  margin: var(--spacing-sm) 0 0 0;
 }
 
 .footer-nav ul {
@@ -338,11 +338,11 @@ h3 + h3 {
 
 .nav {
   display: inline-block;
-  margin-bottom: var(--spacing-small);
+  margin-bottom: var(--spacing-sm);
 }
 
 .footer-nav ul > li {
-  margin-bottom: var(--spacing-tiny);
+  margin-bottom: var(--spacing-xs);
 }
 
 .footer-nav ul > li > a {
