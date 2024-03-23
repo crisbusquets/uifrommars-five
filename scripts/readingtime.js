@@ -1,16 +1,16 @@
 const post = document.querySelector("article");
 const readingTimeSummary = document.querySelector(".reading-time span.minutes");
-const avgWordsPerMin = 220;
+const AVG_WORDS_PER_MIN = 220;
 
 setReadingTime();
 
 function setReadingTime() {
   let count = getWordCount();
-  let time = Math.ceil(count / avgWordsPerMin);
+  let time = Math.ceil(count / AVG_WORDS_PER_MIN);
 
-  readingTimeSummary.innerText = time + " minutos";
+  readingTimeSummary.innerText = time;
 }
 
 function getWordCount() {
-  return post.innerText.match(/[\p{Letter}\p{Number}]+/giu).length;
+  return post.innerText.match(/[\w-]+/giu).length;
 }

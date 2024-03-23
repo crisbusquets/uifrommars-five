@@ -42,8 +42,8 @@
                         <?php the_author_posts_link(); ?></span></div>
                 <div class="reading-time">
                     <img class="icon"
-                        src="<?php echo get_bloginfo('template_url') ?>/assets/images/icon/reading-time.svg" /><span
-                        class="meta">Tiempo de lectura: <span class="minutes"></span></span>
+                        src="<?php echo get_bloginfo('template_url') ?>/assets/images/icon/clock.svg" /><span
+                        class="meta">Tiempo de lectura: <span class="minutes"></span> minutos</span>
                 </div>
             </div>
 
