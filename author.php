@@ -39,7 +39,7 @@ $curauth = (isset($_GET['author_name'])) ? get_user_by('slug', $author_name) : g
         <p class="author-related-posts">Estos son los últimos nueve artículos que he escrito en uiFromMars (de un total
             de
             <?php echo '' . count_user_posts( $q->ID ); ?>).</p>
-        <div class="content-grid-recent">
+        <div class="content-grid">
 
 
             <?php

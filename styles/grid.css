@@ -131,14 +131,6 @@ article {
   }
 }
 
-.content-grid {
-  width: 100%;
-  display: grid;
-  grid-auto-rows: auto;
-  grid-template-columns: repeat(auto-fill, minmax(370px, 1fr));
-  gap: 6rem 3.65rem;
-}
-
 img.size-blog-thumbnails {
   margin: 0 0 var(--spacing-xl) 0;
   border-radius: 2px;

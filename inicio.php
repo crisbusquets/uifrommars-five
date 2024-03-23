@@ -27,7 +27,7 @@ Template Name: Inicio
         <section class="one-column">
             <h2>Últimos artículos</h2>
 
-            <div class="content-grid-recent">
+            <div class="content-grid">
                 <?php
                     global $post;
                     $last_posts = get_posts(array('posts_per_page' => 6));

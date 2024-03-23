@@ -73,7 +73,7 @@
 <aside>
     <div class="wrapper">
         <h2 class="related-posts">Artículos relacionados</h2>
-        <div class="content-grid-recent">
+        <div class="content-grid">
 
             <?php
                     $related = get_posts( array( 'category__in' => wp_get_post_categories($post->ID), 'numberposts' => 3, 'post__not_in' => array($post->ID) ) );

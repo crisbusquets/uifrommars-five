@@ -104,7 +104,7 @@ section.one-column {
   width: 100%;
 }
 
-.content-grid-recent {
+.content-grid {
   display: inline-grid;
   grid-auto-rows: auto;
   grid-template-columns: 1fr 1fr 1fr;
@@ -112,7 +112,7 @@ section.one-column {
 }
 
 @media (max-width: 640px) {
-  .content-grid-recent {
+  .content-grid {
     gap: 3rem 0;
     justify-items: center;
     grid-template-columns: 1fr;
