@@ -67,27 +67,25 @@
                     </ul>
                 </nav>
             </div>
-            <div id="search-icon" class="gtm_web_search-link">
-                <img src="<?php echo get_bloginfo('template_url') ?>/assets/images/icon/search.svg" width="28"
-                    height="28" alt="Buscar en uiFromMars" />
+            <div id="search-icon" class="show">
+                <img src="<?php echo get_bloginfo('template_url') ?>/assets/images/icon/magnifying-glass.svg" width="28"
+                    height="28" alt="icono lupa buscar" />
             </div>
             <button class="nav-toggle" aria-label="Abrir menú navegación" aria-expanded="false">
                 <img id="menu-icon" src="<?php echo get_bloginfo('template_url') ?>/assets/images/icon/menu.svg"
                     width="28" height="28" alt="icono tres líneas navegación" />
-                <img id="close-icon" src="<?php echo get_bloginfo('template_url') ?>/assets/images/icon/close.svg"
+                <img id="close-icon" src="<?php echo get_bloginfo('template_url') ?>/assets/images/icon/x-mark.svg"
                     style="display: none;" width="28" height="28" alt="icono aspa cerrar" />
             </button>
-            <div id="search-shade"></div>
-            <div id="search-container">
-                <div class="wrapper">
-                    <div class="search-input">
-                        <?php get_search_form(); ?>
-                    </div>
-                    <div id="search-close">
-                        <img src="<?php echo get_bloginfo('template_url') ?>/assets/images/icon/close.svg" width="28"
-                            height="28" alt="Cerrar búsqueda" />
-                    </div>
+
+            <dialog id="dialog">
+                <div id="dialog-header">
+                    <h3>Busca en uiFromMars</h3>
+                    <img src="<?php echo get_bloginfo('template_url') ?>/assets/images/icon/x-mark.svg" width="28"
+                        height="28" alt="icono aspa cerrar" class="close" />
+
                 </div>
-            </div>
+                <?php get_search_form(); ?>
+            </dialog>
         </div>
     </header>

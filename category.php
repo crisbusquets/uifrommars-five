@@ -7,12 +7,6 @@
         <div class="page-title">
             <h1><?php $cat = get_the_category(); echo $cat[0]->cat_name; ?></h1>
             <?php echo category_description(); ?>
-
-            <div class="search-again">
-                <p><strong>Refina tu búsqueda</strong>
-                </p>
-                <?php get_search_form(); ?>
-            </div>
         </div>
 
         <div class="content-grid">

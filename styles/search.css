@@ -1,95 +1,67 @@
-/* search functionality structure */
-#search-shade {
-  background: var(--dark-gray);
-  opacity: 0;
-  position: absolute;
-  z-index: 0;
-  top: 0;
-  left: 0;
-  width: 100%;
-  transition: opacity 500ms;
-  height: 0;
-  overflow: hidden;
-}
+/* https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog#animating_dialogs */
 
-#search-shade.active {
-  opacity: 0.25;
-  height: 100vh;
-}
-
-#search-container {
-  display: flex;
-  position: absolute;
-  z-index: 2;
-  width: 100%;
-  height: auto;
-  top: -100vw;
-  left: 0;
-  background-color: var(--white);
-  transition: opacity 500ms;
-  opacity: 0;
-}
-
-#search-container.active {
-  position: absolute;
-  top: 0;
+/*   Open state of the dialog  */
+dialog[open] {
   opacity: 1;
+  transform: scaleY(1);
 }
 
-#search-container > .wrapper {
-  padding: var(--spacing-xmedium) 0;
+/*   Closed state of the dialog   */
+dialog {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  border: 0;
+  border-radius: 4px;
+  box-shadow: 0px 4px 24px rgb(0 0 0 / 50%);
+  opacity: 0;
+  transform: scaleY(0);
+  transition: opacity 0.4s ease-out;
 }
 
-@media (max-width: 948px) {
-  #search-container > .wrapper {
-    align-items: flex-start;
-    flex-flow: row wrap;
-    padding: var(--spacing-xmedium);
+/*   Before-open state  */
+/* Needs to be after the previous dialog[open] rule to take effect,
+      as the specificity is the same */
+@starting-style {
+  dialog[open] {
+    opacity: 0;
+    transform: scaleY(0);
   }
 }
 
-/* search form and input structure */
-
-main#search .search-form {
-  margin: var(--spacing-small) 0 0 0;
+/* Transition the :backdrop when the dialog modal is promoted to the top layer */
+dialog::backdrop {
+  background-color: rgb(0 0 0 / 0%);
+  backdrop-filter: blur(2px);
+  transition: background-color 1s ease-out, backdrop-filter 1s ease-out;
 }
 
-.search-form {
-  display: flex;
-  margin: 0 0 0 0;
-  gap: var(--spacing-medium);
-  flex-flow: row wrap;
+dialog[open]::backdrop {
+  background-color: rgb(0 0 0 / 50%);
 }
 
-@media (max-width: 948px) {
-  .search-form {
-    flex-flow: column wrap;
-    width: 100%;
+/* This starting-style rule cannot be nested inside the above selector
+  because the nesting selector cannot represent pseudo-elements. */
+
+@starting-style {
+  dialog[open]::backdrop {
+    background-color: rgb(0 0 0 / 0%);
   }
 }
 
-.search-input {
+/* It was a-me! */
+#dialog-header {
   display: flex;
-  flex: 1 1 80%;
+  justify-content: space-between;
+  align-items: center;
 }
 
-#search-close {
+#dialog-header h3 {
+  margin: 0;
+}
+
+form.search-form {
   display: flex;
-  flex: 0 0 auto;
-  cursor: pointer;
-  margin-top: var(--spacing-tiny);
-}
-
-@media (max-width: 948px) {
-  #search-close {
-    margin: 0 0 0 var(--spacing-large);
-  }
-}
-
-/* search results page */
-
-.search-highlight {
-  background-color: var(--light-gray);
-  padding: 2px;
-  border-radius: 2px;
+  flex-direction: column;
+  gap: 16px;
 }

@@ -128,10 +128,6 @@ aside > .wrapper {
   }
 }
 
-#search-icon:hover {
-  cursor: pointer;
-}
-
 article {
   max-width: 43.75rem;
 }

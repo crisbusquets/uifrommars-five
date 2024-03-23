@@ -11,6 +11,11 @@ button {
   vertical-align: bottom;
 }
 
+input[type="search"],
+.select.postform {
+  width: 350px;
+}
+
 input[type="email"] {
   width: 100%;
 }

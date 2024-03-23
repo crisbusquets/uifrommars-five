@@ -8,11 +8,6 @@
             <p>Existen <strong><?php echo $wp_query->found_posts; ?></strong>
                 <?php _e( 'artículos sobre', 'locale' ); ?> <span
                     class="search-highlight"><?php the_search_query(); ?></span>.</p>
-            <div class="search-again">
-                <p><strong>Refina tu búsqueda</strong>
-                </p>
-                <?php get_search_form(); ?>
-            </div>
         </div>
 
         <section class="content-grid">
