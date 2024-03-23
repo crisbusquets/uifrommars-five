@@ -13,24 +13,22 @@
         <section class="content-grid">
 
             <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-            <section class="<?php echo $category->name; ?> grid-column">
-                <article id="post-<?php the_ID(); ?>" <?php post_class( 'search-results' ); ?>>
-                    <?php $title = get_the_title(); $keys= explode(" ",$s); $title = preg_replace('/('.implode('|', $keys) .')/iu', '<span class="search-highlight">\0</span>', $title); ?>
+            <article id="post-<?php the_ID(); ?>" <?php post_class( 'search-results' ); ?>>
+                <?php $title = get_the_title(); $keys= explode(" ",$s); $title = preg_replace('/('.implode('|', $keys) .')/iu', '<span class="search-highlight">\0</span>', $title); ?>
 
-                    <a href="<?php the_permalink(); ?>" class="search-image">
-                        <?php the_post_thumbnail( 'blog-thumbnails' ); ?>
+                <a href="<?php the_permalink(); ?>" class="search-image">
+                    <?php the_post_thumbnail( 'blog-thumbnails' ); ?>
+                </a>
+
+                <div class="category-link-list"><?php the_category(' ') ?></div>
+
+                <h3>
+                    <a href="<?php the_permalink(); ?>">
+                        <?php echo $title; ?>
                     </a>
+                </h3>
 
-                    <?php the_category(' ') ?>
-
-                    <h3>
-                        <a href="<?php the_permalink(); ?>">
-                            <?php echo $title; ?>
-                        </a>
-                    </h3>
-
-                </article>
-            </section>
+            </article>
             <?php endwhile; else: ?>
 
             <p>No hay contenido a mostrar</p>

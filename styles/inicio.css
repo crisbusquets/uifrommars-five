@@ -111,7 +111,13 @@ section.one-column {
   gap: 6rem 2.8125rem;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 769px) and (max-width: 1200px) {
+  .content-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 768px) {
   .content-grid {
     gap: 3rem 0;
     justify-items: center;

@@ -73,19 +73,19 @@
 <aside>
     <div class="wrapper">
         <h2 class="related-posts">Artículos relacionados</h2>
-        <div class="content-grid">
+        <section class="content-grid">
 
             <?php
                     $related = get_posts( array( 'category__in' => wp_get_post_categories($post->ID), 'numberposts' => 3, 'post__not_in' => array($post->ID) ) );
                         if( $related ) foreach( $related as $post ) {
                         setup_postdata($post);
                 ?>
-            <article class="grid-column">
+            <article>
                 <a href="<?php the_permalink(); ?>" class="category-image plausible-event-name=Related+Article">
                     <?php the_post_thumbnail( 'blog-thumbnails' ); ?>
                 </a>
 
-                <span class="separator"><?php the_category(' ') ?></span>
+                <div class="category-link-list"><?php the_category(' ') ?></div>
 
                 <h3>
                     <a href="<?php the_permalink(); ?>" class="plausible-event-name=Related+Article">
@@ -96,7 +96,7 @@
             <?php }
                     wp_reset_postdata(); ?>
 
-        </div>
+        </section>
     </div>
 </aside>
 

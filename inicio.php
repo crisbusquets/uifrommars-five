@@ -35,13 +35,13 @@ Template Name: Inicio
                     foreach ( $last_posts as $post ) :
                     setup_postdata( $post );?>
 
-                <article class="grid-column">
+                <article>
 
                     <a href="<?php the_permalink(); ?>" aria-label="Lee más sobre <?php the_title(); ?>"
                         class="category-image">
                         <?php the_post_thumbnail( 'blog-thumbnails' ); ?>
                     </a>
-                    <span class="separator"><?php the_category(' ') ?></span>
+                    <div class="category-link-list"><?php the_category(' ') ?></div>
 
                     <h3>
                         <a href="<?php the_permalink(); ?>">
@@ -66,7 +66,7 @@ Template Name: Inicio
                     foreach ( $post_id as $post ) :?>
                 <article class="most-read-grid">
                     <div class="most-category">
-                        <span class="separator"><?php the_category(' ') ?></span>
+                        <div class="category-link-list"><?php the_category(' ') ?></div>
                     </div>
 
                     <div class="most-title">

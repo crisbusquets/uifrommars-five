@@ -41,7 +41,6 @@ $curauth = (isset($_GET['author_name'])) ? get_user_by('slug', $author_name) : g
             <?php echo '' . count_user_posts( $q->ID ); ?>).</p>
         <div class="content-grid">
 
-
             <?php
 // Define our WP Query Parameters
 $the_query = new WP_Query( 'posts_per_page=9' ); ?>
@@ -52,9 +51,7 @@ while ($the_query -> have_posts()) : $the_query -> the_post();
 // Display the Post Title with Hyperlink
 ?>
 
-
-
-            <article class="grid-column">
+            <article>
                 <a href="<?php the_permalink(); ?>" class="category-image">
                     <?php the_post_thumbnail( 'blog-thumbnails' ); ?>
                 </a>

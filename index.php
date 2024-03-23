@@ -45,7 +45,7 @@
 
                 <?php while ( $query->have_posts() ) {$query->the_post();?>
 
-                <article id="post-<?php the_ID(); ?>" class="grid-column">
+                <article id="post-<?php the_ID(); ?>" class="category-item">
 
                     <?php if ( $first ): ?>
                     <a href="<?php the_permalink(); ?>">

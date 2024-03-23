@@ -9,26 +9,23 @@
             <?php echo category_description(); ?>
         </div>
 
-        <div class="content-grid">
-
+        <section class="content-grid">
             <?php while ( have_posts() ) : the_post(); ?>
-            <section class="<?php echo $category->name; ?>">
-                <article id="post-<?php the_ID(); ?>" <?php post_class( 'grid-column' ); ?>>
+            <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
+                <a href="<?php the_permalink(); ?>">
+                    <?php the_post_thumbnail( 'blog-thumbnails' ); ?>
+                </a>
+                <div class="category-link-list"><?php the_category(' ') ?></div>
+                <h3>
                     <a href="<?php the_permalink(); ?>">
-                        <?php the_post_thumbnail( 'blog-thumbnails' ); ?>
+                        <?php the_title(); ?>
                     </a>
-                    <?php the_category(' ') ?>
-                    <h3>
-                        <a href="<?php the_permalink(); ?>">
-                            <?php the_title(); ?>
-                        </a>
-                    </h3>
+                </h3>
 
-                </article>
-            </section>
+            </article>
             <?php endwhile; ?>
-        </div>
+        </section>
 
         <nav class="pagination">
             <?php echo paginate_links( array(
