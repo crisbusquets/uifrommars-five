@@ -10,6 +10,7 @@ dialog[open] {
 dialog {
   display: flex;
   flex-direction: column;
+  width: 400px;
   gap: 16px;
   border: 0;
   border-radius: 4px;
@@ -17,6 +18,12 @@ dialog {
   opacity: 0;
   transform: scaleY(0);
   transition: opacity 0.4s ease-out;
+}
+
+@media (max-width: 948px) {
+  dialog {
+    width: 90vw;
+  }
 }
 
 /*   Before-open state  */
