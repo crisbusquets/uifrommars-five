@@ -2,7 +2,7 @@ main#category p {
   width: 70ch;
 }
 
-@media (max-width: 948px) {
+@media (max-width: 768px) {
   main#category p {
     width: 100%;
   }

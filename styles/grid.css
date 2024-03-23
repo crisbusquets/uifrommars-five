@@ -17,7 +17,7 @@ header {
   background-color: var(--white);
 }
 
-@media (max-width: 948px) {
+@media (max-width: 768px) {
   header {
     top: 48px;
   }
@@ -35,18 +35,13 @@ aside {
   display: flex; /* if you remove this line it works on Safari */
 }
 
-@media (max-width: 948px) {
+@media (max-width: 768px) {
   main:not(#home) {
     margin-top: var(--spacing-xhuge);
   }
 
   main {
     margin-top: var(--spacing-huge);
-  }
-
-  main,
-  aside {
-    padding-inline: var(--spacing-md);
   }
 }
 
@@ -55,11 +50,12 @@ aside {
   flex-flow: row wrap;
   justify-content: center;
   width: 100%;
-  max-width: var(--max-content);
+  padding-inline: var(--spacing-md);
+  max-width: 1232px;
 }
 
 header > .wrapper {
-  padding: var(--spacing-lg) 0;
+  padding-block: var(--spacing-lg);
 }
 
 header > .wrapper {
@@ -70,7 +66,7 @@ aside > .wrapper {
   justify-content: left;
 }
 
-@media (max-width: 948px) {
+@media (max-width: 768px) {
   .wrapper {
     flex-flow: column nowrap;
   }
@@ -82,14 +78,6 @@ aside > .wrapper {
   }
 }
 
-@media (max-width: 1232px) and (min-width: 949px) {
-  header,
-  main,
-  footer {
-    padding-inline: var(--spacing-md);
-  }
-}
-
 #logo {
   display: flex;
   align-items: center;
@@ -97,7 +85,7 @@ aside > .wrapper {
   height: auto;
 }
 
-@media (max-width: 948px) {
+@media (max-width: 768px) {
   #logo a {
     display: flex;
   }
@@ -108,7 +96,7 @@ aside > .wrapper {
   height: auto;
 }
 
-@media (max-width: 948px) {
+@media (max-width: 768px) {
   #logo img {
     width: 112px;
     height: auto;
@@ -122,7 +110,7 @@ aside > .wrapper {
   margin: 0 0 0 var(--spacing-xl);
 }
 
-@media (max-width: 948px) {
+@media (max-width: 768px) {
   #search-icon {
     margin: 0 var(--spacing-md) 0 0;
   }
@@ -137,7 +125,7 @@ article {
   margin-bottom: var(--spacing-huge);
 }
 
-@media (max-width: 948px) {
+@media (max-width: 768px) {
   .page-title {
     margin-bottom: var(--spacing-xxl);
   }
@@ -157,7 +145,7 @@ img.size-blog-thumbnails {
   height: auto;
 }
 
-@media (max-width: 948px) {
+@media (max-width: 768px) {
   img.size-blog-thumbnails {
     width: 100%;
     margin: var(--spacing-sm) 0 var(--spacing-lg) 0;
@@ -209,7 +197,7 @@ footer {
   padding: var(--spacing-xxl) 0;
 }
 
-@media (max-width: 948px) {
+@media (max-width: 768px) {
   footer {
     padding: var(--spacing-md) 0;
   }
@@ -228,7 +216,7 @@ footer {
   flex-flow: column nowrap;
 }
 
-@media (max-width: 948px) {
+@media (max-width: 768px) {
   #footer-container {
     grid-template-columns: repeat(1, 1fr);
   }

@@ -20,7 +20,7 @@ dialog {
   transition: opacity 0.4s ease-out;
 }
 
-@media (max-width: 948px) {
+@media (max-width: 768px) {
   dialog {
     width: 90vw;
   }

@@ -10,7 +10,7 @@
   z-index: 10;
 }
 
-@media (max-width: 948px) {
+@media (max-width: 768px) {
   #top-bar {
     padding: 0 32px;
     height: 48px;

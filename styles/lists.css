@@ -28,7 +28,7 @@
   padding-bottom: var(--spacing-md);
 }
 
-@media (max-width: 948px) {
+@media (max-width: 768px) {
   .single-post li,
   .page li {
     font-size: var(--font-size-body-mobile);

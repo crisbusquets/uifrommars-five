@@ -3,7 +3,7 @@ main#home section:nth-child(3) {
   margin: var(--spacing-huge) 0 0 0;
 }
 
-@media (max-width: 948px) {
+@media (max-width: 768px) {
   main#home section:nth-child(2),
   main#home section:nth-child(3) {
     margin: var(--spacing-xxxl) 0 0 0;
@@ -14,7 +14,7 @@ main#home h2 {
   margin: 0 0 var(--spacing-xxl) 0;
 }
 
-@media (max-width: 948px) {
+@media (max-width: 768px) {
   main#home h2 {
     margin: 0 0 var(--spacing-xl) 0;
     text-align: center;
@@ -32,7 +32,7 @@ section.two-columns:last-of-type {
   gap: 96px;
 }
 
-@media (max-width: 948px) {
+@media (max-width: 1024px) {
   section.two-columns {
     flex-flow: column nowrap;
     gap: var(--spacing-xxl);
@@ -52,7 +52,7 @@ section.two-columns:last-of-type {
   max-width: 80%;
 }
 
-@media (max-width: 948px) {
+@media (max-width: 1024px) {
   .newsletter {
     order: 2;
   }
@@ -84,7 +84,7 @@ mark {
   width: 100%;
 }
 
-@media (max-width: 948px) {
+@media (max-width: 1024px) {
   .lottie {
     order: 1;
     margin: var(--spacing-xl) 0 0 0;
@@ -146,7 +146,7 @@ section.one-column {
   transition: background-color 500ms;
 }
 
-@media (max-width: 948px) {
+@media (max-width: 768px) {
   .most-read-grid {
     display: flex;
     flex-flow: column wrap;

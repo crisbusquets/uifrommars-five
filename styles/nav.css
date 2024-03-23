@@ -44,7 +44,7 @@ button.nav-toggle {
   z-index: 1;
 }
 
-@media (max-width: 948px) {
+@media (max-width: 768px) {
   button.nav-toggle {
     font-size: var(--font-size-nav-toggle);
     display: flex;

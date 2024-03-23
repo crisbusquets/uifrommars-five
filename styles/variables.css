@@ -48,9 +48,4 @@
   --text-decoration-line: underline;
   --text-decoration-style: dotted;
   --text-decoration-thickness: 1.75px;
-
-  /* breakpoints */
-  --mobile: 768px; /* up */
-  --tablet: 899px; /* from */
-  --max-content: 1232px; /* from */
 }

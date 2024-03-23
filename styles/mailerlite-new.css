@@ -3,7 +3,7 @@
   margin: var(--spacing-lg) 0 0 0;
 }
 
-@media (max-width: 948px) {
+@media (max-width: 768px) {
   #mailerlite-mars {
     width: 100%;
   }
