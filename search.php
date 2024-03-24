@@ -29,12 +29,28 @@
                 </h3>
 
             </article>
-            <?php endwhile; else: ?>
-
-            <p>No hay contenido a mostrar</p>
-
-            <?php endif; ?>
+            <?php endwhile;  ?>
         </section>
+
+        <nav class="pagination">
+            <?php echo paginate_links( array(
+                'base'          => str_replace( 9999999999, '%#%', esc_url( get_pagenum_link( 9999999999 ) ) ),
+                'current'       => max( 1, get_query_var( 'paged' ) ),
+                'total'         => $wp_query->max_num_pages,
+                'end_size'      => 0,
+                'mid_size'      => 3,
+                'prev_next'     => True,
+                'prev_text'     => __( '&laquo;' ),
+                'next_text'     => __( '&raquo;' ),
+            ) ); ?>
+        </nav>
+
+        <?php else : ?>
+
+        <p>No hay contenido a mostrar</p>
+
+        <?php endif; ?>
+
     </div>
 </main>
 
