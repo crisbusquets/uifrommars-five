@@ -6,5 +6,13 @@
   "intelephense.diagnostics.undefinedFunctions": false,
   "intelephense.diagnostics.undefinedTypes": false,
   "cSpell.language": "en,es-ES",
-  "cSpell.words": ["giphy", "mailerlite", "pagenum", "shortcode", "userdata"]
+  "cSpell.words": [
+    "bloginfo",
+    "giphy",
+    "mailerlite",
+    "pagenum",
+    "shortcode",
+    "uifrommars",
+    "userdata"
+  ]
 }
