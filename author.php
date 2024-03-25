@@ -20,6 +20,7 @@
     </article>
   </div>
 </main>
+
 <aside>
   <div class="wrapper">
     <h2 class="author-related-posts">Últimos artículos escritos por <?php echo $author->nickname; ?></h2>
