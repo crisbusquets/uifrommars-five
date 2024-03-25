@@ -1,0 +1,9 @@
+{
+  "editor.tabSize": 2,
+  "[php]": {
+    "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
+  },
+  "intelephense.diagnostics.undefinedFunctions": false,
+  "cSpell.language": "en,es-ES",
+  "cSpell.words": ["giphy", "mailerlite", "shortcode"]
+}
