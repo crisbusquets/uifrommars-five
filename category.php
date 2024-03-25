@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+
 <main id="category">
   <div class="wrapper">
     <?php if (have_posts()) : ?>
@@ -42,4 +43,5 @@
     <?php endif; ?>
   </div>
 </main>
+
 <?php get_footer(); ?>

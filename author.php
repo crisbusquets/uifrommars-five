@@ -1,5 +1,7 @@
 <?php get_header(); ?>
+
 <?php $author = (isset($_GET['author_name'])) ? get_user_by('slug', $author_name) : get_userdata(intval($author)); ?>
+
 <main id="page">
   <div class="wrapper">
     <article class="page">
@@ -51,4 +53,5 @@
     </div>
   </div>
 </aside>
+
 <?php get_footer(); ?>

@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+
 <main id="page">
   <div class="wrapper">
     <article class="page">
@@ -23,4 +24,5 @@
     </article>
   </div>
 </main>
+
 <?php get_footer(); ?>
