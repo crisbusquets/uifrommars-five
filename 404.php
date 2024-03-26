@@ -9,7 +9,7 @@ get_header(); ?>
     <div class="wrapper">
 
 
-        <article class="page">
+        <article class="content-narrow">
             <h1>Error 404: no encontrado</h1>
             <br />
             <div style="width:100%;height:0;padding-bottom:79%;position:relative;"><iframe

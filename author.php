@@ -1,9 +1,4 @@
-<?php
-/**
- * The template for displaying an Author Profile
- *
- */
-get_header(); ?>
+<?php get_header(); ?>
 
 <?php
 // Set the Current Author Variable $curauth
@@ -11,7 +6,7 @@ $curauth = (isset($_GET['author_name'])) ? get_user_by('slug', $author_name) : g
 ?>
 <main id="page">
     <div class="wrapper">
-        <article class="page">
+        <article class="content-narrow">
             <div class="author-heading">
                 <div class="author-photo">
                     <img src="https://www.uifrommars.com/wp-content/uploads/2024/03/cbusquets-avatar-128.jpg"
@@ -23,7 +18,8 @@ $curauth = (isset($_GET['author_name'])) ? get_user_by('slug', $author_name) : g
                 </div>
             </div>
             <h2>Sobre mí</h2>
-            <?php echo $curauth->user_description; ?>
+            <p>
+                <?php echo $curauth->user_description; ?>
             </p>
             <hr />
         </article>
