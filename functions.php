@@ -118,14 +118,6 @@ add_filter( 'posts_search', 'wpse_11826_search_by_title', 10, 2 );
 // featured image
 add_theme_support( 'post-thumbnails' );
 
-// custom avatar
-add_filter( 'avatar_defaults', 'addNewAvatar' );
-function addNewAvatar($avatar_defaults) {
-	$myavatar = 'https://pbs.twimg.com/profile_images/1607460477872869378/2GGIHSfq_400x400.jpg';
-	$avatar_defaults[$myavatar] = "Cris' Avatar";
-	return $avatar_defaults;
-}
-
 // custom post images
 add_action( 'after_setup_theme', 'wpdocs_theme_setup' );
 function wpdocs_theme_setup() {

@@ -14,7 +14,8 @@ $curauth = (isset($_GET['author_name'])) ? get_user_by('slug', $author_name) : g
         <article class="page">
             <div class="author-heading">
                 <div class="author-photo">
-                    <?php echo get_avatar( $curauth->user_email , '64'); ?>
+                    <img src="https://www.uifrommars.com/wp-content/uploads/2024/03/cbusquets-avatar-128.jpg"
+                        class="avatar" alt="Cris Busquets">
                 </div>
                 <div class="author-name-position">
                     <h1><?php echo $curauth->nickname; ?></h1>
@@ -32,7 +33,8 @@ $curauth = (isset($_GET['author_name'])) ? get_user_by('slug', $author_name) : g
     <div class="wrapper">
         <h2 class="author-related-posts">Últimos artículos escritos por
             <?php echo $curauth->nickname; ?></h2>
-        <p class="author-related-posts">Estos son los últimos nueve artículos que he escrito en uiFromMars (de un total de
+        <p class="author-related-posts">Estos son los últimos nueve artículos que he escrito en uiFromMars (de un total
+            de
             <?php echo '' . count_user_posts( $q->ID ); ?>).</p>
         <div class="content-grid">
             <?php

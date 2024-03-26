@@ -38,8 +38,11 @@
 
             <div class="post-meta">
                 <div class="author">
-                    <?php echo get_avatar( get_the_author_meta( 'ID' ), 20 ); ?><span class="meta">Escrito por
-                        <?php the_author_posts_link(); ?></span></div>
+                    <img src="https://www.uifrommars.com/wp-content/uploads/2024/03/cbusquets-avatar-40.jpg"
+                        class="avatar" alt="Cris Busquets">
+                    <span class="meta">Escrito por
+                        <?php the_author_posts_link(); ?></span>
+                </div>
                 <div class="reading-time">
                     <img class="icon"
                         src="<?php echo get_bloginfo('template_url') ?>/assets/images/icon/clock.svg" /><span
