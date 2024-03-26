@@ -1,0 +1,10 @@
+{
+  "editor.tabSize": 2,
+  "[php]": {
+    "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
+  },
+  "intelephense.diagnostics.undefinedFunctions": false,
+  "intelephense.diagnostics.undefinedTypes": false,
+  "cSpell.language": "en,es-ES",
+  "cSpell.words": ["giphy", "lottie", "mailerlite", "uifrommars"]
+}
