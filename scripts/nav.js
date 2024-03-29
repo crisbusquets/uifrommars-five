@@ -1,7 +1,13 @@
 var container = document.querySelector(".nav-container");
 var button = document.querySelector("button");
-var menuIcon = document.querySelector("#menu-icon");
-var closeIcon = document.querySelector("#close-icon");
+
+// Look for .hamburger
+var hamburger = document.querySelector(".hamburger");
+// On click
+hamburger.addEventListener("click", function () {
+  // Toggle class "is-active"
+  hamburger.classList.toggle("is-active");
+});
 
 button.addEventListener("click", () => {
   // Slide down.
@@ -9,8 +15,6 @@ button.addEventListener("click", () => {
     // Show the container.
     container.classList.add("open");
     container.style.height = "auto";
-    closeIcon.style.display = "block";
-    menuIcon.style.display = "none";
 
     // Get the computed height of the container.
     var height = container.clientHeight + "px";
@@ -29,8 +33,6 @@ button.addEventListener("click", () => {
   } else {
     // Set the height as 0px to trigger the slide up animation.
     container.style.height = "0px";
-    closeIcon.style.display = "none";
-    menuIcon.style.display = "block";
 
     // Remove the `open` class when the animation ends.
     container.addEventListener(
