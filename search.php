@@ -9,7 +9,7 @@
     </div>
     <section class="content-grid">
       <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-      <article id="post-<?php the_ID(); ?>" <?php post_class('search-results'); ?>>
+      <article id="post-<?php the_ID(); ?>" class="home-item">
         <?php $title = get_the_title();
             $keys = explode(" ", $s);
             $title = preg_replace('/(' . implode('|', $keys) . ')/iu', '<span class="search-highlight">\0</span>', $title); ?>
