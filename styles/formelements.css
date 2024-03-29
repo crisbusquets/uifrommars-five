@@ -1,0 +1,60 @@
+select,
+input,
+button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+input,
+select {
+  border: 2px solid var(--dark-gray);
+  background-color: var(--white);
+  border-radius: 2px;
+  font-family: Garamond, Georgia, serif;
+  font-size: var(--font-size-body);
+  line-height: 1.5;
+  color: var(--regular-gray);
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px #ee3e2b5f;
+}
+
+select {
+  background: url("../assets/images/icon/arrow.svg") no-repeat center right 0.75rem;
+}
+
+button {
+  background-color: var(--mars);
+  border: 0.5px solid var(--mars);
+  border-radius: 2px;
+  cursor: pointer;
+  width: auto;
+  padding: 0 var(--spacing-lg);
+  margin: 0;
+  text-transform: uppercase;
+  color: var(--white);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  width: 100%;
+  height: 48px;
+}
+
+button:hover {
+  background-color: var(--mars);
+  -webkit-box-shadow: 0 0 0 4px #ee3e2b5f;
+  box-shadow: 0 0 0 4px #ee3e2b5f;
+  color: var(--white);
+}
