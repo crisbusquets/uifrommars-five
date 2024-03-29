@@ -74,7 +74,7 @@
       if ($related) foreach ($related as $post) {
         setup_postdata($post);
       ?>
-      <article>
+      <article class="home-item">
         <a href="<?php the_permalink(); ?>" class="category-image plausible-event-name=Related+Article">
           <?php the_post_thumbnail('blog-thumbnails'); ?>
         </a>
