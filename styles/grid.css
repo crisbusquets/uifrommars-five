@@ -123,7 +123,6 @@ aside > .wrapper {
 article {
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-md);
 }
 
 .page-title {

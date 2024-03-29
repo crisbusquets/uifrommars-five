@@ -40,6 +40,10 @@ ul + .wp-block-image img {
   }
 }
 
+article.single-post {
+  gap: 0;
+}
+
 .single-post h4 {
   font-family: "MartianMonoCondensed-Light";
   font-size: var(--font-size-heading-4);

@@ -125,6 +125,10 @@ section.one-column {
   }
 }
 
+article.home-item {
+  gap: var(--spacing-md);
+}
+
 .most-read {
   flex: 1 0 60%;
   height: auto;
