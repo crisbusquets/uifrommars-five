@@ -126,11 +126,16 @@ span.meta {
   gap: var(--spacing-xs);
 }
 
-.author > img.avatar,
-.reading-time > img.icon {
+.author > img.avatar {
   width: 20px;
   height: 20px;
   border-radius: 50%;
+  margin: 0;
+}
+
+.reading-time > img.icon {
+  width: 20px;
+  height: 20px;
   margin: 0;
 }
 
