@@ -139,6 +139,38 @@ span.meta {
   margin: 0;
 }
 
+/* copy URL */
+#share-article {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+#copy-url-btn {
+  background-color: var(--white);
+  border: 1px solid var(--medium-gray);
+  border-radius: 2px;
+  display: flex;
+  color: var(--dark-gray);
+  padding: var(--spacing-xs) var(--spacing-sm);
+  flex-direction: row;
+  align-self: flex-start;
+  align-items: center;
+  gap: var(--spacing-xs);
+  cursor: pointer;
+}
+
+#copy-url-btn:hover {
+  -webkit-box-shadow: 0 0 0 4px #dbd9d67d;
+  box-shadow: 0 0 0 4px #dbd9d67d;
+}
+
+#copy-url-btn img {
+  width: 18px;
+  height: 18px;
+  margin: 0;
+}
+
 /* related posts */
 h2.related-posts {
   margin: 0 0 var(--spacing-xxl) 0;

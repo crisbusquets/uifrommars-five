@@ -47,6 +47,12 @@
       </div>
       <?php the_post_thumbnail('post-thumbnails'); ?>
       <?php the_content(); ?>
+      <div id="share-article">
+        <h4>¿Te ha gustado? Comparte el artículo :)</h4>
+        <button id="copy-url-btn" class="plausible-event-name=Share+Article"><img
+            src="<?php echo get_bloginfo('template_url') ?>/assets/images/icon/copy.svg" width="18" height="18"
+            alt="icono copiar enlace" /> Copiar enlace</button>
+      </div>
       <hr />
       <div class="newsletter-post">
         <h3>Subscríbete a uiFromMars</h3>

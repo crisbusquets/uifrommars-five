@@ -178,7 +178,8 @@ nav,
 .nav,
 input[type="submit"],
 button,
-ol.toc::before {
+ol.toc::before,
+#share-article > h4 {
   font-family: "MartianMono-Medium";
   font-size: var(--font-size-nav);
   line-height: 1;
