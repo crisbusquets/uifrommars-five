@@ -14,7 +14,7 @@
     </div>
     <section class="content-grid">
       <?php while (have_posts()) : the_post(); ?>
-      <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+      <article id="post-<?php the_ID(); ?>" class="category-item">
         <a href="<?php the_permalink(); ?>">
           <?php the_post_thumbnail('blog-thumbnails'); ?>
         </a>

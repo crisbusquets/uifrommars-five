@@ -24,7 +24,7 @@ main#blog .size-blog-thumbnails {
 }
 
 article.category-item {
-  gap: 8px;
+  gap: var(--spacing-md);
 }
 
 main#blog section {
