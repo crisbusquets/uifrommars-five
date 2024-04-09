@@ -224,12 +224,14 @@ label {
   line-height: 1.25;
 }
 
-code {
+.wp-block-code code {
   font-family: "Courier New", Courier, monospace !important;
+  font-size: var(--font-size-toc);
+  font-weight: bold;
   background-color: var(--light-gray);
   color: var(--dark-gray);
   border-radius: 2px;
-  padding: var(--spacing-xs) var(--spacing-sm);
+  padding: var(--spacing-xs);
   display: inline !important;
 }
 
