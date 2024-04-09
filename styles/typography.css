@@ -226,13 +226,11 @@ label {
 
 code {
   font-family: "Courier New", Courier, monospace !important;
-  font-size: var(--font-size-meta);
-  padding: var(--spacing-lg);
-  background-color: var(--dark-gray);
-  margin: var(--spacing-lg) 0 var(--spacing-xl) 0;
-  color: var(--light-gray);
-  line-height: 1.35;
+  background-color: var(--light-gray);
+  color: var(--dark-gray);
   border-radius: 2px;
+  padding: var(--spacing-xs) var(--spacing-sm);
+  display: inline !important;
 }
 
 @media (max-width: 768px) {
