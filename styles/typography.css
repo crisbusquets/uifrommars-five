@@ -264,8 +264,15 @@ small {
 blockquote {
   color: var(--regular-gray);
   border-left: 3px solid var(--regular-gray);
-  margin: 0;
+  margin: var(--spacing-lg) 0;
+  /* margin: 0; */
   padding: 0 0 0 var(--spacing-md);
+}
+
+blockquote p:first-child,
+blockquote ul,
+blockquote ol {
+  margin: 0;
 }
 
 /* interface items */
