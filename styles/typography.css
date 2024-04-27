@@ -35,43 +35,21 @@
 }
 
 @font-face {
-  font-family: "MartianMonoCondensed-Light";
-  src: url("../assets/fonts/martianmono_condensed_light.woff2") format("woff2");
-  font-style: normal;
-  font-stretch: normal;
   font-display: swap;
-}
-
-@font-face {
-  font-family: "MartianMonoCondensed-Medium";
-  src: url("../assets/fonts/martianmono_condensed_medium.woff2") format("woff2");
+  font-family: Martian Mono;
+  font-stretch: 75% 200%;
   font-style: normal;
-  font-stretch: normal;
-  font-display: swap;
+  font-weight: 100 1000;
+  src: url("../assets/fonts/MartianMonoVF.woff2") format("woff2"), local("Consolas"), local("Courier New"),
+    local("Courier"), local("monospace");
 }
-
-@font-face {
-  font-family: "MartianMonoCondensed-ExtraBold";
-  src: url("../assets/fonts/martianmono_condensed_extrabold.woff2") format("woff2");
-  font-style: normal;
-  font-stretch: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "MartianMono-Medium";
-  src: url("../assets/fonts/martianmono-medium.woff2") format("woff2");
-  font-style: normal;
-  font-stretch: normal;
-  font-display: swap;
-}
-
 h1 {
-  font-family: "MartianMonoCondensed-ExtraBold";
+  font-family: "Martian Mono";
   font-size: var(--font-size-heading-1);
   line-height: 1.2;
-  margin: 0 0 0 0;
+  margin: 0;
   font-weight: 800;
+  font-stretch: 77%;
 }
 
 @media (max-width: 768px) {
@@ -82,15 +60,15 @@ h1 {
 }
 
 h2 {
-  font-family: "MartianMonoCondensed-Medium";
+  font-family: "Martian Mono";
   font-size: var(--font-size-heading-2);
   line-height: 1.2;
   margin: var(--spacing-xxxl) 0 0 0;
   font-weight: 500;
+  font-stretch: 77%;
 }
 
 h2 em {
-  font-family: "MartianMonoCondensed-Medium";
   letter-spacing: -0.5px;
 }
 
@@ -180,18 +158,20 @@ input[type="submit"],
 button,
 ol.toc::before,
 #share-article > h4 {
-  font-family: "MartianMono-Medium";
+  font-family: "Martian Mono";
   font-size: var(--font-size-nav);
   line-height: 1;
   text-transform: uppercase;
   font-weight: 500;
+  font-stretch: 100%;
 }
 
 .pill {
-  font-family: "MartianMono-Medium";
+  font-family: "Martian Mono";
   font-size: var(--font-size-pill);
   line-height: 1;
   font-weight: 500;
+  font-stretch: 100%;
 }
 
 .pill a {

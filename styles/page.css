@@ -6,7 +6,7 @@ main#page .alignleft {
 }
 
 main#page h3 {
-  font-family: "MartianMonoCondensed-Light";
+  font-family: "Martian Mono";
   font-size: var(--font-size-heading-3);
   line-height: 1.2;
   margin: var(--spacing-xxxl) 0 0 0;

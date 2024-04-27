@@ -59,14 +59,17 @@ section.two-columns:last-of-type {
 }
 
 mark {
-  font-family: "MartianMono-Medium";
-  color: var(--mars);
+  font-family: "Martian Mono";
   font-size: var(--font-size-meta);
+  line-height: 1;
+  margin: var(--spacing-xxxl) 0 0 0;
+  font-weight: 500;
+  font-stretch: 77%;
+  color: var(--mars);
   padding: 2px 4px;
   background-color: rgba(238, 62, 43, 0.1);
-  line-height: 1;
+
   text-transform: uppercase;
-  font-weight: 500;
   border-radius: 2px;
 }
 
