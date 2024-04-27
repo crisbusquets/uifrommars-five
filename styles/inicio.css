@@ -53,6 +53,12 @@ section.two-columns:last-of-type {
 }
 
 @media (max-width: 1024px) {
+  .newsletter > h1 {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 1024px) {
   .newsletter {
     order: 2;
   }
