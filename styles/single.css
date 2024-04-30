@@ -102,6 +102,7 @@ article.single-post {
 @media (max-width: 768px) {
   .single-post .post-meta {
     gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-xl);
   }
 }
 
