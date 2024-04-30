@@ -12,8 +12,7 @@
 
 @media (max-width: 768px) {
   #top-bar {
-    padding: 0 32px;
-    height: 48px;
+    padding: 20px 0;
   }
 }
 

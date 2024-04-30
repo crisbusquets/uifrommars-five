@@ -48,7 +48,7 @@
 <body>
   <a href="https://disenodesdemarte.com/" target="_blank" alt="Compra Diseño desde Marte">
     <div id="top-bar" class="plausible-event-name=Top+Bar">
-      <p>Mi libro, "<span>Diseño desde Marte</span>", ya a la venta 🚀</p>
+      <p>📔 <span>Diseño desde Marte</span> ya a la venta</p>
     </div>
   </a>
   <header>
