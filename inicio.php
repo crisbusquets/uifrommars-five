@@ -45,9 +45,6 @@
         $post_id = array(1754, 1241, 1299, 2368, 1382, 592, 3442, 4008, 121, 3667);
         foreach ($post_id as $post) : ?>
         <article class="most-read-grid">
-          <div class="most-category">
-            <div class="category-link-list"><?php the_category(' ') ?></div>
-          </div>
           <div class="most-title">
             <h3>
               <a href="<?php the_permalink(); ?>" class="<?php echo ('gtm_web_most-read-' . $counter);

@@ -153,15 +153,8 @@ article.home-item {
 .most-read-grid {
   width: 100%;
   background-color: transparent;
-  display: grid;
-
-  grid-template-columns: 0.2fr 1fr;
-  grid-template-rows: 1fr;
-
-  grid-column-gap: 32px;
-  grid-row-gap: 0px;
   padding: var(--spacing-lg) 0;
-  border-bottom: 1px solid var(--medium-gray);
+  border-bottom: 1px solid var(--dark-gray);
   transition: background-color 500ms;
 }
 
@@ -183,7 +176,7 @@ article.home-item {
 
 .most-read,
 .categories {
-  border-top: 1px solid var(--regular-gray);
+  border-top: 2px solid var(--dark-gray);
   padding-top: var(--spacing-xxl);
 }
 
