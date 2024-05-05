@@ -74,7 +74,6 @@ aside > .wrapper {
   footer > .wrapper,
   header > .wrapper {
     flex-flow: row nowrap;
-    padding: var(--spacing-md);
   }
 }
 
