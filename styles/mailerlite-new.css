@@ -1,6 +1,5 @@
 #mailerlite-mars {
   width: 568px;
-  margin: var(--spacing-lg) 0 0 0;
 }
 
 @media (max-width: 768px) {

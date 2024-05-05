@@ -25,50 +25,30 @@ ul + .wp-block-image img {
   width: 100% !important;
 }
 
-.single-post h3 {
-  font-family: "Space Grotesk";
-  font-size: var(--font-size-heading-3);
-  line-height: 1.2;
-  margin: var(--spacing-xxxl) 0 0 0;
-  font-weight: 500;
-}
-
-@media (max-width: 768px) {
-  .single-post h3 {
-    font-size: var(--font-size-heading-3-mobile);
-    margin: var(--spacing-xxl) 0 0 0;
-  }
-}
-
 article.single-post {
   gap: 0;
 }
 
 .single-post h4 {
-  font-family: "Space Grotesk";
-  font-size: var(--font-size-heading-4);
-  line-height: 1.2;
-  margin: var(--spacing-xxxl) 0 0 0;
-  font-weight: 300;
+  margin: 0;
 }
 
 .single-post img {
   width: 100%;
   height: auto;
-  margin: var(--spacing-lg) 0 0 0;
   border-radius: 2px;
 }
 
 .single-post .size-post-thumbnails {
-  margin: 0;
+  margin-bottom: var(--spacing-lg);
 }
 
 .single-post > ul {
-  margin: var(--spacing-xl) 0;
+  margin-bottom: var(--spacing-lg);
 }
 
 .single-post > .category {
-  margin-top: var(--spacing-md);
+  margin-bottom: var(--spacing-md);
 }
 
 .single-post .pill {
@@ -96,7 +76,7 @@ article.single-post {
   display: flex;
   flex-flow: row wrap;
   gap: var(--spacing-md);
-  margin: var(--spacing-lg) 0 var(--spacing-xxl) 0;
+  margin-bottom: var(--spacing-xxl);
 }
 
 @media (max-width: 768px) {
@@ -196,10 +176,6 @@ h2.related-posts {
   .newsletter-post {
     width: 100%;
   }
-}
-
-.newsletter-post h3 {
-  margin: 0;
 }
 
 /* author info */

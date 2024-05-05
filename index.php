@@ -43,7 +43,7 @@
           </a>
           <?php $first = false; ?>
           <?php endif; ?>
-          <h3>
+          <h3 class="post-title-home">
             <a href="<?php the_permalink(); ?>">
               <?php the_title(); ?>
             </a>

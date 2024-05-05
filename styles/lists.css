@@ -1,10 +1,11 @@
-.content-narrow ul {
-  list-style-type: none;
+ul,
+ol {
+  margin-bottom: var(--spacing-md);
   padding: 0;
 }
 
-.content-narrow ol {
-  padding: 0;
+.content-narrow ul {
+  list-style-type: none;
 }
 
 .content-narrow ol li::marker {
@@ -19,9 +20,13 @@
   font-family: "Charter-Regular";
   font-size: var(--font-size-body);
   line-height: 1.3;
-  margin: 0 0 0 var(--spacing-lg);
+  margin-bottom: var(--spacing-md);
+  margin-left: var(--spacing-lg);
   position: relative;
-  padding-bottom: var(--spacing-md);
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 @media (max-width: 768px) {
@@ -30,9 +35,8 @@
   }
 }
 
-.content-narrow li ul li {
-  padding-top: var(--spacing-md);
-  padding-bottom: 0;
+.content-narrow ul li ul {
+  margin-top: var(--spacing-md);
 }
 
 .content-narrow li ol li {

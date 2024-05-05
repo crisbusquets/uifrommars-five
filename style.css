@@ -8,6 +8,7 @@ Author URI: http://www.cbusquets.com
 Tags: black, white, red, grey, responsive, minimal
 */
 
+@import "styles/reset.css";
 @import "styles/variables.css";
 @import "styles/typography.css";
 @import "styles/grid.css";
