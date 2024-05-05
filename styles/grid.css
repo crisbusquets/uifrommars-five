@@ -145,20 +145,20 @@ a.category-link {
   font-family: "Space Grotesk";
   font-size: var(--font-size-pill-xs);
   font-weight: 500;
-  color: var(--mars);
+  color: var(--dark-gray);
   text-transform: uppercase;
   text-decoration: none;
   transition: all 500ms;
 }
 
-a.category-link:hover {
+/* a.category-link:hover {
   text-decoration: underline;
-}
+} */
 
-.category-link-list {
+/* .category-link-list {
   display: flex;
   gap: var(--spacing-sm);
-}
+} */
 
 .wp-block-video {
   margin: var(--spacing-lg) 0;

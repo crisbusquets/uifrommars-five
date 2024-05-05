@@ -26,7 +26,8 @@
           <a href="<?php the_permalink(); ?>" aria-label="Lee más sobre <?php the_title(); ?>" class="category-image">
             <?php the_post_thumbnail('blog-thumbnails'); ?>
           </a>
-          <div class="category-link-list"><?php the_category(' ') ?></div>
+          <span class="pill"><?php the_category(' ') ?>
+          </span>
           <h3 class="post-title-home">
             <a href="<?php the_permalink(); ?>">
               <?php the_title(); ?>

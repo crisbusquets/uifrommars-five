@@ -84,7 +84,7 @@
         <a href="<?php the_permalink(); ?>" class="category-image plausible-event-name=Related+Article">
           <?php the_post_thumbnail('blog-thumbnails'); ?>
         </a>
-        <div class="category-link-list"><?php the_category(' ') ?></div>
+        <span class="pill"><?php the_category(' ') ?></span>
         <h3 class="post-title-home">
           <a href="<?php the_permalink(); ?>" class="plausible-event-name=Related+Article">
             <?php the_title(); ?>

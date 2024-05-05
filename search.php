@@ -16,7 +16,7 @@
         <a href="<?php the_permalink(); ?>" class="search-image">
           <?php the_post_thumbnail('blog-thumbnails'); ?>
         </a>
-        <div class="category-link-list"><?php the_category(' ') ?></div>
+        <span class="pill"><?php the_category(' ') ?></span>
         <h3>
           <a href="<?php the_permalink(); ?>">
             <?php echo $title; ?>

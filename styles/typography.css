@@ -185,6 +185,8 @@ ol.toc::before,
 }
 
 .pill {
+  display: flex;
+  gap: var(--spacing-sm);
   font-family: "Space Grotesk";
   font-size: var(--font-size-pill);
   line-height: 1;
@@ -198,7 +200,7 @@ ol.toc::before,
   text-decoration: none;
   text-transform: uppercase;
   color: var(--dark-gray);
-  padding: var(--spacing-xs) var(--spacing-sm);
+  padding: 4px var(--spacing-xs);
   transition: all 300ms ease-in-out;
 }
 
