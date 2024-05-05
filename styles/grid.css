@@ -143,8 +143,8 @@ img.size-blog-thumbnails {
 }
 
 a.category-link {
-  font-family: "Martian Mono";
-  font-size: var(--font-size-pill);
+  font-family: "Space Grotesk";
+  font-size: var(--font-size-pill-xs);
   font-weight: 500;
   color: var(--mars);
   text-transform: uppercase;

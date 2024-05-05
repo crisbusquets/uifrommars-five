@@ -36,36 +36,36 @@
 
 @font-face {
   font-display: swap;
-  font-family: Martian Mono;
-  font-stretch: 75% 200%;
+  font-family: Space Grotesk;
   font-style: normal;
   font-weight: 100 1000;
-  src: url("../assets/fonts/MartianMonoVF.woff2") format("woff2"), local("Consolas"), local("Courier New"),
+  src: url("../assets/fonts/SpaceGroteskVF.woff2") format("woff2"), local("Consolas"), local("Courier New"),
     local("Courier"), local("monospace");
 }
+
 h1 {
-  font-family: "Martian Mono";
+  font-family: "Space Grotesk";
   font-size: var(--font-size-heading-1);
-  line-height: 1.2;
+  line-height: 1.1;
+  letter-spacing: -0.05rem;
   margin: 0;
-  font-weight: 800;
-  font-stretch: 77%;
+  font-weight: 700;
 }
 
 @media (max-width: 768px) {
   h1 {
-    line-height: 1.4;
+    line-height: 1.1;
     font-size: var(--font-size-heading-1-mobile);
   }
 }
 
 h2 {
-  font-family: "Martian Mono";
+  font-family: "Space Grotesk";
   font-size: var(--font-size-heading-2);
-  line-height: 1.2;
+  line-height: 1.1;
+  letter-spacing: -0.05rem;
   margin: var(--spacing-xxxl) 0 0 0;
-  font-weight: 500;
-  font-stretch: 77%;
+  font-weight: 700;
 }
 
 h2 em {
@@ -158,42 +158,34 @@ input[type="submit"],
 button,
 ol.toc::before,
 #share-article > h4 {
-  font-family: "Martian Mono";
+  font-family: "Space Grotesk";
   font-size: var(--font-size-nav);
   line-height: 1;
   text-transform: uppercase;
-  font-weight: 500;
-  font-stretch: 100%;
+  font-weight: 600;
 }
 
 .pill {
-  font-family: "Martian Mono";
+  font-family: "Space Grotesk";
   font-size: var(--font-size-pill);
   line-height: 1;
   font-weight: 500;
-  font-stretch: 100%;
 }
 
 .pill a {
   display: inline-block;
-  border: 0;
-  border-radius: 2px;
+  border: 1px solid var(--dark-gray);
+  border-radius: 4px;
   text-decoration: none;
   text-transform: uppercase;
-  background-color: var(--light-gray);
   color: var(--dark-gray);
   padding: var(--spacing-xs) var(--spacing-sm);
   transition: all 300ms ease-in-out;
 }
 
 .pill a:hover {
-  background-color: var(--medium-gray);
-}
-
-label {
-  font-family: "Charter-Regular";
-  font-size: var(--font-size-input-label);
-  line-height: 1;
+  border-color: var(--mars);
+  color: var(--mars);
 }
 
 .footnotes,

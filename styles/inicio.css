@@ -11,7 +11,7 @@ main#home section:nth-child(3) {
 }
 
 main#home h2 {
-  margin: 0 0 var(--spacing-xxl) 0;
+  margin: 0 0 var(--spacing-lg) 0;
 }
 
 @media (max-width: 768px) {
@@ -65,12 +65,11 @@ section.two-columns:last-of-type {
 }
 
 mark {
-  font-family: "Martian Mono";
-  font-size: var(--font-size-meta);
+  font-family: "Space Grotesk";
+  font-size: var(--font-size-body);
   line-height: 1;
   margin: var(--spacing-xxxl) 0 0 0;
-  font-weight: 500;
-  font-stretch: 77%;
+  font-weight: 700;
   color: var(--mars);
   padding: 2px 4px;
   background-color: rgba(238, 62, 43, 0.1);

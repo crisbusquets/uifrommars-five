@@ -16,7 +16,7 @@ main#category .search-form {
   display: flex;
   justify-content: center;
   text-transform: none;
-  font-family: "Martian Mono";
+  font-family: "Space Grotesk";
   font-size: var(--font-size-heading-3);
   line-height: 1.2;
   margin: var(--spacing-xxxl) 0 0 0;
