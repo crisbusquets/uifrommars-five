@@ -91,6 +91,7 @@ h3 {
 main#category .post-title-home {
   font-family: "Charter-Bold";
   font-size: var(--font-size-body);
+  margin-block: 0;
 }
 
 .category-item .post-title-home:nth-child(2n + 1) {
