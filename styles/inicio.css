@@ -137,6 +137,34 @@ article.home-item {
   gap: var(--spacing-md);
 }
 
+.read-more {
+  display: flex;
+  justify-content: center;
+  margin-top: 48px;
+}
+
+.read-more > a {
+  background-color: var(--mars);
+  border: 0.5px solid var(--mars);
+  border-radius: 2px;
+  cursor: pointer;
+  width: auto;
+  padding: var(--spacing-md);
+  height: auto;
+  text-transform: uppercase;
+  color: var(--white);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.read-more > a:hover {
+  background-color: var(--mars);
+  -webkit-box-shadow: 0 0 0 4px #ee3e2b5f;
+  box-shadow: 0 0 0 4px #ee3e2b5f;
+  color: var(--white);
+}
+
 .most-read {
   flex: 1 0 60%;
   height: auto;

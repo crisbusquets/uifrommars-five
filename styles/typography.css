@@ -176,7 +176,8 @@ nav,
 input[type="submit"],
 button,
 ol.toc::before,
-#share-article > h4 {
+#share-article > h4,
+.read-more > a {
   font-family: "Space Grotesk";
   font-size: var(--font-size-nav);
   line-height: 1;

@@ -37,6 +37,9 @@
         <?php endforeach;
         wp_reset_postdata(); ?>
       </div>
+      <div class="read-more">
+        <a href="/blog" class="plausible-event-name=Read+More+Home">Leer más artículos</a>
+      </div>
     </section>
     <section class="two-columns">
       <div class="most-read">
