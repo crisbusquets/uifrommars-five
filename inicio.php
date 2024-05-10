@@ -19,7 +19,7 @@
       <div class="content-grid">
         <?php
         global $post;
-        $last_posts = get_posts(array('posts_per_page' => 6));
+        $last_posts = get_posts(array('posts_per_page' => 18));
         foreach ($last_posts as $post) :
           setup_postdata($post); ?>
         <article class="home-item">
