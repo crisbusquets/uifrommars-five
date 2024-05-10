@@ -17,7 +17,7 @@
           <?php the_post_thumbnail('blog-thumbnails'); ?>
         </a>
         <span class="pill"><?php the_category(' ') ?></span>
-        <h3>
+        <h3 class="post-title-home">
           <a href="<?php the_permalink(); ?>">
             <?php echo $title; ?>
           </a>
