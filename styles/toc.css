@@ -38,6 +38,7 @@ ol.toc > li > ol > li > a:hover {
 }
 
 ol.toc > li {
+  margin-bottom: 0;
   padding: 0 0 var(--spacing-sm) 0;
 }
 
@@ -46,5 +47,10 @@ ol.toc > li:last-child {
 }
 
 ol.toc li ol li {
-  padding: var(--spacing-md) 0 0 0;
+  padding: var(--spacing-sm) 0 0 0;
+  margin-block: 0;
+}
+
+ol.toc li ol {
+  margin-bottom: 0;
 }
