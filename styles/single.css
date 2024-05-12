@@ -127,7 +127,8 @@ span.meta {
 #share-article {
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-md);
+  margin-top: var(--spacing-lg);
+  gap: var(--spacing-sm);
 }
 
 #copy-url-btn {
