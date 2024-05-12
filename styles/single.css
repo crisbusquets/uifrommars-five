@@ -155,17 +155,6 @@ span.meta {
   margin: 0;
 }
 
-/* related posts */
-h2.related-posts {
-  margin: 0 0 var(--spacing-xxl) 0;
-}
-
-@media (max-width: 768px) {
-  h2.related-posts {
-    margin: 0 0 var(--spacing-xl) 0;
-  }
-}
-
 /* newsletter widget */
 .newsletter-post {
   display: flex;
@@ -202,17 +191,20 @@ h2.related-posts {
 }
 
 /* related posts */
+h2.related-posts {
+  margin: 0 0 var(--spacing-xxl) 0;
+}
+
+@media (max-width: 768px) {
+  h2.related-posts {
+    margin: 0 0 var(--spacing-lg) 0;
+  }
+}
+
 h2.author-related-posts {
   margin: 0 0 var(--spacing-lg) 0;
 }
 
 p.author-related-posts {
   margin: 0 0 var(--spacing-xxl) 0;
-}
-
-@media (max-width: 768px) {
-  h2.related-posts {
-    text-align: center;
-    margin: 0 0 var(--spacing-sm) 0;
-  }
 }
