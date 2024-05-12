@@ -145,15 +145,15 @@ a.category-link {
   font-family: "Space Grotesk";
   font-size: var(--font-size-pill-xs);
   font-weight: 500;
-  color: var(--dark-gray);
+  color: var(--mars);
   text-transform: uppercase;
   text-decoration: none;
   transition: all 500ms;
 }
 
-/* a.category-link:hover {
+a.category-link:hover {
   text-decoration: underline;
-} */
+}
 
 /* .category-link-list {
   display: flex;

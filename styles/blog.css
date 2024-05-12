@@ -4,7 +4,7 @@ main#blog .size-blog-thumbnails {
 
 .content-grid h2 {
   display: inline-block;
-  margin-top: 0;
+  margin-block: 0;
 }
 
 .content-grid h2 a {

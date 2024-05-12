@@ -56,7 +56,8 @@ article.single-post {
   gap: var(--spacing-sm);
 }
 
-.single-post .pill a {
+.single-post .pill a,
+.content-grid .pill a {
   display: inline-block;
   border: 1px solid var(--dark-gray);
   border-radius: 4px;
@@ -68,7 +69,8 @@ article.single-post {
   line-height: 1.25;
 }
 
-.single-post .pill a:hover {
+.single-post .pill a:hover,
+.content-grid .pill a:hover {
   border-color: var(--mars);
   color: var(--mars);
 }
