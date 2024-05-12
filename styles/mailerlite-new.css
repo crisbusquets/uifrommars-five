@@ -72,6 +72,14 @@
   font-weight: 700;
 }
 
+/* Mailerlite weird things */
+#mailerlite-mars > #mlb2-7142255.ml-form-embedContainer button {
+  font-family: "Space Grotesk" !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.01rem !important;
+}
+/* Mailerlite weird things */
+
 #mailerlite-mars
   > #mlb2-7142255.ml-form-embedContainer
   .ml-form-embedWrapper
