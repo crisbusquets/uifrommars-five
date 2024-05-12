@@ -49,13 +49,7 @@ section.two-columns:last-of-type {
 }
 
 .newsletter > h1 {
-  max-width: 80%;
-}
-
-@media (max-width: 1024px) {
-  .newsletter > h1 {
-    max-width: 100%;
-  }
+  max-width: 75ch;
 }
 
 @media (max-width: 1024px) {
@@ -66,8 +60,6 @@ section.two-columns:last-of-type {
 
 mark {
   font-family: "Space Grotesk";
-  font-size: var(--font-size-body);
-  line-height: 1;
   margin: var(--spacing-xxxl) 0 0 0;
   font-weight: 700;
   color: var(--mars);
