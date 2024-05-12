@@ -65,6 +65,7 @@ article.single-post {
   color: var(--dark-gray);
   padding: 4px var(--spacing-xs);
   transition: all 300ms ease-in-out;
+  line-height: 1.25;
 }
 
 .single-post .pill a:hover {
