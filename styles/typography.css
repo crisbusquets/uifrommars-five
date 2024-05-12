@@ -86,6 +86,12 @@ h3 {
   font-weight: 500;
 }
 
+@media (max-width: 768px) {
+  h3 {
+    font-size: var(--font-size-heading-3-mobile);
+  }
+}
+
 /** ojo-cuidado **/
 .post-title-home,
 main#category .post-title-home {
