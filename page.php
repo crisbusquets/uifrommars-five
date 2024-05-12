@@ -11,7 +11,8 @@
           if (!is_page(array(18, 182, 152, 4677, 4692, 4699, 4701, 4690, 405))) : ?>
       <hr />
       <div class="newsletter-post">
-        <h3>Únete a <mark><?php echo do_shortcode('[mailerlite-subscribers]'); ?></mark> diseñadores y mejora en tu
+        <h3>Únete a <mark id="thousandsNumber"><?php echo do_shortcode('[mailerlite-subscribers]'); ?></mark>
+          diseñadores y mejora en tu
           carrera de diseño</h3>
         <p>Recibe un correo semanal con artículos, consejos, inspiración y herramientas para crecer día a día 🚀</p>
         <?php get_template_part('mailerlite', 'widget'); ?>

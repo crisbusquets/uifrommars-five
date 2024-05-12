@@ -11,6 +11,7 @@ function my_scripts()
   wp_enqueue_script('nav', get_template_directory_uri() . '/scripts/nav.js', array(), null, true);
   wp_enqueue_script('close-dialog', get_template_directory_uri() . '/scripts/closedialog.js', array(), null, true);
   wp_enqueue_script('mailerlite-tracking', get_template_directory_uri() . '/scripts/mailerlitetracking.js', array(), null, true);
+  wp_enqueue_script('thousands', get_template_directory_uri() . '/scripts/thousands.js', array(), null, true);
 }
 add_action('wp_enqueue_scripts', 'my_scripts');
 

@@ -4,7 +4,9 @@
   <div class="wrapper">
     <section class="two-columns">
       <div class="newsletter">
-        <h1>Únete a <mark><?php echo do_shortcode('[mailerlite-subscribers]'); ?></mark> diseñadores y mejora en tu
+        <h1>Únete a <mark id="thousandsNumber"><?php echo do_shortcode('[mailerlite-subscribers]'); ?></mark>
+          diseñadores
+          y mejora en tu
           carrera de diseño</h1>
         <p>Recibe un correo semanal con artículos, consejos, inspiración y herramientas para crecer día a día 🚀</p>
         <?php get_template_part('mailerlite', 'widget'); ?>
