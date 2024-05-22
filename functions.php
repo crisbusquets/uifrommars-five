@@ -3,7 +3,7 @@
 function my_scripts()
 {
   if (is_single()) {
-    wp_enqueue_script('scroll', get_template_directory_uri() . '/scripts/scroll.js', array(), null, true);
+    wp_enqueue_script('scroll', get_template_directory_uri() . '/scripts/scroll-indicator.js', array(), null, true);
     wp_enqueue_script('reading-time', get_template_directory_uri() . '/scripts/reading-time.js', array(), null, true);
     wp_enqueue_script('copy-url', get_template_directory_uri() . '/scripts/copyurl.js', array(), null, true);
   }
