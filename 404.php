@@ -17,7 +17,7 @@
       <br />
       <hr />
       <div class="newsletter-post">
-        <h3>Únete a <mark id="thousandsNumber"><?php echo do_shortcode('[mailerlite-subscribers]'); ?></mark>
+        <h3>Únete a <mark id="subscriber-count"><?php echo do_shortcode('[mailerlite-subscribers]'); ?></mark>
           diseñadores y mejora en tu
           carrera de diseño</h3>
         <p>Recibe un correo semanal con artículos, consejos, inspiración y herramientas para crecer día a día 🚀</p>
