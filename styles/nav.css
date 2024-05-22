@@ -23,7 +23,7 @@ nav > ul > li:last-of-type {
 }
 
 nav > ul > li > a::after {
-  content: "";
+  content: '';
   display: block;
   width: 0;
   height: 1px;
@@ -63,7 +63,7 @@ button.nav-toggle {
     color: var(--dark-gray);
   }
 
-  .nav-container {
+  .mobile-nav-menu {
     transition: height 500ms ease;
     overflow: hidden;
     display: flex;
@@ -75,7 +75,7 @@ button.nav-toggle {
     background-color: var(--white);
   }
 
-  .nav-container:not(.open) {
+  .mobile-nav-menu:not(.open) {
     display: none;
   }
 
@@ -161,7 +161,7 @@ button.nav-toggle {
 }
 .hamburger-inner::before,
 .hamburger-inner::after {
-  content: "";
+  content: '';
   display: block;
 }
 .hamburger-inner::before {
@@ -171,9 +171,6 @@ button.nav-toggle {
   bottom: -8px;
 }
 
-/*
-   * Squeeze
-   */
 .hamburger--squeeze .hamburger-inner {
   transition-duration: 0.075s;
   transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
@@ -182,7 +179,8 @@ button.nav-toggle {
   transition: top 0.075s 0.12s ease, opacity 0.075s ease;
 }
 .hamburger--squeeze .hamburger-inner::after {
-  transition: bottom 0.075s 0.12s ease, transform 0.075s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition: bottom 0.075s 0.12s ease,
+    transform 0.075s cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
 
 .hamburger--squeeze.is-active .hamburger-inner {
@@ -198,5 +196,6 @@ button.nav-toggle {
 .hamburger--squeeze.is-active .hamburger-inner::after {
   bottom: 0;
   transform: rotate(-90deg);
-  transition: bottom 0.075s ease, transform 0.075s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: bottom 0.075s ease,
+    transform 0.075s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
