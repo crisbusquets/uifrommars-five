@@ -74,7 +74,7 @@
         <img id="menu-icon" src="<?php echo get_bloginfo('template_url') ?>/assets/images/icon/menu.svg" width="28" height="28" alt="icono tres líneas navegación" />
         <img id="close-icon" src="<?php echo get_bloginfo('template_url') ?>/assets/images/icon/x-mark.svg" style="display: none;" width="28" height="28" alt="icono aspa cerrar" />
       </button> -->
-      <dialog id="dialog">
+      <dialog>
         <div id="dialog-header">
           <h3>Busca en uiFromMars</h3>
           <img src="<?php echo get_bloginfo('template_url') ?>/assets/images/icon/x-mark.svg" width="24" height="24" alt="icono aspa cerrar" class="close" />
