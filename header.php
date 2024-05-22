@@ -63,13 +63,11 @@
       <div id="search-icon" class="show">
         <img src="<?php echo get_bloginfo('template_url') ?>/assets/images/icon/magnifying-glass.svg" width="24" height="24" alt="icono lupa buscar" />
       </div>
-
       <button class="hamburger hamburger--squeeze nav-toggle" type="button" aria-label="Abrir menú navegación" aria-expanded="false">
         <span class="hamburger-box">
           <span class="hamburger-inner"></span>
         </span>
       </button>
-
       <!-- <button class="nav-toggle" aria-label="Abrir menú navegación" aria-expanded="false">
         <img id="menu-icon" src="<?php echo get_bloginfo('template_url') ?>/assets/images/icon/menu.svg" width="28" height="28" alt="icono tres líneas navegación" />
         <img id="close-icon" src="<?php echo get_bloginfo('template_url') ?>/assets/images/icon/x-mark.svg" style="display: none;" width="28" height="28" alt="icono aspa cerrar" />
