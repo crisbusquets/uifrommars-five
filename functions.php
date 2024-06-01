@@ -3,15 +3,14 @@
 function my_scripts()
 {
   if (is_single()) {
-    wp_enqueue_script('scroll', get_template_directory_uri() . '/scripts/scroll.js', array(), null, true);
-    wp_enqueue_script('reading-time', get_template_directory_uri() . '/scripts/readingtime.js', array(), null, true);
-    wp_enqueue_script('copy-url', get_template_directory_uri() . '/scripts/copyurl.js', array(), null, true);
+    wp_enqueue_script('scroll-indicator', get_template_directory_uri() . '/scripts/scroll-indicator.js', array(), null, true);
+    wp_enqueue_script('reading-time', get_template_directory_uri() . '/scripts/reading-time.js', array(), null, true);
+    wp_enqueue_script('copy-url', get_template_directory_uri() . '/scripts/copy-url.js', array(), null, true);
   }
-  wp_enqueue_script('search', get_template_directory_uri() . '/scripts/search.js', array(), null, true);
-  wp_enqueue_script('nav', get_template_directory_uri() . '/scripts/nav.js', array(), null, true);
-  wp_enqueue_script('close-dialog', get_template_directory_uri() . '/scripts/closedialog.js', array(), null, true);
-  wp_enqueue_script('mailerlite-tracking', get_template_directory_uri() . '/scripts/mailerlitetracking.js', array(), null, true);
-  wp_enqueue_script('thousands', get_template_directory_uri() . '/scripts/thousands.js', array(), null, true);
+  wp_enqueue_script('search-posts', get_template_directory_uri() . '/scripts/search-posts.js', array(), null, true);
+  wp_enqueue_script('mobile-nav-menu', get_template_directory_uri() . '/scripts/mobile-nav-menu.js', array(), null, true);
+  wp_enqueue_script('mailerlite-tracking', get_template_directory_uri() . '/scripts/mailerlite-tracking.js', array(), null, true);
+  wp_enqueue_script('format-subscriber-count', get_template_directory_uri() . '/scripts/format-subscriber-count.js', array(), null, true);
 }
 add_action('wp_enqueue_scripts', 'my_scripts');
 
@@ -124,7 +123,7 @@ function wpse_11826_search_by_title($search, $wp_query)
 add_filter('posts_search', 'wpse_11826_search_by_title', 10, 2);
 
 // featured image
-add_theme_support( 'post-thumbnails' );
+add_theme_support('post-thumbnails');
 
 // custom post images
 add_action('after_setup_theme', 'wpdocs_theme_setup');

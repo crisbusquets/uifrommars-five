@@ -1,5 +1,4 @@
 header,
-#search-container,
 main,
 aside,
 footer {
@@ -142,7 +141,7 @@ img.size-blog-thumbnails {
 }
 
 a.category-link {
-  font-family: "Space Grotesk";
+  font-family: 'Space Grotesk';
   font-size: var(--font-size-pill-xs);
   font-weight: 500;
   color: var(--mars);
