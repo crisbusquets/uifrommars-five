@@ -192,19 +192,19 @@ footer {
   z-index: 999999;
   display: flex;
   align-items: center;
-  gap: 2px;
+  gap: 4px;
   border-radius: 2px;
-  right: 32px;
-  bottom: 32px;
-  padding-left: 8px;
-  padding-right: 16px;
+  right: var(--spacing-xl);
+  bottom: var(--spacing-xl);
+  padding-left: var(--spacing-xs);
+  padding-right: var(--spacing-md);
 
   color: var(--white);
   background-color: var(--dark-gray);
-  transition: scale ease-in-out 0.25s;
+  transition: box-shadow ease-in-out 0.25s;
 
   &:hover {
-    scale: 1.05;
+    box-shadow: 0 0 0 4px #806e6868;
   }
 }
 

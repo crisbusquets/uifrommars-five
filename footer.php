@@ -1,8 +1,10 @@
 <?php wp_footer(); ?>
 
-<a href="https://ko-fi.com/uifrommars" class="plausible-event-name=Ko-fi+Widget" target="_blank" style="text-decoration: none; color: inherit;">
+<a href="https://ko-fi.com/uifrommars" class="plausible-event-name=Ko-fi+Widget" target="_blank"
+  style="text-decoration: none; color: inherit;">
   <div id="kofi">
-    <img src="<?php echo get_bloginfo('template_url') ?>/assets/images/ko-fi_logo.png" style="width:40px; height: 40px;" alt="Ko-fi de uiFromMars">
+    <img src="<?php echo get_bloginfo('template_url') ?>/assets/images/ko-fi_logo-min.png"
+      style="width:40px; height: 40px;" alt="Ko-fi de uiFromMars">
     ¿Un café?
   </div>
 </a>
@@ -11,7 +13,8 @@
   <div class="wrapper">
     <div id="footer-container">
       <div class="credits">
-        <img src="<?php echo get_bloginfo('template_url') ?>/assets/images/uifrommars-logo.svg" alt="uiFromMars" style="width:140px; height: 39px;" />
+        <img src="<?php echo get_bloginfo('template_url') ?>/assets/images/uifrommars-logo.svg" alt="uiFromMars"
+          style="width:140px; height: 39px;" />
         <small>Copyright © 2018-<?php echo date("Y"); ?>.
           <br />
           Todos los derechos reservados.
