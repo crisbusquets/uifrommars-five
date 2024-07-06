@@ -187,6 +187,33 @@ footer {
   grid-gap: var(--spacing-xl);
 }
 
+#kofi {
+  position: fixed;
+  z-index: 999999;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  border-radius: 2px;
+  right: 32px;
+  bottom: 32px;
+  padding-left: 8px;
+  padding-right: 16px;
+
+  color: var(--white);
+  background-color: var(--dark-gray);
+  transition: scale ease-in-out 0.25s;
+
+  &:hover {
+    scale: 1.05;
+  }
+}
+
+@media (max-width: 768px) {
+  #kofi {
+    display: none;
+  }
+}
+
 .credits {
   display: flex;
   flex-flow: column nowrap;
