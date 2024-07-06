@@ -209,3 +209,27 @@ h2.author-related-posts {
 p.author-related-posts {
   margin: 0 0 var(--spacing-xxl) 0;
 }
+
+@media (max-width: 768px) {
+  .related-post-structure {
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .related-post-item {
+    display: flex;
+    flex-direction: column;
+    order: 1;
+  }
+
+  .related-post-image {
+    order: 2;
+  }
+
+  .related-post-image img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+  }
+}
