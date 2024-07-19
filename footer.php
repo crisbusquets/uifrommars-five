@@ -4,16 +4,20 @@
   <div class="wrapper">
     <div id="footer-container">
       <div class="credits">
-        <img src="<?php echo get_bloginfo('template_url') ?>/assets/images/uifrommars-logo.svg" alt="uiFromMars" style="width:140px; height: 39px;" />
+        <img src="<?php echo get_bloginfo('template_url') ?>/assets/images/uifrommars-logo.svg" alt="uiFromMars"
+          style="width:140px; height: 39px;" />
         <small>Copyright © 2018-<?php echo date("Y"); ?>.
           <br />
           Todos los derechos reservados.
         </small>
       </div>
       <div class="footer-nav">
-        <span class="nav">Explora</span>
-        <ul class="meta">
-          <?php wp_nav_menu(array('theme_location' => 'explore-menu', 'container' => '', 'items_wrap' => '%3$s')); ?>
+        <span class="nav">Categorías</span>
+        <ul class="meta category-list-footer">
+          <?php wp_list_categories(array(
+            'title_li' => '',
+            'orderby' => 'name'
+          )); ?>
         </ul>
       </div>
       <div class="footer-nav">
