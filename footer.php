@@ -21,9 +21,12 @@
         </small>
       </div>
       <div class="footer-nav">
-        <span class="nav">Explora</span>
-        <ul class="meta">
-          <?php wp_nav_menu(array('theme_location' => 'explore-menu', 'container' => '', 'items_wrap' => '%3$s')); ?>
+        <span class="nav">Categorías</span>
+        <ul class="meta category-list-footer">
+          <?php wp_list_categories(array(
+            'title_li' => '',
+            'orderby' => 'name'
+          )); ?>
         </ul>
       </div>
       <div class="footer-nav">

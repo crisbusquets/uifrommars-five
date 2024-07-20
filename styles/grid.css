@@ -223,3 +223,25 @@ footer {
     grid-template-columns: repeat(1, 1fr);
   }
 }
+
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  justify-self: flex-end;
+}
+
+@media (max-width: 768px) {
+  .footer-nav {
+    width: inherit;
+  }
+}
+
+.category-list-footer {
+  -moz-column-count: 2;
+  -moz-column-gap: var(--spacing-xl);
+  -webkit-column-count: 2;
+  -webkit-column-gap: var(--spacing-xl);
+  column-count: 2;
+  column-gap: var(--spacing-xl);
+}
