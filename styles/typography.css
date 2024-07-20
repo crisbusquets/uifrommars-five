@@ -191,7 +191,8 @@ ol.toc::before,
   font-weight: 600;
 }
 
-.pill {
+.pill,
+#kofi {
   display: flex;
   gap: var(--spacing-sm);
   font-family: "Space Grotesk";
