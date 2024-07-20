@@ -1,29 +1,28 @@
 <?php get_header(); ?>
 
-<main id="search">
+<main id="search-results">
   <div class="wrapper">
     <div class="page-title">
       <h1>Resultados de búsqueda</h1>
-      <p>Existen <strong><?php echo $wp_query->found_posts; ?></strong> <?php _e('artículos sobre', 'locale'); ?> <span
-          class="search-highlight"><?php the_search_query(); ?></span>.</p>
+      <p>Existen <strong><?php echo $wp_query->found_posts; ?></strong> <?php _e('artículos sobre', 'locale'); ?> <span class="search-highlight"><?php the_search_query(); ?></span>.</p>
     </div>
     <section class="content-grid">
       <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-      <article id="post-<?php the_ID(); ?>" class="home-item">
-        <?php $title = get_the_title();
+          <article id="post-<?php the_ID(); ?>" class="home-item">
+            <?php $title = get_the_title();
             $keys = explode(" ", $s);
             $title = preg_replace('/(' . implode('|', $keys) . ')/iu', '<span class="search-highlight">\0</span>', $title); ?>
-        <a href="<?php the_permalink(); ?>" class="search-image">
-          <?php the_post_thumbnail('blog-thumbnails'); ?>
-        </a>
-        <span class="pill"><?php the_category(' ') ?></span>
-        <h3 class="post-title-home">
-          <a href="<?php the_permalink(); ?>">
-            <?php echo $title; ?>
-          </a>
-        </h3>
-      </article>
-      <?php endwhile;  ?>
+            <a href="<?php the_permalink(); ?>" class="search-image">
+              <?php the_post_thumbnail('blog-thumbnails'); ?>
+            </a>
+            <span class="pill"><?php the_category(' ') ?></span>
+            <h3 class="post-title-home">
+              <a href="<?php the_permalink(); ?>">
+                <?php echo $title; ?>
+              </a>
+            </h3>
+          </article>
+        <?php endwhile; ?>
     </section>
     <nav class="pagination">
       <?php echo paginate_links(array(
@@ -37,9 +36,9 @@
           'next_text'     => __('&raquo;'),
         )); ?>
     </nav>
-    <?php else : ?>
+  <?php else : ?>
     <p>No hay contenido a mostrar</p>
-    <?php endif; ?>
+  <?php endif; ?>
   </div>
 </main>
 

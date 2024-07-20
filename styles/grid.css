@@ -1,5 +1,4 @@
 header,
-#search-container,
 main,
 aside,
 footer {
@@ -142,7 +141,7 @@ img.size-blog-thumbnails {
 }
 
 a.category-link {
-  font-family: "Space Grotesk";
+  font-family: 'Space Grotesk';
   font-size: var(--font-size-pill-xs);
   font-weight: 500;
   color: var(--mars);
@@ -185,6 +184,33 @@ footer {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto;
   grid-gap: var(--spacing-xl);
+}
+
+#kofi {
+  position: fixed;
+  z-index: 999999;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  border-radius: 2px;
+  right: var(--spacing-xl);
+  bottom: var(--spacing-xl);
+  padding-left: var(--spacing-xs);
+  padding-right: var(--spacing-md);
+
+  color: var(--white);
+  background-color: var(--dark-gray);
+  transition: box-shadow ease-in-out 0.25s;
+
+  &:hover {
+    box-shadow: 0 0 0 4px #806e6868;
+  }
+}
+
+@media (max-width: 768px) {
+  #kofi {
+    display: none;
+  }
 }
 
 .credits {
