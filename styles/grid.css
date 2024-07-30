@@ -41,7 +41,7 @@ aside {
   }
 
   main {
-    margin-top: var(--spacing-huge);
+    margin-top: var(--spacing-xl);
   }
 }
 
