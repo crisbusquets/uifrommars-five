@@ -69,7 +69,6 @@ button.nav-toggle {
     display: flex;
     position: fixed;
     top: 114px;
-    /* top: 0px; */
     z-index: 9;
     left: 0;
     width: 100vw;

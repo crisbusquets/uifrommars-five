@@ -28,7 +28,7 @@
 }
 
 .marquee-link {
-  display: flex; /* Use flex to align and maintain scrolling behavior */
+  display: flex;
   align-items: center;
   text-decoration: none;
   color: var(--medium-gray);
