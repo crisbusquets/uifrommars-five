@@ -17,10 +17,10 @@ main#category .search-form {
   justify-content: center;
   text-transform: none;
   font-family: "Space Grotesk";
-  font-size: var(--font-size-heading-3);
+  font-size: var(--font-size-nav-toggle);
   line-height: 1.2;
   margin: var(--spacing-xxxl) 0 0 0;
-  font-weight: 300;
+  font-weight: 500;
 }
 
 .page-numbers {
