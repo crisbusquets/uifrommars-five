@@ -1,0 +1,49 @@
+#marquee {
+  display: flex;
+  justify-content: center;
+  overflow-x: clip;
+  padding-block: 10px;
+  background-color: var(--dark-gray);
+  position: relative;
+}
+
+.marquee-element {
+  white-space: nowrap;
+  text-transform: uppercase;
+  animation: marquee 100s linear infinite;
+  font-family: "Space Grotesk";
+  font-size: var(--font-size-small);
+  font-weight: 500;
+}
+
+#marquee:hover .marquee-element {
+  animation-play-state: paused;
+}
+
+.marquee-element::before {
+  content: "✦";
+  padding-inline: 8px;
+  color: var(--regular-gray);
+}
+
+.marquee-link {
+  display: flex; /* Use flex to align and maintain scrolling behavior */
+  align-items: center;
+  text-decoration: none;
+  color: var(--medium-gray);
+  transition: color 0.35s ease;
+}
+
+.marquee-link:hover {
+  color: var(--white);
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(100%);
+  }
+}
