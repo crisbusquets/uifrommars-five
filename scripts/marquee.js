@@ -15,3 +15,8 @@ for (let i = 0; i < repeatCount - 1; i++) {
   // Update `elem` to point to the newly inserted clone for the next iteration
   elem = clone;
 }
+
+document.getElementById("close-marquee").addEventListener("click", function () {
+  var marquee = document.getElementById("marquee");
+  marquee.style.display = "none";
+});
