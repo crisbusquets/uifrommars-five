@@ -15,7 +15,7 @@ nav > ul {
 }
 
 nav > ul > li {
-  margin: 0 var(--spacing-xl) 0 0;
+  margin: 0 var(--spacing-md) 0 0;
 }
 
 nav > ul > li:last-of-type {
@@ -23,7 +23,7 @@ nav > ul > li:last-of-type {
 }
 
 nav > ul > li > a::after {
-  content: '';
+  content: "";
   display: block;
   width: 0;
   height: 1px;
@@ -49,7 +49,7 @@ button.nav-toggle {
     font-size: var(--font-size-nav-toggle);
     display: flex;
     height: auto;
-    background-color: var(--white);
+    background-color: var(--warm);
     border: 0;
     border-radius: 0;
     width: auto;
@@ -68,11 +68,12 @@ button.nav-toggle {
     overflow: hidden;
     display: flex;
     position: fixed;
-    top: 63px;
+    top: 110px;
+    z-index: 9;
     left: 0;
     width: 100vw;
     height: 0;
-    background-color: var(--white);
+    background-color: var(--warm);
   }
 
   .mobile-nav-menu:not(.open) {
@@ -86,10 +87,12 @@ button.nav-toggle {
   nav > ul {
     display: flex;
     flex-direction: column;
-    margin: 0;
+    margin-inline: var(--spacing-xl);
+    margin-block: 0;
     padding: 0;
-    height: calc(100vh - 63px);
+    height: calc(100vh - 110px);
     justify-content: center;
+    align-items: flex-start;
   }
 
   nav > ul > li:first-of-type {
@@ -161,7 +164,7 @@ button.nav-toggle {
 }
 .hamburger-inner::before,
 .hamburger-inner::after {
-  content: '';
+  content: "";
   display: block;
 }
 .hamburger-inner::before {
@@ -179,8 +182,7 @@ button.nav-toggle {
   transition: top 0.075s 0.12s ease, opacity 0.075s ease;
 }
 .hamburger--squeeze .hamburger-inner::after {
-  transition: bottom 0.075s 0.12s ease,
-    transform 0.075s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition: bottom 0.075s 0.12s ease, transform 0.075s cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
 
 .hamburger--squeeze.is-active .hamburger-inner {
@@ -196,6 +198,5 @@ button.nav-toggle {
 .hamburger--squeeze.is-active .hamburger-inner::after {
   bottom: 0;
   transform: rotate(-90deg);
-  transition: bottom 0.075s ease,
-    transform 0.075s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: bottom 0.075s ease, transform 0.075s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
 }

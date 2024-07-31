@@ -1,0 +1,76 @@
+#marquee {
+  display: flex;
+  justify-content: center;
+  overflow-x: clip;
+  padding-block: var(--spacing-s);
+  background-color: var(--dark-gray);
+  position: relative;
+}
+
+.marquee-element {
+  animation: left-to-right 100s linear infinite;
+  font-family: "Space Grotesk";
+  font-size: var(--font-size-small);
+  font-weight: 500;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+#marquee:hover .marquee-element {
+  animation-play-state: paused;
+}
+
+.marquee-element::before {
+  content: "✦";
+  padding-inline: var(--spacing-xl);
+  color: var(--regular-gray);
+}
+
+.marquee-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--medium-gray);
+  transition: color 0.35s ease;
+}
+
+.marquee-link:hover {
+  color: var(--white);
+}
+
+@keyframes left-to-right {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+
+#marquee-close-gradient {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: var(--spacing-xhuge);
+  background-image: linear-gradient(to left, var(--dark-gray) 30%, transparent);
+  z-index: 1;
+}
+
+button#close-marquee {
+  position: absolute;
+  top: 50%;
+  padding: 0;
+  right: var(--spacing-md);
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  z-index: 2;
+}
+
+button#close-marquee:hover {
+  box-shadow: none;
+  opacity: 0.65;
+}

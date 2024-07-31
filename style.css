@@ -8,23 +8,23 @@ Author URI: http://www.cbusquets.com
 Tags: black, white, red, grey, responsive, minimal
 */
 
-@import "styles/reset.css";
-@import "styles/variables.css";
-@import "styles/typography.css";
-@import "styles/grid.css";
-@import "styles/nav.css";
-@import "styles/toc.css";
-@import "styles/formelements.css";
-@import "styles/lists.css";
-@import "styles/search.css";
-@import "styles/inicio.css";
 @import "styles/blog.css";
 @import "styles/category.css";
+@import "styles/formelements.css";
+@import "styles/grid.css";
+@import "styles/inicio.css";
+@import "styles/lists.css";
 @import "styles/mailerlite-new.css";
-@import "styles/youtube.css";
-@import "styles/single.css";
+@import "styles/marquee.css";
+@import "styles/nav.css";
 @import "styles/page.css";
-@import "styles/topbar.css";
+@import "styles/reset.css";
+@import "styles/search.css";
+@import "styles/single.css";
+@import "styles/toc.css";
+@import "styles/typography.css";
+@import "styles/variables.css";
+@import "styles/youtube.css";
 
 *,
 *::before,

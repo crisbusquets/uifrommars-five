@@ -8,22 +8,14 @@ footer {
 }
 
 header {
-  position: fixed;
-  z-index: 9;
   width: 100vw;
+  position: relative;
   max-width: 100%;
-  top: 32px;
-  background-color: var(--white);
-}
-
-@media (max-width: 768px) {
-  header {
-    top: 40px;
-  }
+  border-bottom: 1px solid var(--dark-gray);
 }
 
 main {
-  margin-top: var(--spacing-xxhuge);
+  margin-top: var(--spacing-huge);
 }
 
 main,
@@ -40,7 +32,7 @@ aside {
   }
 
   main {
-    margin-top: var(--spacing-huge);
+    margin-top: var(--spacing-xl);
   }
 }
 
@@ -55,10 +47,8 @@ aside {
 
 header > .wrapper {
   padding-block: var(--spacing-lg);
-}
-
-header > .wrapper {
   align-items: center;
+  justify-content: space-between;
 }
 
 aside > .wrapper {
@@ -79,25 +69,53 @@ aside > .wrapper {
 #logo {
   display: flex;
   align-items: center;
-  flex: 1 1 auto;
-  height: auto;
-}
-
-@media (max-width: 768px) {
-  #logo a {
-    display: flex;
-  }
-}
-
-#logo img {
-  width: 140px;
   height: auto;
 }
 
 @media (max-width: 768px) {
   #logo img {
-    width: 112px;
-    height: auto;
+    width: 100px;
+  }
+}
+
+#logo a {
+  display: flex;
+}
+
+#extra {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xl);
+}
+
+@media (max-width: 768px) {
+  #extra {
+    gap: var(--spacing-lg);
+  }
+}
+
+#header-newsletter {
+  display: none; /* k bai */
+  background-color: var(--dark-gray);
+  color: var(--warm);
+  padding-block: var(--spacing-xs);
+  padding-inline: var(--spacing-sm);
+  border-radius: 2px;
+  text-decoration: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#header-newsletter:hover {
+  background-color: var(--almost-black);
+  -webkit-box-shadow: 0 0 0 4px #6d67675f;
+  box-shadow: 0 0 0 4px #6d67675f;
+  color: var(--white);
+}
+
+@media (max-width: 768px) {
+  #header-newsletter {
+    display: none;
   }
 }
 
@@ -105,13 +123,6 @@ aside > .wrapper {
   display: flex;
   align-items: center;
   height: auto;
-  margin: 0 0 0 var(--spacing-xl);
-}
-
-@media (max-width: 768px) {
-  #search-icon {
-    margin: 0 var(--spacing-md) 0 0;
-  }
 }
 
 .content-narrow {
@@ -141,7 +152,7 @@ img.size-blog-thumbnails {
 }
 
 a.category-link {
-  font-family: 'Space Grotesk';
+  font-family: "Space Grotesk";
   font-size: var(--font-size-pill-xs);
   font-weight: 500;
   color: var(--mars);
@@ -153,11 +164,6 @@ a.category-link {
 a.category-link:hover {
   text-decoration: underline;
 }
-
-/* .category-link-list {
-  display: flex;
-  gap: var(--spacing-sm);
-} */
 
 .wp-block-video {
   margin: var(--spacing-lg) 0;

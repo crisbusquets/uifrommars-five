@@ -36,11 +36,9 @@ main#blog section hr {
   height: 1px;
   border: none;
   margin: 0;
-  /* margin: var(--spacing-lg) 0 0 0; */
 }
 
 main#blog section hr:last-of-type {
   display: block;
   background-color: transparent;
-  /* margin: 0 0 var(--spacing-xxl) 0; */
 }

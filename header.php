@@ -46,40 +46,49 @@
 </head>
 
 <body>
-  <a href="https://disenodesdemarte.com/" target="_blank" alt="Compra Diseño desde Marte">
-    <div id="top-bar" class="plausible-event-name=Top+Bar">
-      <p>📔 <span>Diseño desde Marte</span> ya a la venta</p>
-    </div>
-  </a>
+
+  <div id="marquee">
+    <a href="https://disenodesdemarte.com/" class="marquee-link plausible-event-name=Top+Bar"
+      aria-label="Consulta mi libro 'Diseño desde Marte', ya disponible">
+      <span class="marquee-element">Mi libro “Diseño desde Marte” ya a la venta</span>
+    </a>
+    <button id="close-marquee" aria-label="Cerrar barra superior" class="plausible-event-name=Close+Top+Bar"> <img
+        src="<?php echo get_bloginfo('template_url') ?>/assets/images/icon/x-mark-white.svg" width="16" height="16"
+        alt="icono aspa cerrar" /></button>
+    <div id="marquee-close-gradient"></div>
+  </div>
+
   <header>
     <div class="wrapper">
       <div id="logo">
         <a href="/" target="_self" alt="Volver al inicio">
           <img src="<?php echo get_bloginfo('template_url') ?>/assets/images/uifrommars-logo.svg" alt="uiFromMars"
-            width="140" height="39" />
+            width="125" height="auto" />
         </a>
       </div>
-      <div class="mobile-nav-menu">
-        <nav>
-          <ul>
-            <?php wp_nav_menu(array('theme_location' => 'header-menu', 'container' => '', 'items_wrap' => '%3$s')); ?>
-          </ul>
-        </nav>
+      <div id="navigation">
+        <div class="mobile-nav-menu">
+          <nav>
+            <ul>
+              <?php wp_nav_menu(array('theme_location' => 'header-menu', 'container' => '', 'items_wrap' => '%3$s')); ?>
+            </ul>
+          </nav>
+        </div>
       </div>
-      <div id="search-icon" class="show plausible-event-name=Search">
-        <img src="<?php echo get_bloginfo('template_url') ?>/assets/images/icon/magnifying-glass.svg" width="24"
-          height="24" alt="icono lupa buscar" />
+      <div id="extra">
+        <a href="#" id="header-newsletter">Suscríbete</a>
+        <div id="search-icon" class="show plausible-event-name=Search">
+          <img src="<?php echo get_bloginfo('template_url') ?>/assets/images/icon/magnifying-glass.svg" width="24"
+            height="24" alt="icono lupa buscar" />
+        </div>
+        <button class="hamburger hamburger--squeeze nav-toggle" type="button" aria-label="Abrir menú navegación"
+          aria-expanded="false">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
       </div>
-      <button class="hamburger hamburger--squeeze nav-toggle" type="button" aria-label="Abrir menú navegación"
-        aria-expanded="false">
-        <span class="hamburger-box">
-          <span class="hamburger-inner"></span>
-        </span>
-      </button>
-      <!-- <button class="nav-toggle" aria-label="Abrir menú navegación" aria-expanded="false">
-        <img id="menu-icon" src="<?php echo get_bloginfo('template_url') ?>/assets/images/icon/menu.svg" width="28" height="28" alt="icono tres líneas navegación" />
-        <img id="close-icon" src="<?php echo get_bloginfo('template_url') ?>/assets/images/icon/x-mark.svg" style="display: none;" width="28" height="28" alt="icono aspa cerrar" />
-      </button> -->
+
       <dialog>
         <div id="dialog-header">
           <h3>Busca en uiFromMars</h3>
