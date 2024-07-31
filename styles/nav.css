@@ -68,7 +68,7 @@ button.nav-toggle {
     overflow: hidden;
     display: flex;
     position: fixed;
-    top: 114px;
+    top: 110px;
     z-index: 9;
     left: 0;
     width: 100vw;
@@ -90,7 +90,7 @@ button.nav-toggle {
     margin-inline: var(--spacing-xl);
     margin-block: 0;
     padding: 0;
-    height: calc(100vh - 114px);
+    height: calc(100vh - 110px);
     justify-content: center;
     align-items: flex-start;
   }

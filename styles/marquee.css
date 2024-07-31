@@ -2,19 +2,18 @@
   display: flex;
   justify-content: center;
   overflow-x: clip;
-  padding-block: 10px;
+  padding-block: var(--spacing-s);
   background-color: var(--dark-gray);
   position: relative;
-  padding-right: 30px;
 }
 
 .marquee-element {
-  white-space: nowrap;
-  text-transform: uppercase;
-  animation: marquee 100s linear infinite;
+  animation: left-to-right 100s linear infinite;
   font-family: "Space Grotesk";
   font-size: var(--font-size-small);
   font-weight: 500;
+  text-transform: uppercase;
+  white-space: nowrap;
 }
 
 #marquee:hover .marquee-element {
@@ -23,7 +22,7 @@
 
 .marquee-element::before {
   content: "✦";
-  padding-inline: 8px;
+  padding-inline: var(--spacing-xl);
   color: var(--regular-gray);
 }
 
@@ -39,12 +38,11 @@
   color: var(--white);
 }
 
-@keyframes marquee {
-  0% {
-    transform: translateX(-100%);
+@keyframes left-to-right {
+  from {
+    transform: translateX(0%);
   }
-
-  100% {
+  to {
     transform: translateX(100%);
   }
 }
@@ -54,12 +52,8 @@
   top: 0;
   right: 0;
   height: 100%;
-  z-index: 100;
-  padding: 0 var(--spacing-xhuge) 0 0;
+  width: var(--spacing-xhuge);
   background-image: linear-gradient(to left, var(--dark-gray) 30%, transparent);
-  display: flex;
-  align-items: center;
-  justify-content: center;
   z-index: 1;
 }
 
@@ -77,6 +71,6 @@ button#close-marquee {
 }
 
 button#close-marquee:hover {
-  box-shadow: 0 0 0 0;
+  box-shadow: none;
   opacity: 0.65;
 }
