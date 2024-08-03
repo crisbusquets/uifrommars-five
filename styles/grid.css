@@ -95,7 +95,6 @@ aside > .wrapper {
 }
 
 #header-newsletter {
-  display: none; /* k bai */
   background-color: var(--dark-gray);
   color: var(--warm);
   padding-block: var(--spacing-xs);
