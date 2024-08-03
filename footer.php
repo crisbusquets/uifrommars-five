@@ -1,11 +1,22 @@
 <?php wp_footer(); ?>
 
 <footer>
+  <svg>
+    <filter id="filter">
+      <feComponentTransfer color-interpolation-filters="sRGB" result="duotone">
+        <feFuncR type="table" tableValues="0.2 0.9333333333" />
+        <feFuncG type="table" tableValues="0.1882352941 0.2431372549" />
+        <feFuncB type="table" tableValues="0.1882352941 0.168627451" />
+      </feComponentTransfer>
+      <!-- <filter id="filter">
+      <feFlood flood-color="#EE3E2B" flood-opacity=".5" result="FLOOD" />
+      <feBlend in="SourceGraphic" in2="FLOOD" mode="color-burn" result="BLEND" />
+    </filter> -->
+  </svg>
   <div class="wrapper">
     <div id="footer-container">
       <div class="credits">
-        <img src="<?php echo get_bloginfo('template_url') ?>/assets/images/uifrommars-logo.svg" alt="uiFromMars"
-          style="width:140px; height: 39px;" />
+        <img src="<?php echo get_bloginfo('template_url') ?>/assets/images/uifrommars-logo.svg" alt="uiFromMars" style="width:140px; height: 39px;" />
         <small>Copyright © 2018-<?php echo date("Y"); ?>.
           <br />
           Todos los derechos reservados.

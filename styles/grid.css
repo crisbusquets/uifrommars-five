@@ -144,10 +144,12 @@ article {
   }
 }
 
-img.size-blog-thumbnails {
+img.size-blog-thumbnails,
+img.size-post-thumbnails {
   width: 100%;
   height: auto;
   border-radius: 2px;
+  filter: url(#filter) contrast(115%);
 }
 
 a.category-link {
