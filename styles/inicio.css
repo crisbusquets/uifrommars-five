@@ -80,9 +80,9 @@ mark {
   align-self: center;
 }
 
-.lottie img {
+/* .lottie img {
   width: 100%;
-}
+} */
 
 @media (max-width: 1024px) {
   .lottie {
@@ -93,7 +93,7 @@ mark {
   }
 
   .lottie img {
-    width: 284px;
+    width: auto;
     height: 206px;
   }
 }
