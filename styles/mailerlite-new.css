@@ -44,9 +44,9 @@
   padding: 0.5rem 0.75rem;
   transition: all 150ms ease-in-out;
 
-  &:focus {
+  &:focus-visible {
     box-shadow: none;
-    outline: none;
+    outline: 1px solid var(--dark-gray);
     transform: translate(3px, 3px);
   }
 }
@@ -60,21 +60,34 @@
   background-color: var(--mars);
   border: 0.5px solid var(--mars);
   border-radius: 2px;
+  box-shadow: 4px 4px var(--dark-gray);
   cursor: pointer;
   padding: 0 var(--spacing-lg);
   margin: 0;
-  text-transform: uppercase;
   color: var(--white);
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+  transition: all 150ms ease-in-out;
   height: 48px;
-
   text-transform: uppercase !important;
   font-family: "Space Grotesk";
   font-size: var(--font-size-nav) !important;
   letter-spacing: 0.01rem !important;
   line-height: 1;
   font-weight: 700;
+
+  &:hover {
+    background-color: var(--dark-mars);
+  }
+
+  &:focus-visible {
+    box-shadow: inset 0 0 0 3px var(--white), 4px 4px var(--dark-gray);
+    outline: 1.5px solid var(--dark-gray);
+  }
+
+  &:active {
+    background-color: var(--dark-mars);
+    box-shadow: none;
+    transform: translate(3px, 3px);
+  }
 }
 
 /* Mailerlite weird things */
@@ -85,7 +98,7 @@
 }
 /* Mailerlite weird things */
 
-#mailerlite-mars
+/* #mailerlite-mars
   > #mlb2-7142255.ml-form-embedContainer
   .ml-form-embedWrapper
   .ml-form-embedBody
@@ -95,7 +108,7 @@
   -webkit-box-shadow: 0 0 0 4px #ee3e2b5f;
   box-shadow: 0 0 0 4px #ee3e2b5f;
   color: #fff;
-}
+} */
 
 #mailerlite-mars
   > #mlb2-7142255.ml-form-embedContainer
