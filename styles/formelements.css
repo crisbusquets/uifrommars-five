@@ -1,6 +1,4 @@
-select,
-input,
-button {
+select {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -13,23 +11,22 @@ button {
 
 input,
 select {
-  border: 2px solid var(--dark-gray);
   background-color: var(--white);
+  border: 1px solid var(--dark-gray);
   border-radius: 2px;
+  box-shadow: 4px 4px var(--dark-gray);
   font-family: Garamond, Georgia, serif;
   font-size: var(--font-size-body);
   line-height: 1.5;
-  color: var(--regular-gray);
-  display: block;
-  box-sizing: border-box;
-  width: 100%;
   padding: 0.5rem 0.75rem;
-}
+  transition: all 150ms ease-in-out;
+  width: 100%;
 
-input:focus,
-select:focus {
-  outline: none;
-  box-shadow: 0 0 0 4px #ee3e2b5f;
+  &:focus {
+    box-shadow: none;
+    outline: none;
+    transform: translate(3px, 3px);
+  }
 }
 
 select {
