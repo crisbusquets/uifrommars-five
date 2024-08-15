@@ -54,6 +54,7 @@ section.two-columns:last-of-type {
 
 @media (max-width: 1024px) {
   .newsletter {
+    height: auto;
     order: 2;
   }
 }
