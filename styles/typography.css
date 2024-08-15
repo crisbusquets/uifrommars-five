@@ -39,8 +39,12 @@
   font-family: Space Grotesk;
   font-style: normal;
   font-weight: 100 1000;
-  src: url("../assets/fonts/SpaceGroteskVF.woff2") format("woff2"), local("Consolas"), local("Courier New"),
-    local("Courier"), local("monospace");
+  src:
+    url("../assets/fonts/SpaceGroteskVF.woff2") format("woff2"),
+    local("Consolas"),
+    local("Courier New"),
+    local("Courier"),
+    local("monospace");
 }
 
 h1 {
@@ -161,20 +165,20 @@ em > strong {
 
 .content-narrow a:hover {
   color: var(--regular-gray);
-  text-decoration: var(--text-decoration-line) var(--text-decoration-style) var(--regular-gray)
-    var(--text-decoration-thickness);
+  text-decoration: var(--text-decoration-line) var(--text-decoration-style)
+    var(--regular-gray) var(--text-decoration-thickness);
 }
 
 span.meta a {
   color: var(--regular-gray);
-  text-decoration: var(--text-decoration-line) var(--text-decoration-style) var(--regular-gray)
-    var(--text-decoration-thickness);
+  text-decoration: var(--text-decoration-line) var(--text-decoration-style)
+    var(--regular-gray) var(--text-decoration-thickness);
 }
 
 span.meta a:hover {
   color: var(--dark-gray);
-  text-decoration: var(--text-decoration-line) var(--text-decoration-style) var(--regular-gray)
-    var(--text-decoration-thickness);
+  text-decoration: var(--text-decoration-line) var(--text-decoration-style)
+    var(--regular-gray) var(--text-decoration-thickness);
 }
 
 nav,
@@ -227,7 +231,8 @@ ol.toc::before,
 .footnotes,
 .wp-caption-text,
 .wp-element-caption {
-  font-family: -apple-system, "BlinkMacSystemFont", "Segoe UI", "Roboto", "Helvetica", "Arial", sans-serif;
+  font-family: -apple-system, "BlinkMacSystemFont", "Segoe UI", "Roboto",
+    "Helvetica", "Arial", sans-serif;
   font-size: var(--font-size-footnotes);
   line-height: 1.25;
 }
@@ -290,7 +295,9 @@ nav > ul > li > a {
   text-transform: uppercase;
   text-decoration: none;
   border-bottom: 1px solid transparent;
-  transition: color 0.2s ease-in-out, border-bottom 0.2s ease-in-out;
+  transition:
+    color 0.2s ease-in-out,
+    border-bottom 0.2s ease-in-out;
 }
 
 #footer-container small {

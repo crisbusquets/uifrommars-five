@@ -1,15 +1,15 @@
 // Function to check if the button is available and add class to it
 function checkAndAddClass() {
-  const buttons = document.querySelectorAll('.primary')
+  const buttons = document.querySelectorAll(".primary")
   buttons.forEach((button) => {
-    if (!button.classList.contains('plausible-event-name=Newsletter')) {
-      button.classList.add('plausible-event-name=Newsletter')
+    if (!button.classList.contains("plausible-event-name=Newsletter")) {
+      button.classList.add("plausible-event-name=Newsletter")
     }
   })
 }
 
 // Listen for the DOMContentLoaded event to ensure the button is available
-window.addEventListener('DOMContentLoaded', () => {
+window.addEventListener("DOMContentLoaded", () => {
   // Check and add class to the button once the DOM content is loaded
   checkAndAddClass()
 
@@ -17,7 +17,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // you can also use MutationObserver to observe changes in the DOM.
   const observer = new MutationObserver((mutationsList) => {
     mutationsList.forEach((mutation) => {
-      if (mutation.type === 'childList') {
+      if (mutation.type === "childList") {
         // Check and add class to the button if it's added dynamically
         checkAndAddClass()
       }
