@@ -36,7 +36,7 @@ nav > ul > li > a:hover::after {
 }
 
 nav > ul > li.current-menu-item a {
-  border-bottom: 1px solid var(--dark-gray);
+  border-bottom: var(--border);
 }
 
 span.nav-toggle {

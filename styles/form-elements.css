@@ -9,9 +9,9 @@ select {
 input,
 select {
   background-color: var(--white);
-  border: 1px solid var(--dark-gray);
-  border-radius: 2px;
-  box-shadow: 4px 4px var(--dark-gray);
+  border: var(--border);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
   font-family: Garamond, Georgia, serif;
   font-size: var(--font-size-body);
   line-height: 1.5;
@@ -21,7 +21,7 @@ select {
 
   &:focus-visible {
     box-shadow: none;
-    outline: 1px solid var(--dark-gray);
+    outline: var(--border);
     transform: translate(3px, 3px);
   }
 
@@ -37,8 +37,8 @@ select {
 button {
   background-color: var(--mars);
   border: 0.5px solid var(--mars);
-  border-radius: 2px;
-  box-shadow: 4px 4px var(--dark-gray);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
   cursor: pointer;
   padding: 0 var(--spacing-lg);
   margin: 0;
@@ -53,7 +53,7 @@ button {
   }
 
   &:focus-visible {
-    box-shadow: inset 0 0 0 3px var(--white), 4px 4px var(--dark-gray);
+    box-shadow: inset 0 0 0 3px var(--white), var(--box-shadow);
     outline: 1.5px solid var(--dark-gray);
   }
 
