@@ -24,6 +24,10 @@ select {
     outline: 1px solid var(--dark-gray);
     transform: translate(3px, 3px);
   }
+
+  &::placeholder {
+    color: var(--regular-gray);
+  }
 }
 
 select {
