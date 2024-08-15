@@ -36,7 +36,7 @@ article.single-post {
 .single-post img {
   width: 100%;
   height: auto;
-  border-radius: 2px;
+  border-radius: var(--border-radius);
 }
 
 .single-post .size-post-thumbnails {
@@ -59,7 +59,7 @@ article.single-post {
 .single-post .pill a,
 .content-grid .pill a {
   display: inline-block;
-  border: 1px solid var(--dark-gray);
+  border: var(--border);
   border-radius: 4px;
   text-decoration: none;
   text-transform: uppercase;
@@ -91,7 +91,7 @@ article.single-post {
 
 .single-post hr {
   background-color: var(--regular-gray);
-  border-radius: 2px;
+  border-radius: var(--border-radius);
   height: 1px;
   border: none;
   margin: var(--spacing-xxxl) auto;
@@ -134,7 +134,7 @@ span.meta {
 #copy-url-btn {
   background-color: var(--white);
   border: 1px solid var(--medium-gray);
-  border-radius: 2px;
+  border-radius: var(--border-radius);
   display: flex;
   color: var(--dark-gray);
   padding: var(--spacing-xs) var(--spacing-sm);

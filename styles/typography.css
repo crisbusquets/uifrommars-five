@@ -210,7 +210,7 @@ ol.toc::before,
 
 .pill a {
   display: inline-block;
-  border: 1px solid var(--dark-gray);
+  border: var(--border);
   border-radius: 4px;
   text-decoration: none;
   text-transform: uppercase;
@@ -238,7 +238,7 @@ ol.toc::before,
   font-weight: bold;
   background-color: var(--light-gray);
   color: var(--dark-gray);
-  border-radius: 2px;
+  border-radius: var(--border-radius);
   padding: var(--spacing-xs);
   display: inline !important;
 }
@@ -323,5 +323,5 @@ nav > ul > li > a {
 .footer-nav ul > li > a:hover {
   color: var(--dark-gray);
   text-decoration: none;
-  border-bottom: 1px solid var(--dark-gray);
+  border-bottom: var(--border);
 }

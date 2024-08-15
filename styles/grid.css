@@ -11,7 +11,7 @@ header {
   width: 100vw;
   position: relative;
   max-width: 100%;
-  border-bottom: 1px solid var(--dark-gray);
+  border-bottom: var(--border);
 }
 
 main {
@@ -99,7 +99,7 @@ aside > .wrapper {
   color: var(--warm);
   padding-block: var(--spacing-xs);
   padding-inline: var(--spacing-sm);
-  border-radius: 2px;
+  border-radius: var(--border-radius);
   text-decoration: none;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -147,7 +147,7 @@ article {
 img.size-blog-thumbnails {
   width: 100%;
   height: auto;
-  border-radius: 2px;
+  border-radius: var(--border-radius);
 }
 
 a.category-link {

@@ -41,7 +41,7 @@ section.two-columns:last-of-type {
 
 .newsletter {
   flex: 0 1 50%;
-  height: auto;
+  height: 295px;
   order: 1;
   display: flex;
   flex-flow: column wrap;
@@ -67,7 +67,7 @@ mark {
   background-color: rgba(238, 62, 43, 0.1);
 
   text-transform: uppercase;
-  border-radius: 2px;
+  border-radius: var(--border-radius);
 }
 
 .lottie {
@@ -138,7 +138,7 @@ article.home-item {
 .read-more > a {
   background-color: var(--mars);
   border: 0.5px solid var(--mars);
-  border-radius: 2px;
+  border-radius: var(--border-radius);
   cursor: pointer;
   width: auto;
   padding: var(--spacing-md);
@@ -173,7 +173,7 @@ article.home-item {
   width: 100%;
   background-color: transparent;
   padding: var(--spacing-lg) 0;
-  border-bottom: 1px solid var(--dark-gray);
+  border-bottom: var(--border);
   transition: background-color 500ms;
 }
 
