@@ -41,7 +41,7 @@ section.two-columns:last-of-type {
 
 .newsletter {
   flex: 0 1 50%;
-  height: auto;
+  height: 295px;
   order: 1;
   display: flex;
   flex-flow: column wrap;
