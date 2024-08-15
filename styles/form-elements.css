@@ -31,7 +31,8 @@ select {
 }
 
 select {
-  background: url("../assets/images/icon/arrow.svg") no-repeat center right 0.75rem;
+  background: url("../assets/images/icon/arrow.svg") no-repeat center right
+    0.75rem;
 }
 
 button {
@@ -53,7 +54,9 @@ button {
   }
 
   &:focus-visible {
-    box-shadow: inset 0 0 0 3px var(--white), var(--box-shadow);
+    box-shadow:
+      inset 0 0 0 3px var(--white),
+      var(--box-shadow);
     outline: 1.5px solid var(--dark-gray);
   }
 
