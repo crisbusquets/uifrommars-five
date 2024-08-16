@@ -91,8 +91,10 @@
       <dialog>
         <div id="dialog-header">
           <h3>Busca en uiFromMars</h3>
-          <img src="<?php echo get_bloginfo('template_url') ?>/assets/images/icon/x-mark.svg" width="24" height="24"
-            alt="icono aspa cerrar" class="close" />
+          <div id="dialog-icon">
+            <img src="<?php echo get_bloginfo('template_url') ?>/assets/images/icon/x-mark.svg" width="24" height="24"
+              alt="icono aspa cerrar" class="close" />
+          </div>
         </div>
         <?php get_search_form(); ?>
       </dialog>
