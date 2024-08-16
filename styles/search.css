@@ -40,9 +40,7 @@ dialog {
 dialog::backdrop {
   background-color: rgb(0 0 0 / 0%);
   backdrop-filter: blur(2px);
-  transition:
-    background-color 1s ease-out,
-    backdrop-filter 1s ease-out;
+  transition: background-color 1s ease-out, backdrop-filter 1s ease-out;
 }
 
 dialog[open]::backdrop {
@@ -67,6 +65,10 @@ dialog[open]::backdrop {
 
 #dialog-header h3 {
   margin: 0;
+}
+
+#dialog-icon {
+  cursor: pointer;
 }
 
 form.search-form {
