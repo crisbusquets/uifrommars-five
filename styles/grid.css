@@ -95,21 +95,32 @@ aside > .wrapper {
 }
 
 #header-newsletter {
-  background-color: var(--dark-gray);
+  background-color: var(--regular-gray);
+  border: 1px solid var(--dark-gray);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
   color: var(--warm);
   padding-block: var(--spacing-xs);
   padding-inline: var(--spacing-sm);
-  border-radius: var(--border-radius);
   text-decoration: none;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-}
 
-#header-newsletter:hover {
-  background-color: var(--almost-black);
-  -webkit-box-shadow: 0 0 0 4px #6d67675f;
-  box-shadow: 0 0 0 4px #6d67675f;
-  color: var(--white);
+  &:active {
+    background-color: var(--dark-mars);
+    box-shadow: none;
+    transform: translate(3px, 3px);
+  }
+
+  &:hover {
+    background-color: var(--light-gray);
+    color: var(--dark-gray);
+  }
+
+  &:focus-visible {
+    box-shadow: inset 0 0 0 3px var(--white), var(--box-shadow);
+    outline: 1.5px solid var(--dark-gray);
+  }
 }
 
 @media (max-width: 768px) {
