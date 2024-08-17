@@ -67,6 +67,12 @@ aside > .wrapper {
   }
 }
 
+section.full-width {
+  display: flex;
+  flex-flow: column wrap;
+  width: 100%;
+}
+
 #logo {
   display: flex;
   align-items: center;

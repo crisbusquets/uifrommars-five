@@ -121,37 +121,6 @@
     </div>
 
   </div>
-
-
-
-  <!-- <section class="full-width">
-    <h2>Últimos artículos</h2>
-    <div class="content-grid">
-      <?php
-      global $post;
-      $last_posts = get_posts(array('posts_per_page' => 18));
-      foreach ($last_posts as $post) :
-        setup_postdata($post); ?>
-        <article class="home-item">
-          <a href="<?php the_permalink(); ?>" aria-label="Lee más sobre <?php the_title(); ?>" class="category-image">
-            <?php the_post_thumbnail('blog-thumbnails'); ?>
-          </a>
-          <span class="pill"><?php the_category(' ') ?>
-          </span>
-          <h3 class="post-title-home">
-            <a href="<?php the_permalink(); ?>">
-              <?php the_title(); ?>
-            </a>
-          </h3>
-        </article>
-      <?php endforeach;
-      wp_reset_postdata(); ?>
-    </div>
-    <div class="read-more">
-      <a href="/blog" class="plausible-event-name=Read+More+Home">Leer más artículos</a>
-    </div>
-  </section> -->
-
   </div>
 </main>
 
