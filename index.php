@@ -3,7 +3,11 @@
 <main id="blog">
   <div class="wrapper">
     <section class="full-width">
-      <h2>Últimos artículos</h2>
+      <div class="page-title">
+        <h1>El blog de uiFromMars</h1>
+        <p>Impulsa tu carrera ampliando tus conocimientos en diseño de producto digital, diseño de interfaz,
+          investigación UX, portfolio y mucho más con artículos detallados y casos de estudio.</p>
+      </div>
       <div class="content-grid">
         <?php
         $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
@@ -22,11 +26,11 @@
             <?php the_post_thumbnail('blog-thumbnails'); ?>
           </a>
           <span class="pill"><?php the_category(' ') ?></span>
-          <h3 class="post-title-home">
+          <h2 class="post-title-home">
             <a href="<?php the_permalink(); ?>">
               <?php the_title(); ?>
             </a>
-          </h3>
+          </h2>
         </article>
         <?php endwhile; ?>
       </div> <!-- Close content-grid div here -->

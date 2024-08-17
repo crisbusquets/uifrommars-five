@@ -157,6 +157,10 @@ article {
   margin-bottom: var(--spacing-huge);
 }
 
+.page-title p {
+  max-width: 60ch;
+}
+
 @media (max-width: 768px) {
   .page-title {
     margin-bottom: var(--spacing-xxl);

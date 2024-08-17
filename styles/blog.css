@@ -1,5 +1,6 @@
 main#blog h2 {
   margin: 0 0 var(--spacing-lg) 0;
+  letter-spacing: normal;
 }
 
 article.home-item {
