@@ -1,44 +1,8 @@
-main#blog .size-blog-thumbnails {
-  margin: 0;
+main#blog h2 {
+  margin: 0 0 var(--spacing-lg) 0;
+  letter-spacing: normal;
 }
 
-.content-grid h2 {
-  display: inline-block;
-  margin-block: 0;
-}
-
-.content-grid h2 a {
-  color: var(--dark-gray);
-  text-decoration: none;
-  margin: 0 0 var(--spacing-md) 0;
-  transition: all 500ms;
-}
-
-.content-grid h2 a:hover,
-.content-grid h2:hover::after {
-  color: var(--regular-gray);
-}
-
-article.category-item {
+article.home-item {
   gap: var(--spacing-md);
-}
-
-main#blog section {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-}
-
-main#blog section hr {
-  display: block;
-  width: 4rem;
-  background-color: var(--mars);
-  height: 1px;
-  border: none;
-  margin: 0;
-}
-
-main#blog section hr:last-of-type {
-  display: block;
-  background-color: transparent;
 }
