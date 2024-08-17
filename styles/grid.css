@@ -12,11 +12,12 @@ header {
   position: relative;
   max-width: 100%;
   border-bottom: var(--border);
+  margin-bottom: var(--spacing-huge);
 }
 
-main {
+/* main {
   margin-top: var(--spacing-huge);
-}
+} */
 
 main,
 aside {
@@ -26,7 +27,7 @@ aside {
   display: flex; /* if you remove this line it works on Safari */
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   main:not(#home) {
     margin-top: var(--spacing-xhuge);
   }
@@ -34,7 +35,7 @@ aside {
   main {
     margin-top: var(--spacing-xl);
   }
-}
+} */
 
 .wrapper {
   display: flex;

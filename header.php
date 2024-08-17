@@ -42,6 +42,7 @@
   </script>
   <!-- End MailerLite Universal -->
 
+  <script src="https://apis.google.com/js/platform.js"></script>
   <?php wp_head(); ?>
 </head>
 
