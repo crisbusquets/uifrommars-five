@@ -57,5 +57,5 @@
   /* border and shadow */
   --border: 1px solid var(--dark-gray);
   --border-radius: 2px;
-  --box-shadow: 4px 4px var(--dark-gray);
+  --box-shadow: 2px 2px var(--dark-gray);
 }
