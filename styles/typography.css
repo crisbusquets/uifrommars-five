@@ -39,11 +39,8 @@
   font-family: Space Grotesk;
   font-style: normal;
   font-weight: 100 1000;
-  src:
-    url("../assets/fonts/SpaceGroteskVF.woff2") format("woff2"),
-    local("Consolas"),
-    local("Courier New"),
-    local("Courier"),
+  src: url("../assets/fonts/SpaceGroteskVF.woff2") format("woff2"),
+    local("Consolas"), local("Courier New"), local("Courier"),
     local("monospace");
 }
 
@@ -197,8 +194,7 @@ ol.toc::before,
 }
 
 @media (max-width: 768px) {
-  nav,
-  .nav {
+  nav {
     font-size: var(--font-size-nav-mobile);
   }
 }
@@ -295,9 +291,7 @@ nav > ul > li > a {
   text-transform: uppercase;
   text-decoration: none;
   border-bottom: 1px solid transparent;
-  transition:
-    color 0.2s ease-in-out,
-    border-bottom 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out, border-bottom 0.2s ease-in-out;
 }
 
 #footer-container small {

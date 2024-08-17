@@ -15,10 +15,6 @@ header {
   margin-bottom: var(--spacing-huge);
 }
 
-/* main {
-  margin-top: var(--spacing-huge);
-} */
-
 main,
 aside {
   width: 100vw;
@@ -26,16 +22,6 @@ aside {
   flex: 1;
   display: flex; /* if you remove this line it works on Safari */
 }
-
-/* @media (max-width: 768px) {
-  main:not(#home) {
-    margin-top: var(--spacing-xhuge);
-  }
-
-  main {
-    margin-top: var(--spacing-xl);
-  }
-} */
 
 .wrapper {
   display: flex;
@@ -200,11 +186,11 @@ footer {
   padding: var(--spacing-xxl) 0;
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   footer {
     padding: var(--spacing-md) 0;
   }
-}
+} */
 
 #footer-container {
   display: grid;
