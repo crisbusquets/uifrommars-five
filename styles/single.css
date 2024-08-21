@@ -156,6 +156,61 @@ span.meta {
   margin: 0;
 }
 
+/* likes */
+#like-btn {
+  background-color: var(--white);
+  border: 1px solid var(--medium-gray);
+  border-radius: 2px;
+  display: flex;
+  color: var(--dark-gray);
+  padding: var(--spacing-xs) var(--spacing-sm);
+  flex-direction: row;
+  align-self: flex-start;
+  align-items: center;
+  gap: var(--spacing-xs);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+#like-btn[disabled] {
+  cursor: not-allowed;
+  opacity: 1;
+}
+
+#lbp-like-icon {
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+#lbp-icon-empty {
+  fill: #6d6767;
+  transition: fill 0.5s ease; /* Duration for the color transition */
+}
+
+#lbp-icon-filled {
+  fill: #ee3e2b;
+  animation: heartbeat 1s ease-in-out; /* Duration for the heartbeat animation */
+}
+
+@keyframes heartbeat {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  10%,
+  30%,
+  50%,
+  70% {
+    transform: scale(1.1);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: scale(1.05);
+  }
+}
+
 /* newsletter widget */
 .newsletter-post {
   display: flex;

@@ -47,6 +47,8 @@
       </div>
       <?php the_post_thumbnail('post-thumbnails'); ?>
       <?php the_content(); ?>
+      <?php echo do_shortcode('[like_button]'); ?>
+
       <div id="share-article">
         <h4>¿Te ha gustado? ¡Compártelo! 🚀</h4>
         <button id="copy-url-btn" class="plausible-event-name=Share+Article"><img
