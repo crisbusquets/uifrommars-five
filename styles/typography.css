@@ -44,6 +44,16 @@
     local("monospace");
 }
 
+@font-face {
+  font-display: swap;
+  font-family: "Iosevka Curly";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../assets/fonts/iosevka-curly.woff2") format("woff2"),
+    local("Consolas"), local("Courier New"), local("Courier"),
+    local("monospace");
+}
+
 h1 {
   font-family: "Space Grotesk";
   font-size: var(--font-size-heading-1);
@@ -233,15 +243,18 @@ ol.toc::before,
   line-height: 1.25;
 }
 
-.wp-block-code code {
-  font-family: "Courier New", Courier, monospace !important;
-  font-size: var(--font-size-toc);
-  font-weight: bold;
+.wp-block-code code,
+code {
+  font-family: "Iosevka Curly", monospace;
+  font-size: var(--font-size-body-mobile);
+  font-style: italic;
+  font-weight: 500;
+  padding: 0.15rem 0.35rem;
+  position: relative;
+  top: -0.025em;
   background-color: var(--light-gray);
-  color: var(--dark-gray);
   border-radius: var(--border-radius);
-  padding: var(--spacing-xs);
-  display: inline !important;
+  text-wrap: pretty;
 }
 
 @media (max-width: 768px) {
