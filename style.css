@@ -8,6 +8,7 @@ Author URI: http://www.cbusquets.com
 Tags: black, white, red, grey, responsive, minimal
 */
 
+@import "styles/reset.css"; /* this one should be on top */
 @import "styles/blog.css";
 @import "styles/category.css";
 @import "styles/form-elements.css";
@@ -18,7 +19,6 @@ Tags: black, white, red, grey, responsive, minimal
 @import "styles/marquee.css";
 @import "styles/nav.css";
 @import "styles/page.css";
-@import "styles/reset.css";
 @import "styles/search.css";
 @import "styles/single.css";
 @import "styles/toc.css";
