@@ -270,6 +270,10 @@ code {
   color: var(--regular-gray);
   text-align: left;
   margin: var(--spacing-xs) 0 var(--spacing-lg) 0;
+
+  & a {
+    color: var(--dark-gray);
+  }
 }
 
 small {
