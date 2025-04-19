@@ -63,14 +63,13 @@ mark {
   .inicio-svg {
     order: 1;
     margin: 0;
-    width: 284px;
-    height: 206px;
+    max-width: 100%;
     justify-content: center;
   }
 
   .inicio-svg img {
-    width: 100%;
-    height: 160px;
+    width: 340px;
+    height: 192px;
   }
 }
 

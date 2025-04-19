@@ -15,6 +15,12 @@ header {
   margin-bottom: var(--spacing-huge);
 }
 
+@media (max-width: 768px) {
+  header {
+    margin-bottom: var(--spacing-xl);
+  }
+}
+
 main,
 aside {
   width: 100vw;
