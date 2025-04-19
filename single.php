@@ -47,11 +47,14 @@
           </div>
           <?php the_post_thumbnail('post-thumbnails'); ?>
           <?php the_content(); ?>
-          <div id="share-article">
+          <div id="social-article">
             <h4>¿Te ha gustado? ¡Compártelo! 🚀</h4>
-            <button id="copy-url-btn" class="plausible-event-name=Share+Article"><img
-                src="<?php echo get_bloginfo('template_url') ?>/assets/images/icon/copy-link.svg" width="18" height="18"
-                alt="icono copiar enlace" /> Copiar enlace</button>
+            <div id="social-article-content">
+              <button id="copy-url-btn" class="plausible-event-name=Share+Article"><img
+                  src="<?php echo get_bloginfo('template_url') ?>/assets/images/icon/copy-link.svg" width="18" height="18"
+                  alt="icono copiar enlace" /> Copiar enlace</button>
+              <?php echo do_shortcode('[uifrommars_like_button]'); ?>
+            </div>
           </div>
           <hr />
           <div class="newsletter-post">

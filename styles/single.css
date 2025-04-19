@@ -124,11 +124,19 @@ span.meta {
 }
 
 /* copy URL */
-#share-article {
+#social-article {
   display: flex;
   flex-direction: column;
   margin-top: var(--spacing-lg);
   gap: var(--spacing-sm);
+}
+
+#social-article-content {
+  display: flex;
+  flex-direction: row;
+  margin-top: var(--spacing-sm);
+  gap: var(--spacing-md);
+  align-items: center;
 }
 
 #copy-url-btn {
