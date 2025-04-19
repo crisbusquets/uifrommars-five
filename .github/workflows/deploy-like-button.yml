@@ -1,6 +1,7 @@
 name: Deploy Like Plugin to Digital Ocean
 
 on:
+  workflow_dispatch:    # ← allows you to click “Run workflow” in the Actions tab
   push:
     branches:
       - main
